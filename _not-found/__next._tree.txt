@@ -1,0 +1,2 @@
+:HL["/vehicle-intelligence/_next/static/chunks/b986c23c9c8900a6.css","style"]
+0:{"buildId":"_ibipv4DG3eLJ_lUo3frm","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
