@@ -3,7 +3,7 @@
 
 PIMAU es una plataforma de análisis avanzado y modelado econométrico diseñada para transformar datos dispersos del mercado automotor en información accionable para la toma de decisiones de inversión.
 
-Este desarrollo utiliza técnicas de **Agentic Coding** para la implementación, el ajuste de parámetros de los modelos estadísticos y el refinamiento de la lógica de negocio.
+o.
 
 ---
 
