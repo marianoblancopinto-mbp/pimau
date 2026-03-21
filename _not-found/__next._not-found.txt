@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
-2:I[9472,["/vehicle-intelligence/_next/static/chunks/d55f60206c5ac936.js"],"default"]
-3:I[33440,["/vehicle-intelligence/_next/static/chunks/d55f60206c5ac936.js"],"default"]
-0:{"buildId":"hx8bSn_GLKBp-krCZFgxr","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+2:I[9472,["/pimau/_next/static/chunks/d55f60206c5ac936.js"],"default"]
+3:I[33440,["/pimau/_next/static/chunks/d55f60206c5ac936.js"],"default"]
+0:{"buildId":"YOtgfX5xfVdzLEpgHDa6l","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
