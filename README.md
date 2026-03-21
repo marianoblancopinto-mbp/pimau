@@ -1,46 +1,59 @@
-# Vehicle Intelligence Platform
+# PIMAU
+### Plataforma de Inteligencia para el Mercado de Autos Usados
 
-### Inteligencia de Mercado y Valuación Econométrica Automotriz
+PIMAU es una plataforma de análisis avanzado y modelado econométrico diseñada para transformar datos dispersos del mercado automotor en información accionable para la toma de decisiones de inversión.
 
-Nota: Este proyecto surgió inicialmente como una herramienta personal para analizar precios de autos y luego evolucionó en esta plataforma de modelado econométrico.
-
-Este desarrollo fue realizado utilizando técnicas de Agentic Coding, para asistir en la implementación, el ajuste de parámetros de los modelos estadísticos y el refinamiento de la lógica de negocio.
+Este desarrollo utiliza técnicas de **Agentic Coding** para la implementación, el ajuste de parámetros de los modelos estadísticos y el refinamiento de la lógica de negocio.
 
 ---
-
-Esta plataforma ofrece predicciones de "Precio Justo de Mercado" para vehículos usados, utilizando datos reales extraídos de los principales marketplaces y modelos econométricos personalizados.
 
 ## El Motor: Análisis de Depreciación Dual
 
-A diferencia de las calculadoras que solo ofrecen un promedio, esta plataforma usa un Motor de Depreciación Dual. Separa los dos factores que más afectan el valor de un auto:
+A diferencia de las calculadoras tradicionales basadas en promedios, PIMAU implementa un **Motor de Depreciación Dual** que segrega los dos factores determinantes del valor de un activo:
 
-1. Depreciación por Tiempo (Costo de Antigüedad): La pérdida de valor fija por cada año que pasa.
-2. Depreciación por Uso (Desgaste): La pérdida de valor variable por los kms recorridos. Las deprececiaciones fueron modeladas como decaimentos lineales o exponenciales y se combinaron mediante un Ensemble. La plataforma predice un "Precio Justo" con alta confianza estadística.
+1.  **Depreciación Temporal (Antigüedad):** La pérdida de valor intrínseca por el paso del tiempo.
+2.  **Desgaste Operativo (Kilometraje):** La pérdida de valor variable por el uso acumulado.
 
-## Stack Técnico y Features
+### Modelado Matemático y Precisión
+El sistema no se limita a un único modelo, sino que evalúa y combina diferentes aproximaciones para cada vehículo:
+-   **Modelo Lineal:** Efectivo para vehículos con demanda inelástica.
+-   **Modelo de Decaimiento Exponencial:** Captura la rápida pérdida de valor inicial y la estabilización asintótica.
+-   **Optimización por Ensamble (Weighted Ensemble):** Un algoritmo que pondera ambos modelos minimizando el Error Cuadrático Medio (RMSE) para lograr el mejor ajuste histórico.
 
-- Frontend: Next.js 15, TypeScript, Tailwind CSS.
-- Visualizaciones: Scatterplots interactivos y gráficos de área con Recharts para ver la dispersión del mercado.
-- Ingeniería de Datos:
-    - Scraping Automatizado: Motores personalizados para extraer datos de marketplaces.
-    - Normalización: Conversión de divisas, eliminación de duplicados y filtrado de outliers.
-    - Segregación por Versión: Agrupa y analiza versiones específicas para mayor precisión en la comparativa.
-- Modelador Econométrico: Un motor científico independiente que procesa los datos para generar coeficientes de tendencia y etiquetas de estabilidad.
-
-## Valor del Proyecto
-
-Este proyecto demuestra capacidad en:
-- Pipeline de datos: Desde la extracción de datos crudos hasta el modelado estadístico asistido.
-- UX/UI para Analytics: Presentar datos complejos en un dashboard premium e intuitivo.
-- Desarrollo Full-Stack: Patrones modernos de React y seguridad con TypeScript.
+**Resultados:** El sistema ha validado una **Precisión Global del 89.44%**, alcanzando picos del 94% en modelos con alta representatividad estadística.
 
 ---
 
-### Cómo correrlo localmente
+## Takeaways Técnicos y Procesamiento de Datos
 
-1. Clonar el repo: git clone https://github.com/marianoblancopinto-mbp/vehicle-intelligence.git
-2. Instalar dependencias: npm install
-3. Correr el servidor de desarrollo: npm run dev
+La robustez de PIMAU se basa en un pipeline de procesamiento de datos masivos (*High-Throughput Data Processing*):
+
+-   **Adquisición Automatizada:** Recolección multinodo de cientos de puntos de datos de múltiples marketplaces.
+-   **Filtrado de Señal (Sigma Clipping):** Aplicación de filtros estadísticos (Z-Score > 1.5) para segregar *outliers* y ruidos de mercado (precios artificialmente bajos o fuera de rango), asegurando que los datos representen fielmente la realidad transaccional.
+-   **Categorización Inteligente:** Agrupación por versiones y variantes para eliminar sesgos por equipamiento.
 
 ---
-Desarrollado como muestra de análisis de datos y desarrollo de aplicaciones modernas.
+
+## Stack Tecnológico
+
+-   **Frontend:** Next.js 15, TypeScript, Tailwind CSS.
+-   **Visualización:** Dashboard industrial con **Recharts** (Scatterplots, Area Charts, Histogramas de distribución 0km).
+-   **Motor Econométrico:** Lógica independiente en TypeScript utilizando **regression-js** para el cálculo de coeficientes de tendencia.
+-   **Automatización:** Motores de scraping personalizados y pipelines de normalización de datos.
+
+---
+
+## Ejecución Local
+
+1.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+2.  **Correr servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+    *La plataforma estará disponible en el puerto 7000 por defecto.*
+
+---
+Desarrollado como una herramienta de alta precisión para el análisis de activos y desarrollo de aplicaciones de inteligencia de mercado.

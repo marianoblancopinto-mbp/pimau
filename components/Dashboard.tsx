@@ -50,14 +50,36 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
         const groups: Record<string, ReportItem[]> = {};
         const allModels = data.map(d => d.model);
 
-        // Identify "Parents": Any model that is a prefix of another
-        const parents = allModels.filter(m =>
+        // First, find parents that exist as actual models
+        const existingParents = allModels.filter(m =>
             allModels.some(other => other !== m && other.startsWith(m + ' '))
         );
 
+        // Second, detect implicit parents (common prefixes like "JEEP COMPASS" when we have "JEEP COMPASS SPORT", "JEEP COMPASS LIMITED")
+        const findCommonPrefix = (model: string): string | null => {
+            // Check if this model shares a prefix with other models
+            const parts = model.split(' ');
+            for (let i = parts.length - 1; i >= 2; i--) {
+                const prefix = parts.slice(0, i).join(' ');
+                const siblings = allModels.filter(m => m !== model && m.startsWith(prefix + ' '));
+                if (siblings.length >= 1) {
+                    // Found at least one sibling with same prefix
+                    return prefix;
+                }
+            }
+            return null;
+        };
+
         const findParent = (modelName: string) => {
-            const p = parents.find(parent => modelName.startsWith(parent + ' '));
-            return p || modelName; // Fallback to self (Orphan)
+            // First check if there's an existing parent
+            const existingParent = existingParents.find(parent => modelName.startsWith(parent + ' '));
+            if (existingParent) return existingParent;
+
+            // Then check for implicit parent (common prefix)
+            const implicitParent = findCommonPrefix(modelName);
+            if (implicitParent) return implicitParent;
+
+            return modelName; // Fallback to self (Orphan)
         };
 
         data.forEach(item => {
@@ -73,21 +95,98 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
 
     const [selectedParent, setSelectedParent] = useState(parentKeys[0] || '');
 
-    // We just track selected VARIANT MODEL string
+    // We just track selected VARIANT MODEL string (or 'GLOBAL' for combined view)
     const [selectedModel, setSelectedModel] = useState(data[0]?.model || '');
 
+    // Track if we're in "Global" view (combined data from all variants)
+    const isGlobalView = selectedModel === '__GLOBAL__';
+
     // Derived parent (for UI sync)
-    const activeParent = parentKeys.find(p =>
-        groupedModels[p].some(item => item.model === selectedModel)
-    ) || selectedModel;
+    const activeParent = isGlobalView
+        ? selectedParent
+        : parentKeys.find(p =>
+            groupedModels[p].some(item => item.model === selectedModel)
+        ) || selectedParent;
 
     const [calcYear, setCalcYear] = useState(2022);
     const [calcKm, setCalcKm] = useState(50000);
     const [chartFixedYear, setChartFixedYear] = useState(currentYear - 3);
     const [chartFixedKm, setChartFixedKm] = useState(50000);
 
-    const selected = data.find(d => d.model === selectedModel) || data[0];
-    const selectedZeroKm = zeroKmData.find(z => z.model === selectedModel);
+    // --- GLOBAL CONSOLIDATION LOGIC ---
+    const globalReportItem = useMemo((): ReportItem | null => {
+        if (!isGlobalView || !activeParent) return null;
+        const variants = groupedModels[activeParent] || [];
+        if (variants.length === 0) return null;
+
+        const totalCount = variants.reduce((sum, v) => sum + v.count, 0);
+        if (totalCount === 0) return variants[0]; // Fallback
+
+        // Weighted Average helper
+        const weightedAvg = (getKey: (v: ReportItem) => number) => {
+            return variants.reduce((sum, v) => sum + (getKey(v) * v.count), 0) / totalCount;
+        };
+
+        return {
+            model: activeParent, // Display name
+            count: totalCount,
+            r2: weightedAvg(v => v.r2),
+            depreciation_per_year: weightedAvg(v => v.depreciation_per_year),
+            depreciation_per_10k_km: weightedAvg(v => v.depreciation_per_10k_km),
+            // Synthesize linear coefficients (Approximate)
+            coefficients: {
+                intercept: weightedAvg(v => v.coefficients.intercept),
+                year: weightedAvg(v => v.coefficients.year),
+                km: weightedAvg(v => v.coefficients.km)
+            },
+            // For stability score/label, take the mode or avg? Avg score.
+            resilience_score: weightedAvg(v => v.resilience_score),
+            stability_label: variants.sort((a, b) => b.count - a.count)[0].stability_label, // Take dominant label
+
+            // Ranges: Union of all ranges
+            yearRange: {
+                min: Math.min(...variants.map(v => v.yearRange.min)),
+                max: Math.max(...variants.map(v => v.yearRange.max))
+            },
+            kmRange: {
+                min: Math.min(...variants.map(v => v.kmRange.min)),
+                max: Math.max(...variants.map(v => v.kmRange.max))
+            },
+
+            // Buckets not strictly needed for UI (we use coefficients) but could aggregate
+            buckets: [],
+            modelType: 'LINEAR', // Simplify to Linear for aggregate view 
+            weights: undefined,
+            exponential_coefficients: undefined // Skip complexity for aggregate
+        };
+    }, [isGlobalView, activeParent, groupedModels]);
+
+    // SELECT THE RIGHT DATA
+    const selected = isGlobalView
+        ? globalReportItem || groupedModels[activeParent]?.[0] || data[0]
+        : data.find(d => d.model === selectedModel) || data[0];
+
+
+    // Get 0km data - for global view, combine all variants' 0km data
+    const selectedZeroKm = useMemo(() => {
+        if (isGlobalView && activeParent) {
+            // Combine 0km data from all variants under this parent
+            const variants = groupedModels[activeParent] || [];
+            const allPrices: number[] = [];
+            variants.forEach(v => {
+                const zkm = zeroKmData.find(z => z.model === v.model);
+                if (zkm) allPrices.push(...zkm.prices);
+            });
+            // Also check parent name directly
+            const parentZkm = zeroKmData.find(z => z.model === activeParent);
+            if (parentZkm) allPrices.push(...parentZkm.prices);
+
+            if (allPrices.length > 0) {
+                return { model: activeParent, prices: allPrices };
+            }
+        }
+        return zeroKmData.find(z => z.model === selectedModel);
+    }, [isGlobalView, activeParent, selectedModel, zeroKmData, groupedModels]);
 
     // Calculate mean
     const calculateMean = (prices: number[]) => {
@@ -110,8 +209,8 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
 
         const fixedMin = 0;
         const fixedMax = 70000;
-        const binCount = 14;
-        const binSize = (fixedMax - fixedMin) / binCount; // 5k per bin
+        const binSize = 2500; // Increased bin size for cleaner presentation
+        const binCount = Math.ceil((fixedMax - fixedMin) / binSize);
 
         const bins = Array(binCount).fill(0).map((_, i) => ({
             range: `$${Math.round((fixedMin + i * binSize) / 1000)}k`,
@@ -128,7 +227,11 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
             }
         });
 
-        return bins.map(b => ({
+        // Filter out empty tail bins for better scaling
+        let lastNonZero = bins.length - 1;
+        while (lastNonZero > 0 && bins[lastNonZero].count === 0) lastNonZero--;
+
+        return bins.slice(0, lastNonZero + 1).map(b => ({
             ...b,
             percentage: total > 0 ? (b.count / total) * 100 : 0
         }));
@@ -198,404 +301,394 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
     }));
 
     const getBadgeStyle = (label: string) => {
+        if (!label) return 'border-muted text-muted';
         if (label.includes('Gold') || label.includes('Benchmark'))
-            return 'bg-gradient-to-r from-yellow-500/20 to-amber-500/20 text-yellow-400 border-yellow-500/40';
+            return 'border-secondary/40 text-secondary bg-secondary/5';
         if (label.includes('Silver'))
-            return 'bg-gradient-to-r from-gray-400/20 to-slate-400/20 text-gray-300 border-gray-500/40';
+            return 'border-muted/40 text-muted';
         if (label.includes('Platinum'))
-            return 'bg-gradient-to-r from-purple-500/20 to-violet-500/20 text-purple-400 border-purple-500/40';
-        return 'bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-400 border-orange-500/40';
+            return 'border-primary text-primary bg-primary/5';
+        return 'border-red-500/40 text-red-500';
     };
 
     const showLowConfidence = selected.r2 < 0.6;
-    const modelScatterData = scatterData?.[selectedModel] || [];
+
+    // For scatter plot, if Global, combine all points?
+    // User didn't strictly ask for scatter agg but for consistency we should.
+    const modelScatterData = useMemo(() => {
+        if (isGlobalView && scatterData && activeParent) {
+            const variants = groupedModels[activeParent] || [];
+            const combined: ScatterPoint[] = [];
+            variants.forEach(v => {
+                if (scatterData[v.model]) combined.push(...scatterData[v.model]);
+            });
+            // also parent if exists
+            if (scatterData[activeParent]) combined.push(...scatterData[activeParent]);
+            // dedupe not needed if models keys are distinct
+            return combined;
+        }
+        return scatterData?.[selectedModel] || [];
+    }, [isGlobalView, selectedModel, scatterData, activeParent, groupedModels]);
+
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 text-zinc-100 font-sans">
-            {/* Header */}
-            <header className="border-b border-zinc-800/50 backdrop-blur-sm bg-zinc-950/80 sticky top-0 z-50">
-                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-lg">V</div>
-                        <h1 className="text-xl font-bold tracking-tight">
-                            Vehicle <span className="text-blue-400">Intelligence</span>
-                        </h1>
+        <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20 flex flex-col">
+            {/* Simple Header - Compact */}
+            <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md text-foreground border-b border-border h-16 flex-none">
+                <div className="h-full px-6 flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                        <div className="bg-primary/10 p-1.5 border border-primary/20">
+                            <span className="font-black text-lg tracking-tighter text-primary">PIMAU</span>
+                        </div>
+                        <div>
+                            <h1 className="text-lg font-black tracking-tight uppercase leading-none">
+                                PIMAU
+                            </h1>
+                        </div>
                     </div>
-                    <div className="flex items-center gap-3 bg-zinc-900 rounded-lg p-1 border border-zinc-800">
-                        <select
-                            value={activeParent}
-                            onChange={(e) => {
-                                const newParent = e.target.value;
-                                const variants = groupedModels[newParent];
-                                // Prefer "Global" variant if exists (name === newParent)
-                                const globalVar = variants.find(v => v.model === newParent);
-                                const firstVar = variants[0];
-                                setSelectedModel((globalVar || firstVar).model);
-                            }}
-                            className="bg-transparent text-sm font-medium focus:outline-none text-zinc-200 px-3 py-1.5 cursor-pointer max-w-[250px]"
-                        >
-                            {parentKeys.map(parent => (
-                                <option key={parent} value={parent} className="bg-zinc-900">
-                                    {parent}
-                                </option>
-                            ))}
-                        </select>
+
+                    <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-3">
+                            <span className="text-[10px] font-black uppercase tracking-widest opacity-60">Dataset:</span>
+                            <select
+                                value={activeParent}
+                                onChange={(e) => {
+                                    const newParent = e.target.value;
+                                    const variants = groupedModels[newParent];
+                                    if (variants.length > 1) {
+                                        setSelectedModel('__GLOBAL__');
+                                    } else {
+                                        setSelectedModel(variants[0].model);
+                                    }
+                                    setSelectedParent(newParent);
+                                }}
+                                className="bg-background text-foreground text-sm font-black focus:outline-none cursor-pointer min-w-[200px] text-right border border-border px-2 py-1 rounded-sm [&>option]:text-black"
+                            >
+                                {parentKeys.map(parent => (
+                                    <option key={parent} value={parent} className="text-black">
+                                        {parent}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                 </div>
             </header>
 
-            {/* Main Grid - 2x2 Layout (Always 2 columns) */}
-            <main className="max-w-[1600px] mx-auto p-6">
-                <div className="grid grid-cols-2 gap-6">
+            {/* Main Content - 2x2 Grid */}
+            <main className="flex-1 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2">
 
-                    {/* LEFT COLUMN */}
-                    <div className="space-y-6">
-                        {/* Model Header Card */}
-                        <div className="bg-zinc-900/60 border border-zinc-800/60 rounded-2xl p-6">
-                            <div className="flex justify-between items-start mb-4">
-                                <div>
-                                    <h2 className="text-3xl font-black text-white">{activeParent}</h2>
+                {/* QUADRANT I: IDENTITY & VALUATOR (Top-Left) */}
+                <div className="p-8 lg:p-12 border-b lg:border-r border-border relative flex flex-col">
 
-                                    {/* Variant Selection Tabs */}
-                                    <div className="flex flex-wrap gap-2 mt-3">
-                                        {groupedModels[activeParent]?.map((variant) => {
-                                            const isActive = variant.model === selectedModel;
-                                            const shortName = variant.model.replace(activeParent, '').trim() || 'Global';
-                                            return (
-                                                <button
-                                                    key={variant.model}
-                                                    onClick={() => setSelectedModel(variant.model)}
-                                                    className={cn(
-                                                        "px-3 py-1.5 rounded-lg text-xs font-bold transition-all border",
-                                                        isActive
-                                                            ? "bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-900/20"
-                                                            : "bg-zinc-800/50 text-zinc-400 border-zinc-700/50 hover:bg-zinc-800 hover:text-zinc-200"
-                                                    )}
-                                                >
-                                                    {shortName}
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-                                <div className="flex flex-col items-end gap-2">
-                                    <div className={cn("px-3 py-1 rounded-full text-xs font-bold border", getBadgeStyle(selected.stability_label))}>
-                                        {selected.stability_label}
-                                    </div>
-                                    <div className="text-xs text-zinc-500 font-medium">
-                                        <span className="text-zinc-300 font-bold">{selected.count}</span> muestras
-                                    </div>
+                    {/* Top: Identity */}
+                    <div className="mb-8">
+                        <div className="flex justify-between items-start mb-6">
+                            <h2 className="text-5xl lg:text-6xl font-black text-primary leading-[0.8] tracking-[-0.04em] uppercase">
+                                {activeParent}
+                            </h2>
+                            <div className={cn("badge-industrial ml-auto", getBadgeStyle(selected.stability_label))}>
+                                {selected.stability_label}
+                            </div>
+                        </div>
+
+                        {/* Variant Selection */}
+                        <div className="flex flex-wrap gap-2 mb-8">
+                            {groupedModels[activeParent]?.length > 1 && (
+                                <button
+                                    onClick={() => setSelectedModel('__GLOBAL__')}
+                                    className={cn(
+                                        "px-2 py-0.5 text-[10px] font-black uppercase tracking-widest transition-all border",
+                                        isGlobalView
+                                            ? "bg-primary text-white border-primary"
+                                            : "bg-transparent text-muted hover:text-foreground border-border"
+                                    )}
+                                >
+                                    Vista Global
+                                </button>
+                            )}
+                            {groupedModels[activeParent]?.map((variant) => {
+                                const isActive = !isGlobalView && variant.model === selectedModel;
+                                const rawShortName = variant.model.replace(activeParent, '').trim();
+                                const shortName = rawShortName || 'Base';
+
+                                return (
+                                    <button
+                                        key={variant.model}
+                                        onClick={() => setSelectedModel(variant.model)}
+                                        className={cn(
+                                            "px-2 py-0.5 text-[10px] font-black uppercase tracking-widest transition-all border",
+                                            isActive
+                                                ? "bg-primary text-white border-primary"
+                                                : "bg-transparent text-muted hover:text-foreground border-border"
+                                        )}
+                                    >
+                                        {shortName}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Compact Metrics Grid */}
+                        <div className="grid grid-cols-4 gap-4 pb-8 border-b border-border/50">
+                            <div>
+                                <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Confianza (R²)</div>
+                                <div className="text-2xl font-black text-foreground">
+                                    {(selected.r2 * 100).toFixed(0)}<span className="text-sm text-muted opacity-50">%</span>
                                 </div>
                             </div>
-
-                            <div className="flex items-center gap-6 mt-6 pt-6 border-t border-zinc-800/50">
+                            <div>
+                                <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Ensemble Weights</div>
+                                <div className="text-xs font-black text-foreground flex flex-col justify-center h-8">
+                                    {selected.weights ? (
+                                        <>
+                                            <span>Lin: {(selected.weights.linear).toFixed(2)}</span>
+                                            <span>Exp: {(selected.weights.exponential).toFixed(2)}</span>
+                                        </>
+                                    ) : (
+                                        <span className="text-muted/50">N/A</span>
+                                    )}
+                                </div>
+                            </div>
+                            <div className="col-span-2 grid grid-cols-2 gap-4">
                                 <div>
-                                    <div className="text-zinc-500 text-xs font-bold uppercase mb-1">R² Score</div>
-                                    <div className={cn("text-2xl font-mono font-bold", selected.r2 > 0.8 ? "text-emerald-400" : selected.r2 > 0.6 ? "text-yellow-400" : "text-amber-500")}>
-                                        {selected.r2.toFixed(3)}
+                                    <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Depreciación Temporal</div>
+                                    <div className="text-xl font-black text-foreground whitespace-nowrap">
+                                        -${Math.abs(Math.round(selected.depreciation_per_year)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/año</span>
                                     </div>
                                 </div>
-
-                                <div className="ml-auto">
-                                    <div className="text-zinc-500 text-xs font-bold uppercase mb-1">Pesos del Modelo</div>
-                                    <div className="flex items-center gap-3 text-xs font-medium">
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                                            <span className="text-zinc-400">Lin:</span>
-                                            <span className="text-blue-400">{Math.round((selected.weights?.linear ?? (selected.modelType === 'LINEAR' ? 1 : 0)) * 100)}%</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="w-2 h-2 rounded-full bg-purple-500"></span>
-                                            <span className="text-zinc-400">Exp:</span>
-                                            <span className="text-purple-400">{Math.round((selected.weights?.exponential ?? (selected.modelType === 'EXPONENTIAL' ? 1 : 0)) * 100)}%</span>
-                                        </div>
+                                <div>
+                                    <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Desgaste Operativo</div>
+                                    <div className="text-xl font-black text-foreground whitespace-nowrap">
+                                        -${Math.abs(Math.round(selected.depreciation_per_10k_km)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/10k KM</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Stats Grid */}
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-xl p-5">
-                                <div className="text-zinc-500 text-xs font-bold uppercase mb-2">Depreciación Anual</div>
-                                <div className="text-2xl font-bold text-red-400">${Math.abs(selected.depreciation_per_year).toLocaleString()}</div>
-                                <div className="text-zinc-600 text-xs mt-1">Pérdida por año</div>
-                            </div>
-                            <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-xl p-5">
-                                <div className="text-zinc-500 text-xs font-bold uppercase mb-2">Depreciación Uso</div>
-                                <div className="text-2xl font-bold text-orange-400">${Math.abs(selected.depreciation_per_10k_km).toLocaleString()}</div>
-                                <div className="text-zinc-600 text-xs mt-1">Cada 10.000 km</div>
-                            </div>
-                        </div>
+                    {/* Bottom: Calculator/Valuator */}
+                    <div className="flex-1 flex flex-col justify-center">
+                        <div className="text-[10px] text-muted/40 font-black uppercase tracking-widest mb-4">Calculadora</div>
 
-                        {/* Calculator */}
-                        <div className="bg-zinc-900/60 border border-zinc-800/60 rounded-2xl p-6">
-                            <div className="flex justify-between items-center mb-4">
-                                <div>
-                                    <h3 className="text-lg font-bold text-zinc-100">Calculadora de Valor Real</h3>
-                                    <p className="text-xs text-blue-400 font-medium">
-                                        Calculado sobre: <span className="text-zinc-200 font-bold border-b border-zinc-600">{selected.model}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-2 gap-4 mb-6">
-                                <div>
-                                    <label className="text-xs text-zinc-500 font-medium block mb-2">Año del Vehículo</label>
+                        <div className="flex gap-6 items-end">
+                            <div className="flex-1 grid grid-cols-2 gap-4">
+                                <div className="space-y-1">
+                                    <label className="text-[9px] font-black uppercase tracking-widest text-muted block">Año</label>
                                     <input
                                         type="number"
                                         value={calcYear}
                                         onChange={(e) => setCalcYear(Number(e.target.value))}
-                                        className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-3 text-white text-lg font-mono focus:ring-2 focus:ring-blue-500 outline-none"
+                                        className="w-full bg-secondary/10 border-b-2 border-primary/20 px-0 py-2 text-foreground text-2xl font-black focus:border-primary transition-all outline-none"
                                     />
                                 </div>
-                                <div>
-                                    <label className="text-xs text-zinc-500 font-medium block mb-2">Kilometraje</label>
+                                <div className="space-y-1">
+                                    <label className="text-[9px] font-black uppercase tracking-widest text-muted block">Kilometraje</label>
                                     <input
                                         type="number"
                                         value={calcKm}
                                         onChange={(e) => setCalcKm(Number(e.target.value))}
-                                        className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-3 text-white text-lg font-mono focus:ring-2 focus:ring-blue-500 outline-none"
+                                        className="w-full bg-secondary/10 border-b-2 border-primary/20 px-0 py-2 text-foreground text-2xl font-black focus:border-primary transition-all outline-none"
                                     />
                                 </div>
                             </div>
-                            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center">
-                                <div className="text-xs text-zinc-400 mb-1">Precio de Mercado Justo</div>
-                                <div className="text-4xl font-black text-emerald-400">${predictedPrice.toLocaleString()}</div>
-                                <div className="text-xs text-zinc-500 mt-1">Para {calcYear} con {calcKm.toLocaleString()} km</div>
-                            </div>
-                        </div>
 
-                        {/* 0km Histogram */}
-                        <div className="bg-zinc-900/60 border border-zinc-800/60 rounded-2xl p-6">
-                            <div className="flex justify-between items-start mb-4">
-                                <div>
-                                    <h3 className="text-lg font-bold text-zinc-100 flex items-center gap-2">
-                                        <BarChart3 size={18} className="text-cyan-500" />
-                                        Distribución Precios 0km
-                                    </h3>
-                                    <p className="text-xs text-zinc-500">Histograma de precios de mercado</p>
+                            <div className="flex-1 text-right">
+                                <div className="text-[9px] text-muted font-black uppercase tracking-widest mb-1">Valor Estimado</div>
+                                <div className="text-5xl font-black text-primary leading-none tracking-tight">
+                                    <span className="text-3xl align-top opacity-50 mr-1">$</span>
+                                    {predictedPrice.toLocaleString()}
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            {zeroKmPrices.length > 0 ? (
-                                <>
-                                    {/* Statistics Display */}
-                                    <div className="grid grid-cols-2 gap-4 mb-4">
-                                        <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-3 text-center">
-                                            <div className="text-xs text-zinc-400 mb-1">Media (μ)</div>
-                                            <div className="text-xl font-bold text-cyan-400">${Math.round(zeroKmMean).toLocaleString()}</div>
-                                        </div>
-                                        <div className="bg-violet-500/10 border border-violet-500/30 rounded-lg p-3 text-center">
-                                            <div className="text-xs text-zinc-400 mb-1">Desvío Muestral (s)</div>
-                                            <div className="text-xl font-bold text-violet-400">${Math.round(zeroKmStdDev).toLocaleString()}</div>
-                                        </div>
-                                    </div>
+                {/* QUADRANT II: REALITY (Top-Right) */}
+                <div className="p-8 lg:p-12 border-b border-border relative">
 
-                                    {/* Histogram Chart */}
-                                    <div className="h-[200px] w-full">
-                                        <ResponsiveContainer width="100%" height="100%">
-                                            <BarChart data={histogramData}>
-                                                <defs>
-                                                    <linearGradient id="colorHistogram" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#06b6d4" stopOpacity={0.8} />
-                                                        <stop offset="95%" stopColor="#06b6d4" stopOpacity={0.3} />
-                                                    </linearGradient>
-                                                </defs>
-                                                <XAxis dataKey="range" stroke="#52525b" fontSize={10} tickLine={false} axisLine={false} />
-                                                <YAxis stroke="#52525b" fontSize={10} tickLine={false} axisLine={false} allowDecimals={false} tickFormatter={(v) => `${v}%`} />
-                                                <Tooltip
-                                                    contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46', borderRadius: '12px' }}
-                                                    formatter={(value: any) => [`${parseFloat(value).toFixed(1)}%`, 'Frecuencia']}
-                                                />
-                                                <ReferenceLine x={histogramData.find(b => zeroKmMean >= b.rangeStart && zeroKmMean < b.rangeEnd)?.range} stroke="#22d3ee" strokeDasharray="3 3" label={{ value: 'μ', fill: '#22d3ee', fontSize: 12 }} />
-                                                <Bar dataKey="percentage" fill="url(#colorHistogram)" radius={[4, 4, 0, 0]}>
-                                                    {histogramData.map((entry, index) => (
-                                                        <Cell
-                                                            key={`cell-${index}`}
-                                                            fill={zeroKmMean >= entry.rangeStart && zeroKmMean < entry.rangeEnd ? '#22d3ee' : 'url(#colorHistogram)'}
-                                                        />
-                                                    ))}
-                                                </Bar>
-                                            </BarChart>
-                                        </ResponsiveContainer>
-                                    </div>
-
-                                    {/* Additional Info */}
-                                    <div className="mt-3 text-center text-xs text-zinc-500">
-                                        n = {zeroKmPrices.length} vehículos 0km analizados
-                                    </div>
-                                </>
-                            ) : (
-                                <div className="h-[280px] flex items-center justify-center text-zinc-500">
-                                    <div className="text-center">
-                                        <BarChart3 size={48} className="mx-auto mb-2 opacity-30" />
-                                        <p>Sin datos 0km disponibles para este modelo</p>
-                                    </div>
+                    <div className="h-full flex flex-col">
+                        <div className="mb-6 flex justify-between items-end">
+                            <h3 className="text-2xl font-black text-foreground uppercase tracking-tight leading-none">
+                                {showLowConfidence ? 'Dispersión de Mercado' : 'Devaluación Temporal'}
+                            </h3>
+                            {!showLowConfidence && (
+                                <div className="text-right">
+                                    <div className="text-[10px] text-muted font-black uppercase tracking-widest mb-1">Odómetro Fijo</div>
+                                    <input
+                                        type="number"
+                                        value={chartFixedKm}
+                                        onChange={(e) => setChartFixedKm(Number(e.target.value))}
+                                        className="bg-secondary text-foreground font-black w-24 text-center py-1 px-2 text-sm focus:bg-primary focus:text-white outline-none"
+                                    />
                                 </div>
                             )}
                         </div>
-                    </div>
 
-                    {/* RIGHT COLUMN - Charts */}
-                    <div className="space-y-6">
-                        {showLowConfidence ? (
-                            <>
-                                <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6">
-                                    <h3 className="text-lg font-bold text-amber-500 flex items-center gap-2 mb-2">
-                                        <AlertTriangle size={20} />
-                                        Baja Confianza del Modelo (R² {(selected.r2).toFixed(2)})
-                                    </h3>
-                                    <p className="text-sm text-zinc-400 leading-relaxed">
-                                        {selectedModel === activeParent && groupedModels[activeParent]?.length > 1 ? (
-                                            <>
-                                                El modelo <strong className="text-zinc-200">Global</strong> agrupa todas las versiones de {activeParent}, lo que genera alta varianza en los precios.
-                                                Para este vehículo disponemos de <strong className="text-blue-400">{groupedModels[activeParent].length - 1} versiones segregadas</strong> que pueden ofrecer predicciones más confiables.
-                                                Seleccioná una versión específica en los tabs de arriba para mayor precisión.
-                                            </>
-                                        ) : (
-                                            <>
-                                                Este modelo presenta una alta varianza en los precios, lo que indica que el año y el kilometraje no son suficientes para explicar completamente su valor.
-                                                Esto puede deberse a versiones muy dispares (ej. base vs sport) o un mercado inestable. Las predicciones de la calculadora pueden ser menos precisas.
-                                            </>
-                                        )}
-                                    </p>
-                                </div>
+                        <div className="flex-1 min-h-[300px] w-full">
+                            <ResponsiveContainer width="100%" height="100%">
+                                {showLowConfidence ? (
+                                    <ScatterChart margin={{ top: 10, right: 10, bottom: 0, left: -20 }}>
+                                        <XAxis type="number" dataKey="km" stroke="#71717a" fontSize={10} tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} domain={[0, 'auto']} tick={{ fontWeight: 900, fill: '#71717a' }} axisLine={false} tickLine={false} />
+                                        <YAxis type="number" dataKey="price" stroke="#71717a" fontSize={10} tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} domain={[0, 'auto']} tick={{ fontWeight: 900, fill: '#71717a' }} axisLine={false} tickLine={false} />
+                                        <ZAxis type="number" dataKey="year" range={[60, 60]} />
+                                        <Tooltip
+                                            cursor={{ strokeDasharray: '4 4', stroke: '#ffffff' }}
+                                            contentStyle={{ backgroundColor: '#fff', border: '2px solid #111', borderRadius: '0px' }}
+                                            itemStyle={{ color: '#111', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase' }}
+                                        />
+                                        <Legend
+                                            iconType="circle"
+                                            verticalAlign="bottom"
+                                            height={36}
+                                            wrapperStyle={{ fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', paddingTop: '10px' }}
+                                        />
+                                        {Object.entries((modelScatterData || []).reduce((acc, item) => {
+                                            if (!acc[item.year]) acc[item.year] = [];
+                                            acc[item.year].push(item);
+                                            return acc;
+                                        }, {} as Record<number, any[]>))
+                                            .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+                                            .map(([year, items]) => {
+                                                const y = Number(year);
+                                                const colors = ['#75aadb', '#fcbf45', '#111', '#71717a', '#e4e4e7'];
+                                                const color = colors[y % colors.length];
 
-                                <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 min-h-[350px]">
-                                    <div className="mb-4">
-                                        <h3 className="text-lg font-bold text-zinc-100">Distribución Real de Mercado</h3>
-                                        <p className="text-xs text-zinc-500">Dispersión de precios reales por Año</p>
-                                    </div>
-                                    <div className="h-[300px] w-full">
-                                        <ResponsiveContainer width="100%" height="100%">
-                                            <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 10 }}>
-                                                <XAxis type="number" dataKey="km" name="Kilometraje" unit=" km" stroke="#52525b" fontSize={12} tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} domain={[0, 'auto']} />
-                                                <YAxis type="number" dataKey="price" name="Precio" unit=" USD" stroke="#52525b" fontSize={12} tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} domain={[0, 'auto']} />
-                                                <ZAxis type="number" dataKey="year" name="Año" range={[60, 60]} />
-                                                <Tooltip
-                                                    cursor={{ strokeDasharray: '3 3' }}
-                                                    contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46', borderRadius: '8px' }}
-                                                    formatter={(value: any, name: any) => [
-                                                        name === 'Precio' ? `$${value?.toLocaleString()}` : name === 'Kilometraje' ? `${value?.toLocaleString()} km` : value,
-                                                        name
-                                                    ]}
-                                                />
-                                                <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />
-                                                {/* Group data by year for Legend coloring */}
-                                                {Object.entries(modelScatterData.reduce((acc, item) => {
-                                                    if (!acc[item.year]) acc[item.year] = [];
-                                                    acc[item.year].push(item);
-                                                    return acc;
-                                                }, {} as Record<number, any[]>))
-                                                    .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
-                                                    .map(([year, items]) => {
-                                                        const y = Number(year);
-                                                        const color =
-                                                            y >= 2025 ? '#10b981' : // Emerald
-                                                                y === 2024 ? '#06b6d4' : // Cyan
-                                                                    y === 2023 ? '#3b82f6' : // Blue
-                                                                        y === 2022 ? '#8b5cf6' : // Violet
-                                                                            y === 2021 ? '#d946ef' : // Fuchsia
-                                                                                y === 2020 ? '#f43f5e' : // Rose
-                                                                                    '#f59e0b';               // Amber (Older)
-
-                                                        return (
-                                                            <Scatter key={year} name={`${year}`} data={items} fill={color} shape="circle" />
-                                                        );
-                                                    })}
-                                            </ScatterChart>
-                                        </ResponsiveContainer>
-                                    </div>
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                {/* Usage Chart */}
-                                <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 min-h-[350px]">
-                                    <div className="flex justify-between items-center mb-4">
-                                        <div>
-                                            <h3 className="text-lg font-bold text-zinc-100 flex items-center gap-2">
-                                                <Activity size={18} className="text-emerald-500" />
-                                                Impacto del Kilometraje
-                                            </h3>
-                                            <p className="text-xs text-zinc-500">Valor vs Km recorridos • <span className="text-amber-400">Zona punteada = proyección</span></p>
-                                        </div>
-                                        <div className="flex items-center gap-2 text-sm">
-                                            <span className="text-zinc-500">Año:</span>
-                                            <input
-                                                type="number"
-                                                value={chartFixedYear}
-                                                onChange={(e) => setChartFixedYear(Number(e.target.value))}
-                                                className="bg-zinc-800 border-zinc-700 text-zinc-300 w-16 text-center rounded"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="h-[250px] w-full">
-                                        <ResponsiveContainer width="100%" height="100%">
-                                            <AreaChart data={usageChartData}>
-                                                <defs>
-                                                    <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
-                                                        <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                                                    </linearGradient>
-                                                </defs>
-                                                <XAxis dataKey="km" stroke="#52525b" fontSize={12} tickLine={false} axisLine={false} />
-                                                <YAxis stroke="#52525b" fontSize={12} tickLine={false} axisLine={false} tickFormatter={(v) => `$${v / 1000}k`} />
-                                                <Tooltip
-                                                    contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46', borderRadius: '12px' }}
-                                                    formatter={(value: any, name: any, props: any) => [
-                                                        `$${(value as number)?.toLocaleString() ?? 0}${props.payload?.isExtrapolation ? ' (proyección)' : ''}`,
-                                                        'Precio'
-                                                    ]}
-                                                />
-                                                <ReferenceLine
-                                                    x={usageChartData.find(d => d.kmValue > dataKmMax)?.km}
-                                                    stroke="#f59e0b"
-                                                    strokeWidth={2}
-                                                    strokeDasharray="8 4"
-                                                />
-                                                <Area
-                                                    type="monotone"
-                                                    dataKey="precio"
-                                                    stroke="#10b981"
-                                                    strokeWidth={3}
-                                                    fillOpacity={1}
-                                                    fill="url(#colorPrice)"
-                                                />
-                                            </AreaChart>
-                                        </ResponsiveContainer>
-                                    </div>
-                                </div>
-
-                                {/* Time Chart */}
-                                <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 min-h-[350px]">
-                                    <div className="flex justify-between items-center mb-4">
-                                        <div>
-                                            <h3 className="text-lg font-bold text-zinc-100">Impacto de la Antigüedad</h3>
-                                            <p className="text-xs text-zinc-500">Valor vs Año de Fabricación</p>
-                                        </div>
-                                    </div>
-                                    <div className="h-[250px] w-full">
-                                        <ResponsiveContainer width="100%" height="100%">
-                                            <AreaChart data={timeChartData}>
-                                                <defs>
-                                                    <linearGradient id="colorPriceTime" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
-                                                        <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
-                                                    </linearGradient>
-                                                </defs>
-                                                <XAxis dataKey="año" stroke="#52525b" fontSize={12} tickLine={false} axisLine={false} />
-                                                <YAxis stroke="#52525b" fontSize={12} tickLine={false} axisLine={false} tickFormatter={(v) => `$${v / 1000}k`} />
-                                                <Tooltip contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46', borderRadius: '12px' }} />
-                                                <Area type="monotone" dataKey="precio" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#colorPriceTime)" />
-                                            </AreaChart>
-                                        </ResponsiveContainer>
-                                    </div>
-                                </div>
-                            </>
-                        )}
+                                                return (
+                                                    <Scatter key={year} name={`${year}`} data={items} fill={color} />
+                                                );
+                                            })}
+                                    </ScatterChart>
+                                ) : (
+                                    <AreaChart data={timeChartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                                        <XAxis dataKey="año" stroke="#71717a" fontSize={10} tickLine={false} axisLine={false} tick={{ fontWeight: 900, fill: '#71717a' }} />
+                                        <YAxis stroke="#71717a" fontSize={10} tickLine={false} axisLine={false} tickFormatter={(v) => `$${v / 1000}k`} tick={{ fontWeight: 900, fill: '#71717a' }} />
+                                        <Tooltip
+                                            contentStyle={{ backgroundColor: '#fff', border: '2px solid #111', borderRadius: '0px' }}
+                                            itemStyle={{ color: '#111', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase' }}
+                                        />
+                                        <Area type="monotone" dataKey="precio" stroke="#fcbf45" strokeWidth={3} fillOpacity={0.15} fill="#fcbf45" />
+                                    </AreaChart>
+                                )}
+                            </ResponsiveContainer>
+                        </div>
                     </div>
                 </div>
+
+                {/* QUADRANT III: MARKET BENCHMARK (Bottom-Left) */}
+                <div className="p-8 lg:p-12 border-r border-border relative bg-primary text-white">
+
+                    <div className="h-full flex flex-col">
+                        <div className="flex justify-between items-end mb-8 mt-6">
+                            <div>
+                                <div className="text-[10px] text-white/60 font-black uppercase tracking-widest mb-1">Precio Promedio 0km</div>
+                                <div className="text-4xl font-black text-white">
+                                    ${Math.round(zeroKmMean).toLocaleString()}
+                                </div>
+                            </div>
+                            <div className="text-right">
+                                <div className="text-[10px] text-white/60 font-black uppercase tracking-widest mb-1">Desviación Estándar</div>
+                                <div className="text-2xl font-black text-white/80">
+                                    ±${Math.round(zeroKmStdDev).toLocaleString()}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Full Q3 Histogram */}
+                        <div className="flex-1 w-full min-h-[200px]">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <BarChart data={histogramData} margin={{ top: 20, right: 0, left: -20, bottom: 20 }}>
+                                    <XAxis
+                                        dataKey="range"
+                                        stroke="rgba(255,255,255,0.5)"
+                                        fontSize={9}
+                                        tickLine={false}
+                                        axisLine={false}
+                                        tick={{ fontWeight: 700, fill: 'rgba(255,255,255,0.7)' }}
+                                        interval={1} // Skip labels if crowded
+                                    />
+                                    <Tooltip
+                                        contentStyle={{ backgroundColor: '#111', border: '1px solid #fff', borderRadius: '0px', color: '#fff' }}
+                                        itemStyle={{ color: '#fff', fontSize: '10px', fontWeight: 900 }}
+                                        cursor={{ fill: 'rgba(255,255,255,0.1)' }}
+                                        labelStyle={{ color: '#aaa', fontWeight: 700, marginBottom: '0.25rem' }}
+                                    />
+                                    <Bar dataKey="count" fill="#ffffff" fillOpacity={0.9} radius={[2, 2, 0, 0]}>
+                                        {histogramData.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={entry.rangeStart <= zeroKmMean && entry.rangeEnd >= zeroKmMean ? '#fcbf45' : '#ffffff'} />
+                                        ))}
+                                    </Bar>
+                                    <ReferenceLine x={histogramData.find(b => b.rangeStart <= zeroKmMean && b.rangeEnd >= zeroKmMean)?.range} stroke="#fcbf45" strokeDasharray="3 3" />
+                                </BarChart>
+                            </ResponsiveContainer>
+                        </div>
+
+                        <div className="text-center mt-2">
+                            <div className="text-[9px] text-white/40 font-black uppercase tracking-widest">
+                                Distribución de Precios 0km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* QUADRANT IV: PROJECTION (Bottom-Right) */}
+                <div className="p-8 lg:p-12 relative bg-background flex flex-col">
+
+                    <div className="h-full flex flex-col">
+                        <div className="mb-6 flex justify-between items-end">
+                            <h3 className="text-2xl font-black text-foreground uppercase tracking-tight leading-none">Intensidad de Uso</h3>
+                            <div className="flex gap-4">
+                                <div className="text-right">
+                                    <div className="text-[10px] text-muted font-black uppercase tracking-widest mb-1">Año Base</div>
+                                    <input
+                                        type="number"
+                                        value={chartFixedYear}
+                                        onChange={(e) => setChartFixedYear(Number(e.target.value))}
+                                        className="bg-primary text-white font-black w-24 text-center py-1 px-2 text-sm focus:bg-secondary focus:text-foreground outline-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex-1 min-h-[300px] w-full">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <AreaChart data={usageChartData} margin={{ top: 10, right: 30, left: -20, bottom: 0 }}>
+                                    <XAxis dataKey="km" stroke="#71717a" fontSize={10} tickLine={false} axisLine={false} tick={{ fontWeight: 900, fill: '#71717a' }} />
+                                    <YAxis stroke="#71717a" fontSize={10} tickLine={false} axisLine={false} tickFormatter={(v) => `$${v / 1000}k`} tick={{ fontWeight: 900, fill: '#71717a' }} />
+                                    <Tooltip
+                                        contentStyle={{ backgroundColor: '#fff', border: '2px solid #38bdf8', borderRadius: '0px' }}
+                                        itemStyle={{ color: '#111', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase' }}
+                                    />
+                                    <ReferenceLine
+                                        x={usageChartData.find(d => d.kmValue > dataKmMax)?.km}
+                                        stroke="#fcbf45"
+                                        strokeWidth={2}
+                                        strokeDasharray="6 4"
+                                        label={({ viewBox }) => {
+                                            const x = viewBox.x + 10;
+                                            const y = viewBox.y + 10;
+                                            return (
+                                                <text x={x} y={y} fill="#fcbf45" fontSize={10} fontWeight={900} style={{ textTransform: 'uppercase' }}>
+                                                    <tspan x={x} dy="0">Proyección</tspan>
+                                                    <tspan x={x} dy="1.2em">→</tspan>
+                                                </text>
+                                            );
+                                        }}
+                                    />
+                                    <Area
+                                        type="monotone"
+                                        dataKey="precio"
+                                        stroke="#38bdf8"
+                                        strokeWidth={3}
+                                        fillOpacity={0.15}
+                                        fill="#38bdf8"
+                                    />
+                                </AreaChart>
+                            </ResponsiveContainer>
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
     );

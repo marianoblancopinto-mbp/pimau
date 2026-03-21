@@ -1,12 +1,14 @@
 {
-  "name": "vehicle-intelligence",
+  "name": "pimau",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 7000",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
+    "deploy": "gh-pages -d out --dotfiles -t"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
@@ -25,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
