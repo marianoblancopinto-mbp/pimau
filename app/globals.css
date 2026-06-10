@@ -1,19 +1,85 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 23, 23, 23; 
-  --background-end-rgb: 10, 10, 10;
+@theme {
+  --color-primary: #75aadb;
+  --color-secondary: #fcbf45;
+  --color-industrial-bg: #ffffff;
+  --color-industrial-fg: #111111;
+  --color-industrial-muted: #71717a;
+  --color-industrial-border: #e4e4e7;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #111111;
+    --primary: #75aadb;
+    --secondary: #fcbf45;
+    --muted: #71717a;
+    --border: #e4e4e7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #111111;
+      --foreground: #ffffff;
+      --secondary: #27272a;
+      --muted: #a1a1aa;
+      --border: #3f3f46;
+    }
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+@layer components {
+  .industrial-header {
+    @apply bg-[var(--primary)] text-white relative;
+    border-bottom: 4px solid var(--secondary);
+  }
+
+  .industrial-title {
+    @apply uppercase font-bold tracking-[-0.02em] leading-none;
+    color: var(--primary);
+  }
+
+  .industrial-card {
+    @apply border border-[var(--border)] bg-transparent transition-all duration-300;
+    border-radius: 0px;
+  }
+
+  .industrial-card:hover {
+    @apply border-[var(--secondary)] shadow-none;
+    transform: translateY(-2px);
+  }
+
+  .badge-industrial {
+    @apply text-[10px] uppercase font-bold tracking-[0.2em] px-2 py-1 border border-[var(--muted)];
+    border-radius: 0px;
+  }
+
+  .nav-link {
+    @apply uppercase tracking-widest text-sm opacity-70 hover:opacity-100 transition-opacity duration-300;
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-2px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-industrial-in {
+  animation: slide-in-top 0.4s ease-out forwards;
 }

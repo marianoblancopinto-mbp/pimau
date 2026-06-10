@@ -1,0 +1,6791 @@
+[
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2019,
+    "km": 59900,
+    "price_usd": 14288,
+    "version": "1.6 PRIVILEGE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2018,
+    "km": 29500,
+    "price_usd": 16401,
+    "version": "1.8 PREMIER MT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2019,
+    "km": 45000,
+    "price_usd": 18114,
+    "version": "1.8 SPORT AUTO MY19",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2020,
+    "km": 82000,
+    "price_usd": 20134,
+    "version": "1.8 LONGITUDE AUTO MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2013,
+    "km": 105000,
+    "price_usd": 10475,
+    "version": "1.6L SE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 7000,
+    "price_usd": 35666,
+    "version": "2.0 SEG CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2021,
+    "km": 71000,
+    "price_usd": 24428,
+    "version": "1.8 EX CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2014,
+    "km": 71000,
+    "price_usd": 11224,
+    "version": "1.6 16V CONFORT PLUS",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2018,
+    "km": 68955,
+    "price_usd": 16569,
+    "version": "1.8 SPORT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2018,
+    "km": 57273,
+    "price_usd": 13231,
+    "version": "1.5 S",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 25149,
+    "price_usd": 19960,
+    "version": "1.6 ADVANCE CVT MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2018,
+    "km": 98135,
+    "price_usd": 15585,
+    "version": "1.8 SPORT MY18",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2024,
+    "km": 28000,
+    "price_usd": 31291,
+    "version": "1.8 ECOBOOST TITANIUM AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 77473,
+    "price_usd": 20482,
+    "version": "1.8 EX CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2014,
+    "km": 115000,
+    "price_usd": 10455,
+    "version": "1.6L TITANIUM",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2013,
+    "km": 128347,
+    "price_usd": 8803,
+    "version": "2.0 16V LUXE NAV",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2023,
+    "km": 39330,
+    "price_usd": 18555,
+    "version": "1.2 TURBO AT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2020,
+    "km": 74000,
+    "price_usd": 21746,
+    "version": "1.8 EX L CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2021,
+    "km": 37408,
+    "price_usd": 20000,
+    "version": "1.8 LONGITUDE AUTO MY21",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 80346,
+    "price_usd": 36816,
+    "version": "2.8 TDI SRX 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2010,
+    "km": 157871,
+    "price_usd": 6013,
+    "version": "1.4 TD XLS MP3",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2024,
+    "km": 12368,
+    "price_usd": 19592,
+    "version": "1.2 TURBO AT MY24",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN C3 AIRCROSS",
+    "year": 2024,
+    "km": 10000,
+    "price_usd": 16308,
+    "version": "1.6 FEEL PACK",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2025,
+    "km": 10800,
+    "price_usd": 32816,
+    "version": "1.8 ECOBOOST TITANIUM AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2015,
+    "km": 112523,
+    "price_usd": 11271,
+    "version": "1.8 LTZ + AT 4X4",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2020,
+    "km": 35004,
+    "price_usd": 18662,
+    "version": "1.8 LONGITUDE AUTO MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2019,
+    "km": 60596,
+    "price_usd": 15793,
+    "version": "1.8 SPORT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2015,
+    "km": 91556,
+    "price_usd": 11525,
+    "version": "2.0L FREESTYLE 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2017,
+    "km": 19598,
+    "price_usd": 12702,
+    "version": "1.6 DYNAMIQUE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2014,
+    "km": 123645,
+    "price_usd": 9324,
+    "version": "2.0 16V LUXE NAV",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2020,
+    "km": 53688,
+    "price_usd": 21485,
+    "version": "2.4 LONGITUDE AUTO FWD MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 11000,
+    "price_usd": 20916,
+    "version": "1.0 TCE TECHNO AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2019,
+    "km": 76713,
+    "price_usd": 20047,
+    "version": "2.4 LONGITUDE AUTO 4WD MY18",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2020,
+    "km": 41323,
+    "price_usd": 21719,
+    "version": "2.4 LONGITUDE AUTO FWD MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2022,
+    "km": 52426,
+    "price_usd": 22361,
+    "version": "1.3 T270 SPORT AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2021,
+    "km": 47649,
+    "price_usd": 17104,
+    "version": "1.2 TURBO AT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2018,
+    "km": 107026,
+    "price_usd": 19565,
+    "version": "2.0 STYLE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2013,
+    "km": 72693,
+    "price_usd": 8756,
+    "version": "1.6 16V CONFORT PLUS",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2018,
+    "km": 105349,
+    "price_usd": 19552,
+    "version": "2.0 2WD PANORAMA AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "SUZUKI GRAND VITARA",
+    "year": 2011,
+    "km": 120232,
+    "price_usd": 13773,
+    "version": "2.4 JLX-L MT 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2016,
+    "km": 96222,
+    "price_usd": 12498,
+    "version": "1.6L SE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2012,
+    "km": 156317,
+    "price_usd": 6709,
+    "version": "1.6 XLS",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 3008",
+    "year": 2024,
+    "km": 14000,
+    "price_usd": 31532,
+    "version": "1.6 THP GT PACK TIPTRONIC",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2013,
+    "km": 176461,
+    "price_usd": 7043,
+    "version": "1.6L SE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 99000,
+    "price_usd": 16000,
+    "version": "1.6 EXCLUSIVE CVT MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2025,
+    "km": 10197,
+    "price_usd": 32415,
+    "version": "1.3 T270 SERIE S AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2017,
+    "km": 97158,
+    "price_usd": 19371,
+    "version": "2.4 LONGITUDE AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT CAPTUR",
+    "year": 2018,
+    "km": 94250,
+    "price_usd": 11291,
+    "version": "1.6 LIFE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2018,
+    "km": 84733,
+    "price_usd": 14441,
+    "version": "1.8 LONGITUDE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHERY TIGGO",
+    "year": 2013,
+    "km": 99200,
+    "price_usd": 7619,
+    "version": "2.0 LUXURY 4X4 MT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2012,
+    "km": 185041,
+    "price_usd": 6548,
+    "version": "2.0 XLT PLUS 4X4",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET EQUINOX",
+    "year": 2023,
+    "km": 38309,
+    "price_usd": 26656,
+    "version": "1.5T PREMIER AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2016,
+    "km": 99240,
+    "price_usd": 12040,
+    "version": "1.8 SPORT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2014,
+    "km": 132266,
+    "price_usd": 8428,
+    "version": "1.6 TECH ROAD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2023,
+    "km": 48057,
+    "price_usd": 23692,
+    "version": "1.4 250 TSI COMFORTLINE AUTO MY23",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 11222,
+    "price_usd": 35806,
+    "version": "2.0 SEG CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2020,
+    "km": 53894,
+    "price_usd": 25211,
+    "version": "2.4 LIMITED PLUS AUTO 4WD MY20",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 41381,
+    "price_usd": 17231,
+    "version": "1.0 200 TSI COMFORTLINE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "DODGE JOURNEY",
+    "year": 2013,
+    "km": 117208,
+    "price_usd": 11211,
+    "version": "2.4 SXT TECHO DVD AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2022,
+    "km": 36135,
+    "price_usd": 20167,
+    "version": "1.8 LONGITUDE AT 4x2",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 15000,
+    "price_usd": 20502,
+    "version": "1.0 TCE PREMIERE EDITION AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KOLEOS",
+    "year": 2012,
+    "km": 197131,
+    "price_usd": 8033,
+    "version": "2.5 L 4X4 PRIVILEGE MT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD BRONCO SPORT",
+    "year": 2023,
+    "km": 23836,
+    "price_usd": 32756,
+    "version": "2.0 WILDTRAK AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 83778,
+    "price_usd": 22622,
+    "version": "1.4 250 TSI HIGHLINE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 3008",
+    "year": 2024,
+    "km": 17535,
+    "price_usd": 32455,
+    "version": "1.6 THP GT PACK TIPTRONIC",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHERY TIGGO 3",
+    "year": 2018,
+    "km": 90121,
+    "price_usd": 10562,
+    "version": "1.6 COMFORT 4X2 MT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2020,
+    "km": 53128,
+    "price_usd": 18381,
+    "version": "1.2 TURBO PREMIER AT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2022,
+    "km": 50000,
+    "price_usd": 25826,
+    "version": "1.3 T270 LIMITED PLUS AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2021,
+    "km": 75630,
+    "price_usd": 20849,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2015,
+    "km": 139177,
+    "price_usd": 9070,
+    "version": "1.6L FREESTYLE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 51503,
+    "price_usd": 29177,
+    "version": "1.8 HYBRID XEI ECVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2020,
+    "km": 96222,
+    "price_usd": 15471,
+    "version": "1.5 TITANIUM",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT CAPTUR",
+    "year": 2017,
+    "km": 147222,
+    "price_usd": 12154,
+    "version": "2.0 ZEN",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD BRONCO SPORT",
+    "year": 2022,
+    "km": 75000,
+    "price_usd": 28328,
+    "version": "2.0 WILDTRAK AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 26731,
+    "price_usd": 17625,
+    "version": "1.6 SENSE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2021,
+    "km": 31179,
+    "price_usd": 22274,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2020,
+    "km": 43860,
+    "price_usd": 22348,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2021,
+    "km": 47637,
+    "price_usd": 21873,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2010,
+    "km": 174747,
+    "price_usd": 5920,
+    "version": "1.6 XL PLUS MP3",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2024,
+    "km": 27621,
+    "price_usd": 24609,
+    "version": "1.4 250 TSI COMFORTLINE AUTO MY24",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2021,
+    "km": 79329,
+    "price_usd": 20736,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2020,
+    "km": 86000,
+    "price_usd": 35492,
+    "version": "2.8 TDI SRX AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHERY TIGGO 5",
+    "year": 2018,
+    "km": 68482,
+    "price_usd": 13378,
+    "version": "2.0 LUXURY AT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2021,
+    "km": 51186,
+    "price_usd": 24000,
+    "version": "1.5 TITANIUM CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET EQUINOX",
+    "year": 2021,
+    "km": 68459,
+    "price_usd": 23398,
+    "version": "1.5 PREMIER AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 67172,
+    "price_usd": 29913,
+    "version": "2.0 TSI DSG 4WD HIGHLINE",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2023,
+    "km": 43222,
+    "price_usd": 19841,
+    "version": "1.2 TURBO AT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2018,
+    "km": 109413,
+    "price_usd": 21967,
+    "version": "2.0 TSI DSG 4WD COMFORTLINE TECHO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FIAT 500X",
+    "year": 2018,
+    "km": 107565,
+    "price_usd": 10990,
+    "version": "1.4 POP STAR",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 34591,
+    "version": "1.8 ECOBOOST SEL AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 24859,
+    "version": "1.0 TCE EVOLUTION AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 24518,
+    "version": "1.0 TCE EVOLUTION AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 24417,
+    "version": "1.0 200 TSI TRENDLINE TIPTRONIC MY25",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 24758,
+    "version": "1.0 200 TSI TRENDLINE TIPTRONIC MY25",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 21943,
+    "version": "1.6 SCE EVOLUTION",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 24417,
+    "version": "1.0 200 TSI TRENDLINE TIPTRONIC MY25",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 84102,
+    "price_usd": 20535,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 25031,
+    "price_usd": 24415,
+    "version": "2.0 XLI CVT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2026,
+    "km": 1003,
+    "price_usd": 27746,
+    "version": "1.0 T200 ALLURE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN BASALT",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 19525,
+    "version": "1.6 LIVE PK",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 3,
+    "price_usd": 25691,
+    "version": "1.0 T200 ACTIVE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 2002,
+    "price_usd": 28431,
+    "version": "1.0 T200 GT AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD BRONCO SPORT",
+    "year": 2025,
+    "km": 2033,
+    "price_usd": 45147,
+    "version": "2.0 BADLANDS AUTO 4WD",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FIAT 600",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 32404,
+    "version": "1.2 MHEV DCT",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 26855,
+    "version": "1.0 T200 ACTIVE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT ARKANA",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 34014,
+    "version": "1.3T MHEV ESPRIT ALPINE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 25453,
+    "version": "1.6 INTENS",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 25113,
+    "version": "1.0 TCE EVOLUTION AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 29596,
+    "version": "1.2 TURBO RS AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 20914,
+    "version": "1.6 SCE EVOLUTION",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN BASALT",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 20141,
+    "version": "1.6 LIVE PK",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 1002,
+    "price_usd": 25006,
+    "version": "1.0 200 TSI TRENDLINE TIPTRONIC MY25",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 34323,
+    "version": "1.8 ECOBOOST SEL AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT ARKANA",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 33912,
+    "version": "1.3T MHEV ESPRIT ALPINE AUTO",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 39735,
+    "version": "1.4 250 TSI HIGHLINE AUTO MY24",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 36138,
+    "version": "1.4 250 TSI COMFORTLINE AUTO MY24",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 1003,
+    "price_usd": 27917,
+    "version": "1.0 200 TSI COMFORTLINE TIPTRONIC MY25",
+    "url": "https://kavak.com/ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET CAPTIVA",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 34139,
+    "version": "Chevrolet Captiva 1.5 Phev Premier Dht",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET CAPTIVA",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 33171,
+    "version": "Chevrolet Captiva 1.5 Phev Premier",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "GWM HAVAL",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 28997,
+    "version": "GWM Haval Jolion Pro Hev Supreme",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "GWM HAVAL",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 39899,
+    "version": "GWM Haval 2.0t 4wd H6",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "GWM HAVAL",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 25892,
+    "version": "GWM Haval Jolion Pro-deluxe 1.5 Hibrido",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROËN AIRCROSS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 27759,
+    "version": "Citroën Aircross 1.0 Vti Xtr Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 25017,
+    "version": "Volkswagen Nivus 1.0 Tsi 200 Comfortline",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TERA",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 27124,
+    "version": "Volkswagen Tera 1.0t 170 Tsi Highline At",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 53512,
+    "version": "Toyota Sw4 2.8 Tdi Diamante Ii 6at 7as",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 33706,
+    "version": "Volkswagen Taos 1.4 250 Tsi Comfortline Tiptronic",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2024,
+    "km": 0,
+    "price_usd": 24415,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 22876,
+    "version": "Volkswagen Nivus 1.0 Tsi 200 Comfortline",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHERY TIGGO",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 31900,
+    "version": "Chery Tiggo 7 Pro 1.5 Comfort Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TERA",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 22943,
+    "version": "Volkswagen Tera 1.0t 170 Tsi Highline At",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2006,
+    "km": 253000,
+    "price_usd": 9300,
+    "version": "Honda Cr-v 2.4 4x4 Ex At",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FIAT 600",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 23338,
+    "version": "Fiat 600 Hybrid 1.2 E-dct",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 28963,
+    "version": "Volkswagen T-cross 1.0 200 Tsi Highline Aut",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI CRETA",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 27500,
+    "version": "Hyundai Creta 1.5 Safety Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 16656,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 28629,
+    "version": "Volkswagen T-cross 1.0 200 Tsi Highline Aut",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 18060,
+    "version": "Peugeot 2008 1.6 Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 23472,
+    "version": "Volkswagen Nivus 1.0 Tsi 200 Comfortline",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 52000,
+    "price_usd": 20600,
+    "version": "Nissan Kicks 1.6 Exclusive Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 19732,
+    "version": "Chevrolet Tracker 1.2t At",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 24732,
+    "version": "Peugeot 2008 1.0t Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SELTOS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 26000,
+    "version": "Kia Seltos 1.5 Lx Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 30355,
+    "version": "Peugeot 2008 1.0t Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TERA",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 16656,
+    "version": "Volkswagen Tera 1.0t 170 Tsi Highline At",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "AUDI Q8",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 158500,
+    "version": "Audi Q8 3.0 55 Tfsi Quattro 340cv",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET SPARK",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 17993,
+    "version": "Chevrolet Spark Euv Activ",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 3008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 43144,
+    "version": "Peugeot 3008 1.6 Gt Pack 165cv",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 39398,
+    "version": "Peugeot 2008 E-2008 Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 110000,
+    "price_usd": 24500,
+    "version": "Kia Sorento 2.2 Crdi Ex At 4x2",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KOLEOS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 46816,
+    "version": "Renault Koleos 2.5 4wd Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 24080,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRAILBLAZER",
+    "year": 2026,
+    "km": 0,
+    "price_usd": 45686,
+    "version": "Chevrolet Trailblazer 2.8 High Country",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 22742,
+    "version": "Volkswagen T-cross 1.0 200 Tsi Trendline Aut",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 22742,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 20795,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT ARKANA",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 27090,
+    "version": "Renault Arkana 1.3 E-tech Hybrid",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 22408,
+    "version": "Peugeot 2008 1.0t Active",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT ARKANA",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 28729,
+    "version": "Renault Arkana 1.3 E-tech Hybrid Espirit Alpine",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHERY TIGGO",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 27000,
+    "version": "Chery Tiggo 4 Pro 1.5t Luxury Cvt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2024,
+    "km": 0,
+    "price_usd": 21338,
+    "version": "Peugeot 2008 1.0t Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2024,
+    "km": 0,
+    "price_usd": 28027,
+    "version": "Peugeot 2008 1.0t Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 22074,
+    "version": "Volkswagen Nivus 1.0 Tsi 200 Trendline",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "BAIC BJ30",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 42500,
+    "version": "Baic Bj30 1.5t 4wd Hybrid",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 22408,
+    "version": "Volkswagen Nivus 1.0 Tsi 200 Trendline",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2025,
+    "km": 0,
+    "price_usd": 29565,
+    "version": "Peugeot 2008 1.2 Gt",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN X-TRAIL",
+    "year": 2014,
+    "km": 205000,
+    "price_usd": 14500,
+    "version": "2.5 EXCLUSIVE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2018,
+    "km": 136000,
+    "price_usd": 12800,
+    "version": "1.6 EXPRESSION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2019,
+    "km": 125000,
+    "price_usd": 14200,
+    "version": "1.8 LTZ+",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "AUDI Q3",
+    "year": 2017,
+    "km": 121000,
+    "price_usd": 24000,
+    "version": "2.0 TFSI QUATTRO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2018,
+    "km": 89000,
+    "price_usd": 22500,
+    "version": "2.4 LONGITUDE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2017,
+    "km": 95000,
+    "price_usd": 11000,
+    "version": "1.6 FREESTYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 68000,
+    "price_usd": 21500,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA RAV4",
+    "year": 2016,
+    "km": 145000,
+    "price_usd": 25000,
+    "version": "2.5 VX 4WD AUTO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 98000,
+    "price_usd": 26500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2017,
+    "km": 112000,
+    "price_usd": 18500,
+    "version": "2.0 STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 77500,
+    "price_usd": 24013,
+    "version": "2.0 XLI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2018,
+    "km": 112000,
+    "price_usd": 15050,
+    "version": "2.0 GDI TITANIUM",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA ETIOS",
+    "year": 2017,
+    "km": 123000,
+    "price_usd": 11973,
+    "version": "1.5 XLS",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN SURAN",
+    "year": 2019,
+    "km": 150000,
+    "price_usd": 10033,
+    "version": "1.6 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN C4 LOUNGE",
+    "year": 2016,
+    "km": 98000,
+    "price_usd": 11200,
+    "version": "1.6 TENDANCE HDI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD ECOSPORT",
+    "year": 2011,
+    "km": 195000,
+    "price_usd": 5500,
+    "version": "1.6 XL PLUS",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT DUSTER",
+    "year": 2012,
+    "km": 178000,
+    "price_usd": 7200,
+    "version": "1.6 CONFORT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET TRACKER",
+    "year": 2014,
+    "km": 165000,
+    "price_usd": 9800,
+    "version": "1.8 LTZ AWD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP RENEGADE",
+    "year": 2017,
+    "km": 115000,
+    "price_usd": 13500,
+    "version": "1.8 SPORT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 95000,
+    "price_usd": 18500,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2018,
+    "km": 120000,
+    "price_usd": 32000,
+    "version": "2.8 TDI SRX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2015,
+    "km": 185000,
+    "price_usd": 26000,
+    "version": "3.0 TDI SRV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 78000,
+    "price_usd": 17500,
+    "version": "1.6 ADVANCE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2022,
+    "km": 45000,
+    "price_usd": 21000,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2021,
+    "km": 62000,
+    "price_usd": 18500,
+    "version": "1.6 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2020,
+    "km": 55000,
+    "price_usd": 15000,
+    "version": "1.6 ALLURE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 2008",
+    "year": 2018,
+    "km": 89000,
+    "price_usd": 12500,
+    "version": "1.6 FELINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN C3 AIRCROSS",
+    "year": 2020,
+    "km": 48000,
+    "price_usd": 14200,
+    "version": "1.6 SHINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CITROEN C3 AIRCROSS",
+    "year": 2018,
+    "km": 85000,
+    "price_usd": 11000,
+    "version": "1.6 VTI FEEL",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2021,
+    "km": 65000,
+    "price_usd": 24000,
+    "version": "2.4 SPORT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "JEEP COMPASS",
+    "year": 2019,
+    "km": 92000,
+    "price_usd": 20000,
+    "version": "2.4 LONGITUDE AWD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2020,
+    "km": 75000,
+    "price_usd": 23000,
+    "version": "2.0 PREMIUM",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2016,
+    "km": 135000,
+    "price_usd": 16000,
+    "version": "2.0 STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2022,
+    "km": 55000,
+    "price_usd": 24000,
+    "version": "1.5 TITANIUM CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "FORD TERRITORY",
+    "year": 2023,
+    "km": 35000,
+    "price_usd": 27000,
+    "version": "1.8 TITANIUM AUTO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET EQUINOX",
+    "year": 2020,
+    "km": 85000,
+    "price_usd": 21000,
+    "version": "1.5T LT AWD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "CHEVROLET EQUINOX",
+    "year": 2022,
+    "km": 52000,
+    "price_usd": 25000,
+    "version": "1.5T PREMIER AWD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2024,
+    "km": 26000,
+    "price_usd": 49900,
+    "version": "350 TSI 4MOTION DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2014,
+    "km": 152000,
+    "price_usd": 16722,
+    "version": "2.0 SPORT STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2021,
+    "km": 83296,
+    "price_usd": 27893,
+    "version": "1.4 TSI DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2020,
+    "km": 95000,
+    "price_usd": 25300,
+    "version": "250TSI DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 75700,
+    "price_usd": 33000,
+    "version": "2.0 TSI HIGHLINE 4MOTION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 129000,
+    "price_usd": 16000,
+    "version": "2.0 SPORT STYLE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 39000,
+    "price_usd": 21000,
+    "version": "2.0 SPORT STYLE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 250000,
+    "price_usd": 17500,
+    "version": "2.0 PREMIUM TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2021,
+    "km": 39000,
+    "price_usd": 26020,
+    "version": "250 TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 127000,
+    "price_usd": 18499,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2016,
+    "km": 104500,
+    "price_usd": 24749,
+    "version": "2.0 ELEGANCE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2015,
+    "km": 153000,
+    "price_usd": 21900,
+    "version": "2.0 TDI 4MOTION SPORT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 70282,
+    "price_usd": 27800,
+    "version": "1.4 TSI DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2014,
+    "km": 117500,
+    "price_usd": 18000,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 110000,
+    "price_usd": 15900,
+    "version": "2.0 SPORT STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2014,
+    "km": 119000,
+    "price_usd": 14400,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2009,
+    "km": 225000,
+    "price_usd": 10000,
+    "version": "2.0 TSI SPORT STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 210000,
+    "price_usd": 14649,
+    "version": "2.0 PREMIUM",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 116000,
+    "price_usd": 25500,
+    "version": "1.4 TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2015,
+    "km": 200000,
+    "price_usd": 16722,
+    "version": "2.0 EXCLUSIVE TSI 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 88000,
+    "price_usd": 22999,
+    "version": "1.4 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 110000,
+    "price_usd": 22542,
+    "version": "1.4 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2018,
+    "km": 92500,
+    "price_usd": 30500,
+    "version": "2.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2018,
+    "km": 120000,
+    "price_usd": 21500,
+    "version": "1.4 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2021,
+    "km": 64800,
+    "price_usd": 41500,
+    "version": "2.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 140000,
+    "price_usd": 24900,
+    "version": "2.0 PREMIUM TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 137634,
+    "price_usd": 23500,
+    "version": "1.4 TSI DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2023,
+    "km": 59000,
+    "price_usd": 41900,
+    "version": "2.0 PREMIUM TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2010,
+    "km": 200000,
+    "price_usd": 11000,
+    "version": "2.0 SPORT STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 207000,
+    "price_usd": 16800,
+    "version": "2.0 PREMIUM TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 180000,
+    "price_usd": 16500,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 185000,
+    "price_usd": 15000,
+    "version": "2.0 PREMIUM TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 78000,
+    "price_usd": 27000,
+    "version": "1.4 DSG TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 194000,
+    "price_usd": 22000,
+    "version": "1.4 TSI DSG TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 178000,
+    "price_usd": 13000,
+    "version": "2.0 SPORT STYLE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2010,
+    "km": 242000,
+    "price_usd": 14900,
+    "version": "2.0 TSI EXCLUSIVE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 124000,
+    "price_usd": 12800,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2020,
+    "km": 174632,
+    "price_usd": 22000,
+    "version": "250TSI DSG",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 160000,
+    "price_usd": 15900,
+    "version": "2.0 SPORT STYLE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 118000,
+    "price_usd": 16500,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2012,
+    "km": 210000,
+    "price_usd": 15000,
+    "version": "2.0 SPORT STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2014,
+    "km": 196000,
+    "price_usd": 14900,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2013,
+    "km": 160000,
+    "price_usd": 15500,
+    "version": "2.0 EXCLUSIVE TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2019,
+    "km": 62000,
+    "price_usd": 26800,
+    "version": "1.4 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2010,
+    "km": 129000,
+    "price_usd": 15900,
+    "version": "2.0 TSI EXCLUSIVE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN ALLSPACE",
+    "year": 2018,
+    "km": 220000,
+    "price_usd": 18595,
+    "version": "1.4T TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2019,
+    "km": 117000,
+    "price_usd": 38000,
+    "version": "2.8 SRX 177CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2017,
+    "km": 190000,
+    "price_usd": 38000,
+    "version": "2.8 SRX 177CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2022,
+    "km": 78352,
+    "price_usd": 53000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2018,
+    "km": 133480,
+    "price_usd": 40000,
+    "version": "2.8 SRX 177CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2020,
+    "km": 115000,
+    "price_usd": 42000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2020,
+    "km": 68500,
+    "price_usd": 46000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 115711,
+    "price_usd": 41300,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2006,
+    "km": 330000,
+    "price_usd": 16500,
+    "version": "3.0 SRV CUERO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2020,
+    "km": 79539,
+    "price_usd": 45000,
+    "version": "2.8 SRX TDI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 106000,
+    "price_usd": 41000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 109345,
+    "price_usd": 45000,
+    "version": "2.8 SRX 177CV MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 19461,
+    "price_usd": 69000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2018,
+    "km": 80000,
+    "price_usd": 35999,
+    "version": "2.8 SRX 204CV MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2024,
+    "km": 80000,
+    "price_usd": 47000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2023,
+    "km": 70000,
+    "price_usd": 61800,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2019,
+    "km": 140000,
+    "price_usd": 38000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2024,
+    "km": 10000,
+    "price_usd": 58000,
+    "version": "2.8 TDI DIAMOND",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2023,
+    "km": 88900,
+    "price_usd": 50000,
+    "version": "2.8 SRX HAR",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 198000,
+    "price_usd": 40000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2012,
+    "km": 210000,
+    "price_usd": 29900,
+    "version": "3.0 SRV CUERO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2024,
+    "km": 20000,
+    "price_usd": 54900,
+    "version": "2.8 TDI DIAMOND",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2022,
+    "km": 79000,
+    "price_usd": 43900,
+    "version": "2.8 SRX 177CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2013,
+    "km": 181000,
+    "price_usd": 27500,
+    "version": "3.0 SRV CUERO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2021,
+    "km": 100000,
+    "price_usd": 44700,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2023,
+    "km": 35000,
+    "price_usd": 51000,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA SW4",
+    "year": 2023,
+    "km": 29350,
+    "price_usd": 49900,
+    "version": "2.8 SRX 204CV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 82000,
+    "price_usd": 21900,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 112131,
+    "price_usd": 21000,
+    "version": "EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 151315,
+    "price_usd": 19000,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 125500,
+    "price_usd": 16656,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 141000,
+    "price_usd": 14900,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 110000,
+    "price_usd": 17300,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 135000,
+    "price_usd": 21400,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 121000,
+    "price_usd": 15900,
+    "version": "1.8 LX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 88000,
+    "price_usd": 21000,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 120000,
+    "price_usd": 17800,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 115000,
+    "price_usd": 20000,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 175000,
+    "price_usd": 17900,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2015,
+    "km": 98000,
+    "price_usd": 18500,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2015,
+    "km": 135000,
+    "price_usd": 17000,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 120000,
+    "price_usd": 19000,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 120000,
+    "price_usd": 20500,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 33000,
+    "price_usd": 25499,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 140000,
+    "price_usd": 17990,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2019,
+    "km": 95000,
+    "price_usd": 21900,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2021,
+    "km": 76000,
+    "price_usd": 26400,
+    "version": "1.8 LX CVT L20",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 141000,
+    "price_usd": 18500,
+    "version": "1.8 LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2020,
+    "km": 66000,
+    "price_usd": 24000,
+    "version": "1.8 LX CVT L20",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 108000,
+    "price_usd": 19500,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2022,
+    "km": 60000,
+    "price_usd": 28500,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2022,
+    "km": 42000,
+    "price_usd": 27900,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 148684,
+    "price_usd": 19000,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 151800,
+    "price_usd": 20500,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 189000,
+    "price_usd": 18500,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2016,
+    "km": 102000,
+    "price_usd": 19000,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2018,
+    "km": 135000,
+    "price_usd": 20500,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2020,
+    "km": 109000,
+    "price_usd": 23000,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 143000,
+    "price_usd": 16999,
+    "version": "1.8 EX-L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA HR-V",
+    "year": 2017,
+    "km": 106000,
+    "price_usd": 17900,
+    "version": "1.8 EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 81000,
+    "price_usd": 19200,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 53000,
+    "price_usd": 20400,
+    "version": "1.6 ADVANCE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 94754,
+    "price_usd": 15385,
+    "version": "1.6 ADVANCE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 54000,
+    "price_usd": 18328,
+    "version": "1.6 SENSE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2023,
+    "km": 44000,
+    "price_usd": 24000,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 101055,
+    "price_usd": 14716,
+    "version": "1.6 ADVANCE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 78000,
+    "price_usd": 23000,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 69000,
+    "price_usd": 17000,
+    "version": "1.6 SENSE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 85000,
+    "price_usd": 18500,
+    "version": "1.6 ADVANCE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 92000,
+    "price_usd": 17800,
+    "version": "1.6 ADVANCE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 38000,
+    "price_usd": 21500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 65000,
+    "price_usd": 19000,
+    "version": "1.6 ADVANCE CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 110000,
+    "price_usd": 16500,
+    "version": "1.6 SENSE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2019,
+    "km": 62000,
+    "price_usd": 27700,
+    "version": "1.6 TGDI TCT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2018,
+    "km": 41700,
+    "price_usd": 26500,
+    "version": "2.0 STYLE 2WD AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2017,
+    "km": 59000,
+    "price_usd": 22800,
+    "version": "2.0 16V",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2016,
+    "km": 95000,
+    "price_usd": 22000,
+    "version": "2.0 GL 6AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2015,
+    "km": 75000,
+    "price_usd": 14500,
+    "version": "2.0 GL 6AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2013,
+    "km": 120000,
+    "price_usd": 14500,
+    "version": "2.0 GLS PREMIUM",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2012,
+    "km": 145000,
+    "price_usd": 14000,
+    "version": "2.0 GL 5MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2011,
+    "km": 156907,
+    "price_usd": 12000,
+    "version": "2.0 GL 5MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2010,
+    "km": 144000,
+    "price_usd": 7800,
+    "version": "2.0 CRDI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2018,
+    "km": 85000,
+    "price_usd": 24000,
+    "version": "2.0 STYLE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2017,
+    "km": 98000,
+    "price_usd": 21000,
+    "version": "2.0 GL AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2019,
+    "km": 78000,
+    "price_usd": 25500,
+    "version": "2.0 PREMIUM",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2016,
+    "km": 125000,
+    "price_usd": 18500,
+    "version": "2.0 GL 6AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HYUNDAI TUCSON",
+    "year": 2014,
+    "km": 110000,
+    "price_usd": 16000,
+    "version": "2.0 GL",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2024,
+    "km": 24000,
+    "price_usd": 34000,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2023,
+    "km": 26000,
+    "price_usd": 28500,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 56000,
+    "price_usd": 27000,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 51000,
+    "price_usd": 24749,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2023,
+    "km": 62000,
+    "price_usd": 24682,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 49000,
+    "price_usd": 24013,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 67000,
+    "price_usd": 30500,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 92000,
+    "price_usd": 25753,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 77000,
+    "price_usd": 22074,
+    "version": "1.4 HERO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 105000,
+    "price_usd": 26000,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 80000,
+    "price_usd": 25500,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 59500,
+    "price_usd": 28900,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2021,
+    "km": 59000,
+    "price_usd": 25000,
+    "version": "1.4 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 72000,
+    "price_usd": 28500,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TAOS",
+    "year": 2022,
+    "km": 126000,
+    "price_usd": 24582,
+    "version": "1.4 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2022,
+    "km": 50000,
+    "price_usd": 21600,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 73000,
+    "price_usd": 20900,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 42000,
+    "price_usd": 21500,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2023,
+    "km": 97000,
+    "price_usd": 18395,
+    "version": "1.0 TSI 170 MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 140000,
+    "price_usd": 17726,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 67900,
+    "price_usd": 19000,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2020,
+    "km": 59500,
+    "price_usd": 19500,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2022,
+    "km": 55000,
+    "price_usd": 20500,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 85000,
+    "price_usd": 18500,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2022,
+    "km": 68000,
+    "price_usd": 19800,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2021,
+    "km": 92000,
+    "price_usd": 17500,
+    "version": "1.0 TSI TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN NIVUS",
+    "year": 2023,
+    "km": 45000,
+    "price_usd": 22500,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 12600,
+    "price_usd": 31900,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 45000,
+    "price_usd": 32107,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 50000,
+    "price_usd": 30000,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 42000,
+    "price_usd": 29231,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 70000,
+    "price_usd": 25351,
+    "version": "2.0 XLI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 40576,
+    "price_usd": 29029,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 77800,
+    "price_usd": 26689,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 63000,
+    "price_usd": 28763,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 43000,
+    "price_usd": 34000,
+    "version": "2.0 XEI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 86000,
+    "price_usd": 28763,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 39879,
+    "price_usd": 30100,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 59000,
+    "price_usd": 33445,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 42900,
+    "price_usd": 30000,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 65260,
+    "price_usd": 26265,
+    "version": "1.8 SEG HEV",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 25000,
+    "price_usd": 30000,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 79000,
+    "price_usd": 26900,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 49600,
+    "price_usd": 28194,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 34000,
+    "price_usd": 28900,
+    "version": "2.0 XEI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 64000,
+    "price_usd": 27500,
+    "version": "2.0 XEI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 51000,
+    "price_usd": 32500,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 48000,
+    "price_usd": 26000,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 45300,
+    "price_usd": 31100,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 56000,
+    "price_usd": 32500,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 44000,
+    "price_usd": 28094,
+    "version": "2.0 XEI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 22000,
+    "price_usd": 34500,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 86000,
+    "price_usd": 29000,
+    "version": "1.8 XEI ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 49500,
+    "price_usd": 30500,
+    "version": "1.8 SEG ECVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 39400,
+    "price_usd": 32000,
+    "version": "2.0 GR-SPORT CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 30000,
+    "price_usd": 28000,
+    "version": "2.0 XLI CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 18000,
+    "price_usd": 31000,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 44000,
+    "price_usd": 30000,
+    "version": "2.0 SEG CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 9200,
+    "price_usd": 19700,
+    "version": "1.0 TCE EVOLUTION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 800,
+    "price_usd": 20500,
+    "version": "1.6 SCE EVOLUTION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 38000,
+    "price_usd": 19391,
+    "version": "1.0 TCE TECHNO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 12000,
+    "price_usd": 21940,
+    "version": "1.0 TCE PREMIERE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2024,
+    "km": 1000,
+    "price_usd": 24700,
+    "version": "1.0 TCE PREMIERE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 5000,
+    "price_usd": 24013,
+    "version": "1.0 TCE TECHNO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 7200,
+    "price_usd": 23344,
+    "version": "1.0 TCE TECHNO",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1000,
+    "price_usd": 21070,
+    "version": "1.0 TCE EVOLUTION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1000,
+    "price_usd": 16314,
+    "version": "1.6 SCE EVOLUTION",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "RENAULT KARDIAN",
+    "year": 2025,
+    "km": 1150,
+    "price_usd": 27191,
+    "version": "1.0 TCE ICONIC",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 220000,
+    "price_usd": 12709,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 185000,
+    "price_usd": 14850,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 240000,
+    "price_usd": 12900,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 197000,
+    "price_usd": 13043,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2006,
+    "km": 141000,
+    "price_usd": 10500,
+    "version": "3.5 EXCLUSIVE 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 175000,
+    "price_usd": 21000,
+    "version": "2.4 EX FULL AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 130000,
+    "price_usd": 26000,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2009,
+    "km": 267000,
+    "price_usd": 10500,
+    "version": "2.5 CRDI MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2007,
+    "km": 186000,
+    "price_usd": 11000,
+    "version": "2.5 EX 4X4 AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 200000,
+    "price_usd": 26087,
+    "version": "2.2 CRDI EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 250000,
+    "price_usd": 11500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 194000,
+    "price_usd": 13200,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2008,
+    "km": 198000,
+    "price_usd": 9000,
+    "version": "3.3 LX V6 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 173000,
+    "price_usd": 17990,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 203000,
+    "price_usd": 12500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 120000,
+    "price_usd": 16500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 90000,
+    "price_usd": 34500,
+    "version": "2.2 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 141000,
+    "price_usd": 27000,
+    "version": "2.2 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 133000,
+    "price_usd": 20900,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 225000,
+    "price_usd": 22000,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 187300,
+    "price_usd": 14047,
+    "version": "2.4 EX FULL 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 203000,
+    "price_usd": 20900,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 109113,
+    "price_usd": 30100,
+    "version": "2.2 CRDI GT-LINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2008,
+    "km": 220000,
+    "price_usd": 11900,
+    "version": "3.8 EX 4X4 AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 102000,
+    "price_usd": 30000,
+    "version": "2.2 CRDI 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 110000,
+    "price_usd": 25000,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 99600,
+    "price_usd": 27500,
+    "version": "2.4 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 221000,
+    "price_usd": 12500,
+    "version": "2.4 EX FULL 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2005,
+    "km": 308000,
+    "price_usd": 8500,
+    "version": "3.5 EX AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 140000,
+    "price_usd": 15000,
+    "version": "2.4 EX FULL 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 190000,
+    "price_usd": 22500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 91000,
+    "price_usd": 28400,
+    "version": "2.2 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2019,
+    "km": 105000,
+    "price_usd": 27000,
+    "version": "2.2 CRDI EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 70000,
+    "price_usd": 23900,
+    "version": "2.4 EX FULL AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 190000,
+    "price_usd": 17500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 86000,
+    "price_usd": 26900,
+    "version": "2.4 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 123000,
+    "price_usd": 15800,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 340000,
+    "price_usd": 16400,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 200000,
+    "price_usd": 12000,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2015,
+    "km": 93000,
+    "price_usd": 16000,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 157000,
+    "price_usd": 14890,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 170000,
+    "price_usd": 14900,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 209000,
+    "price_usd": 15000,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 120000,
+    "price_usd": 27900,
+    "version": "2.4 EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 126300,
+    "price_usd": 25418,
+    "version": "2.2 EX AT 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 222222,
+    "price_usd": 15500,
+    "version": "2.4 EX FULL 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2019,
+    "km": 83000,
+    "price_usd": 32000,
+    "version": "2.2 CRDI EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 173000,
+    "price_usd": 15000,
+    "version": "EX 2.4L 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2010,
+    "km": 165000,
+    "price_usd": 15000,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 69000,
+    "price_usd": 28294,
+    "version": "2.2 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 98000,
+    "price_usd": 29900,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 250000,
+    "price_usd": 15385,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 56000,
+    "price_usd": 29800,
+    "version": "2.4 EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 118000,
+    "price_usd": 20736,
+    "version": "2.4 EX FULL AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 198000,
+    "price_usd": 17500,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2010,
+    "km": 267000,
+    "price_usd": 14500,
+    "version": "2.2 CRDI 6AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 230000,
+    "price_usd": 11371,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 101000,
+    "price_usd": 29990,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 167400,
+    "price_usd": 24400,
+    "version": "2.2 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 132000,
+    "price_usd": 33400,
+    "version": "2.2 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 225000,
+    "price_usd": 14500,
+    "version": "2.4 EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2006,
+    "km": 167000,
+    "price_usd": 8150,
+    "version": "3.5 EX 4X4 AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 259000,
+    "price_usd": 13900,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2010,
+    "km": 173500,
+    "price_usd": 14900,
+    "version": "2.4 EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 255400,
+    "price_usd": 12000,
+    "version": "2.4 EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2009,
+    "km": 190000,
+    "price_usd": 10368,
+    "version": "2.5 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2008,
+    "km": 337500,
+    "price_usd": 8696,
+    "version": "2.5 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2010,
+    "km": 220000,
+    "price_usd": 18500,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2019,
+    "km": 90000,
+    "price_usd": 31000,
+    "version": "2.2 EX AT 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 136000,
+    "price_usd": 23800,
+    "version": "2.4 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2005,
+    "km": 204500,
+    "price_usd": 9800,
+    "version": "2.5 EX CRDI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 217000,
+    "price_usd": 20000,
+    "version": "2.2 CRDI EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2011,
+    "km": 310000,
+    "price_usd": 11500,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 147000,
+    "price_usd": 28000,
+    "version": "2.2 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 110000,
+    "price_usd": 24990,
+    "version": "2.2 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2008,
+    "km": 198000,
+    "price_usd": 11000,
+    "version": "2.5 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2012,
+    "km": 93000,
+    "price_usd": 16000,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2009,
+    "km": 188000,
+    "price_usd": 10000,
+    "version": "2.5 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 115000,
+    "price_usd": 14900,
+    "version": "2.4 EX FULL 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 370000,
+    "price_usd": 11037,
+    "version": "2.4 EX FULL 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 126500,
+    "price_usd": 30900,
+    "version": "2.2 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2016,
+    "km": 134000,
+    "price_usd": 28500,
+    "version": "2.2 EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 100000,
+    "price_usd": 21900,
+    "version": "2.4 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2004,
+    "km": 290000,
+    "price_usd": 8000,
+    "version": "2.5 EX CRDI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2014,
+    "km": 172000,
+    "price_usd": 18900,
+    "version": "2.2 EX PREMIUM 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2013,
+    "km": 150000,
+    "price_usd": 16000,
+    "version": "2.4 EX 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 125000,
+    "price_usd": 28000,
+    "version": "2.2 CRDI EX AT 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2010,
+    "km": 260000,
+    "price_usd": 8361,
+    "version": "2.5 CRDI MT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2018,
+    "km": 101000,
+    "price_usd": 26756,
+    "version": "2.2 CRDI EX AT 4X2",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2017,
+    "km": 74000,
+    "price_usd": 32000,
+    "version": "2.2 CRDI EX",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "KIA SORENTO",
+    "year": 2008,
+    "km": 297000,
+    "price_usd": 13318,
+    "version": "2.5 CRDI EX 4X4",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2020,
+    "km": 97899,
+    "price_usd": 17926,
+    "version": "1.6 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2021,
+    "km": 117307,
+    "price_usd": 20000,
+    "version": "1.6 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2024,
+    "km": 42225,
+    "price_usd": 22074,
+    "version": "1.0 170 TSI",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2020,
+    "km": 103197,
+    "price_usd": 18300,
+    "version": "1.6 COMFORTLINE AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2020,
+    "km": 91862,
+    "price_usd": 19398,
+    "version": "1.6 HIGHLINE AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2019,
+    "km": 85000,
+    "price_usd": 17500,
+    "version": "1.6 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2019,
+    "km": 92000,
+    "price_usd": 16800,
+    "version": "1.6 TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2020,
+    "km": 75000,
+    "price_usd": 19500,
+    "version": "1.6 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2020,
+    "km": 68000,
+    "price_usd": 20000,
+    "version": "1.6 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2021,
+    "km": 55000,
+    "price_usd": 21500,
+    "version": "1.6 COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2021,
+    "km": 48000,
+    "price_usd": 22500,
+    "version": "1.6 HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2022,
+    "km": 38000,
+    "price_usd": 24500,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2022,
+    "km": 52000,
+    "price_usd": 21800,
+    "version": "1.0 TSI TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2023,
+    "km": 35000,
+    "price_usd": 25000,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2023,
+    "km": 28000,
+    "price_usd": 26500,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2023,
+    "km": 42000,
+    "price_usd": 24000,
+    "version": "1.0 TSI TRENDLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2024,
+    "km": 18000,
+    "price_usd": 27500,
+    "version": "1.0 TSI COMFORTLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN T-CROSS",
+    "year": 2024,
+    "km": 12000,
+    "price_usd": 29000,
+    "version": "1.0 TSI HIGHLINE",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2012,
+    "km": 185800,
+    "price_usd": 14381,
+    "version": "2.4 LX 2WD AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2016,
+    "km": 170000,
+    "price_usd": 21000,
+    "version": "2.4 LX 2WD CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2010,
+    "km": 298000,
+    "price_usd": 10635,
+    "version": "2.4 LX AT 2WD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2016,
+    "km": 140000,
+    "price_usd": 20000,
+    "version": "2.4 LX 2WD AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2008,
+    "km": 210000,
+    "price_usd": 11000,
+    "version": "2.4 EX 4WD AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2011,
+    "km": 178000,
+    "price_usd": 14500,
+    "version": "2.4 LX AT 2WD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2014,
+    "km": 125000,
+    "price_usd": 19500,
+    "version": "2.4 LX AT 2WD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2015,
+    "km": 98000,
+    "price_usd": 22000,
+    "version": "2.4 EX L CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2017,
+    "km": 85000,
+    "price_usd": 25000,
+    "version": "2.4 LX 2WD CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2018,
+    "km": 72000,
+    "price_usd": 28500,
+    "version": "2.4 LX 2WD CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2019,
+    "km": 55000,
+    "price_usd": 32000,
+    "version": "1.5T EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2010,
+    "km": 255000,
+    "price_usd": 11500,
+    "version": "LX AT 2WD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2016,
+    "km": 49500,
+    "price_usd": 27000,
+    "version": "LX 2WD CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2021,
+    "km": 80900,
+    "price_usd": 40000,
+    "version": "LX 2WD CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2011,
+    "km": 195000,
+    "price_usd": 15000,
+    "version": "EX L AT 4WD",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2014,
+    "km": 88000,
+    "price_usd": 24500,
+    "version": "LX 2WD AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2007,
+    "km": 220000,
+    "price_usd": 7500,
+    "version": "2.4 EX AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2023,
+    "km": 35000,
+    "price_usd": 45000,
+    "version": "1.5T EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2020,
+    "km": 62000,
+    "price_usd": 35000,
+    "version": "1.5T LX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2013,
+    "km": 145000,
+    "price_usd": 17500,
+    "version": "2.4 LX AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2009,
+    "km": 180000,
+    "price_usd": 12500,
+    "version": "2.4 EX AT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "HONDA CR-V",
+    "year": 2022,
+    "km": 42000,
+    "price_usd": 42000,
+    "version": "1.5T EX CVT",
+    "url": "mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-001",
+    "title": "Peugeot 5008 2.0 Allure Plus Hdi Tiptronic",
+    "version": "2.0 Allure Plus Hdi Tiptronic",
+    "year": 2019,
+    "km": 101400,
+    "price_usd": 25200,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-001",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-002",
+    "title": "Peugeot 5008 1.6 Allure Plus Thp Tiptronic",
+    "version": "1.6 Allure Plus Thp Tiptronic",
+    "year": 2018,
+    "km": 89000,
+    "price_usd": 28608,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-002",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-003",
+    "title": "Peugeot 5008 1.6 Allure Plus 156cv",
+    "version": "1.6 Allure Plus 156cv",
+    "year": 2014,
+    "km": 100000,
+    "price_usd": 12608,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-003",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-004",
+    "title": "Peugeot 5008 1.6 Allure 156cv",
+    "version": "1.6 Allure 156cv",
+    "year": 2012,
+    "km": 140000,
+    "price_usd": 8500,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-004",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-005",
+    "title": "Peugeot 5008 1.6 Feline B/techo Tiptronic",
+    "version": "1.6 Feline B/techo Tiptronic",
+    "year": 2018,
+    "km": 110000,
+    "price_usd": 27739,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-005",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "5008-006",
+    "title": "Peugeot 5008 2.0 Allure Plus Hdi Tiptronic",
+    "version": "2.0 Allure Plus Hdi Tiptronic",
+    "year": 2022,
+    "km": 79000,
+    "price_usd": 39826,
+    "brand_model": "PEUGEOT 5008",
+    "url": "https://auto.mercadolibre.com.ar/MLA-5008-006",
+    "scraped_at": "2026-01-13T23:15:00.000Z",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2019,
+    "km": 58000,
+    "price_usd": 29500,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2021,
+    "km": 25000,
+    "price_usd": 35000,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2013,
+    "km": 86500,
+    "price_usd": 9699,
+    "version": "1.6 ALLURE 156CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2018,
+    "km": 138000,
+    "price_usd": 24000,
+    "version": "1.6 ALLURE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2013,
+    "km": 160000,
+    "price_usd": 9967,
+    "version": "1.6 ALLURE PLUS 156CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2019,
+    "km": 123200,
+    "price_usd": 19990,
+    "version": "1.6 ALLURE THP",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2021,
+    "km": 59000,
+    "price_usd": 30000,
+    "version": "1.6 FELINE HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2018,
+    "km": 80000,
+    "price_usd": 20900,
+    "version": "1.6 ALLURE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2018,
+    "km": 107000,
+    "price_usd": 22000,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2023,
+    "km": 40000,
+    "price_usd": 35900,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2020,
+    "km": 50000,
+    "price_usd": 27500,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2024,
+    "km": 5500,
+    "price_usd": 46000,
+    "version": "1.6 GT PACK THP 165CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2018,
+    "km": 82000,
+    "price_usd": 23070,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2019,
+    "km": 79500,
+    "price_usd": 21070,
+    "version": "1.6 ALLURE PLUS THP",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2014,
+    "km": 160000,
+    "price_usd": 8696,
+    "version": "1.6 ALLURE 156CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2017,
+    "km": 100000,
+    "price_usd": 16200,
+    "version": "1.6 ALLURE THP",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2019,
+    "km": 102000,
+    "price_usd": 25000,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2021,
+    "km": 81760,
+    "price_usd": 26622,
+    "version": "2.0 ALLURE PLUS HDI",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2017,
+    "km": 126000,
+    "price_usd": 13378,
+    "version": "1.6 FELINE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "PEUGEOT 5008",
+    "year": 2014,
+    "km": 132000,
+    "price_usd": 9500,
+    "version": "1.6 ALLURE PLUS 156CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 152000,
+    "price_usd": 29500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 138500,
+    "price_usd": 29000,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 92500,
+    "price_usd": 30500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 108000,
+    "price_usd": 33000,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 75660,
+    "price_usd": 33000,
+    "version": "2.0 TSI HIGHLINE 4MOTION",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 75700,
+    "price_usd": 33000,
+    "version": "2.0 TSI HIGHLINE 4MOTION",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 63000,
+    "price_usd": 36500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 97000,
+    "price_usd": 31500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2021,
+    "km": 64800,
+    "price_usd": 41500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 90000,
+    "price_usd": 36500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 140000,
+    "price_usd": 31000,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 94000,
+    "price_usd": 29300,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 70000,
+    "price_usd": 36600,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2021,
+    "km": 70000,
+    "price_usd": 40000,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 136000,
+    "price_usd": 28500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 120000,
+    "price_usd": 29500,
+    "version": "2.0 TSI HIGHLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 165800,
+    "price_usd": 17391,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 129000,
+    "price_usd": 23411,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 88909,
+    "price_usd": 25000,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 109000,
+    "price_usd": 23500,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 134000,
+    "price_usd": 21271,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 90000,
+    "price_usd": 23800,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 113200,
+    "price_usd": 24000,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 150000,
+    "price_usd": 25450,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 179000,
+    "price_usd": 20201,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 127000,
+    "price_usd": 18997,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 118000,
+    "price_usd": 18662,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2020,
+    "km": 91000,
+    "price_usd": 25000,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2020,
+    "km": 115000,
+    "price_usd": 23077,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2022,
+    "km": 110000,
+    "price_usd": 27900,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 143000,
+    "price_usd": 20067,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 71000,
+    "price_usd": 24080,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 118000,
+    "price_usd": 26500,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 130000,
+    "price_usd": 19800,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 164000,
+    "price_usd": 21500,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 184000,
+    "price_usd": 19900,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 100000,
+    "price_usd": 20669,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 120000,
+    "price_usd": 23400,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2019,
+    "km": 88000,
+    "price_usd": 22999,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "VOLKSWAGEN TIGUAN",
+    "year": 2018,
+    "km": 126000,
+    "price_usd": 21070,
+    "version": "1.4 TSI TRENDLINE DSG",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2022,
+    "km": 84000,
+    "price_usd": 30100,
+    "version": "1.8 SEG HYBRID ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 32000,
+    "price_usd": 33000,
+    "version": "1.8 SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 14791,
+    "price_usd": 38500,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 8300,
+    "price_usd": 37000,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 23900,
+    "price_usd": 32107,
+    "version": "1.8 SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 36000,
+    "price_usd": 34000,
+    "version": "1.8 SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2021,
+    "km": 53000,
+    "price_usd": 28900,
+    "version": "1.8 SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 9000,
+    "price_usd": 38000,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 15583,
+    "price_usd": 34000,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 12600,
+    "price_usd": 32007,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 7500,
+    "price_usd": 36455,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 2000,
+    "price_usd": 33378,
+    "version": "1.8 HEV SEG ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 30000,
+    "price_usd": 31973,
+    "version": "1.8 HEV XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 1000,
+    "price_usd": 33110,
+    "version": "1.8 HEV XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 18000,
+    "price_usd": 31000,
+    "version": "1.8 HEV XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2024,
+    "km": 28500,
+    "price_usd": 32776,
+    "version": "1.8 HEV XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2025,
+    "km": 1111,
+    "price_usd": 39000,
+    "version": "1.8 HEV XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 37000,
+    "price_usd": 28094,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 22500,
+    "price_usd": 29799,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 22990,
+    "price_usd": 29990,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 58000,
+    "price_usd": 28500,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 22500,
+    "price_usd": 31000,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "TOYOTA COROLLA CROSS",
+    "year": 2023,
+    "km": 31000,
+    "price_usd": 28500,
+    "version": "1.8 XEI ECVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 107000,
+    "price_usd": 16200,
+    "version": "1.6 ADVANCE 120CV AT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 137000,
+    "price_usd": 16500,
+    "version": "1.6 ADVANCE AT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 112000,
+    "price_usd": 18395,
+    "version": "1.6 ADVANCE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 114141,
+    "price_usd": 13378,
+    "version": "1.6 ADVANCE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 132500,
+    "price_usd": 18800,
+    "version": "1.6 ADVANCE CVT PLUS",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 56000,
+    "price_usd": 21405,
+    "version": "1.6 ADVANCE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 89000,
+    "price_usd": 16381,
+    "version": "1.6 ADVANCE AT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 113000,
+    "price_usd": 17726,
+    "version": "1.6 ADVANCE CVT PLUS",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 101800,
+    "price_usd": 16054,
+    "version": "1.6 ADVANCE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 93000,
+    "price_usd": 16381,
+    "version": "1.6 ADVANCE AT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 89000,
+    "price_usd": 17500,
+    "version": "1.6 ADVANCE AT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 27000,
+    "price_usd": 18060,
+    "version": "1.6 ADVANCE",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 74000,
+    "price_usd": 20060,
+    "version": "1.6 ADVANCE CVT 120CV",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 150000,
+    "price_usd": 16722,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 90000,
+    "price_usd": 18900,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2021,
+    "km": 52000,
+    "price_usd": 23500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 144000,
+    "price_usd": 16800,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2020,
+    "km": 90000,
+    "price_usd": 18395,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 84000,
+    "price_usd": 16656,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 74000,
+    "price_usd": 17900,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 63400,
+    "price_usd": 19500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 98200,
+    "price_usd": 18000,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 70000,
+    "price_usd": 17324,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 114000,
+    "price_usd": 16500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2017,
+    "km": 72000,
+    "price_usd": 19500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2019,
+    "km": 57000,
+    "price_usd": 18500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2018,
+    "km": 31000,
+    "price_usd": 18500,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "brand_model": "NISSAN KICKS",
+    "year": 2022,
+    "km": 88600,
+    "price_usd": 21070,
+    "version": "1.6 EXCLUSIVE CVT",
+    "url": "https://autos.mercadolibre.com.ar",
+    "source": "MercadoLibre"
+  },
+  {
+    "id": "icy1cp",
+    "title": "Toyota SW4 HILUX SW4 TDI SRX AUT         L/16",
+    "price_usd": 47000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/hilux-sw4-tdi-srx-aut---------l16/aaec922da7af429bac842dedfc977ca1",
+    "year": 2020,
+    "km": 79539,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "f4wtmh",
+    "title": "Toyota SW4 SRX 2.8 TDi 7A Aut",
+    "price_usd": 40000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srx-28-tdi-7a-aut/18fb5160b22b443d9242e836dd8129c6",
+    "year": 2021,
+    "km": 136000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "hfgrxk",
+    "title": "Toyota SW4 SRX 2.8 TDi 7A Aut",
+    "price_usd": 60435,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srx-28-tdi-7a-aut/5d27c526984d4638a9a9df9151156adf",
+    "year": 2024,
+    "km": 29600,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "egjj9w",
+    "title": "Toyota SW4 Diamond 7 Pas Aut",
+    "price_usd": 52000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/diamond-7-pas-aut/ff455b0c06fa40bebb2fa3a3928f17d1",
+    "year": 2023,
+    "km": 84000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "a6kjy",
+    "title": "Toyota SW4 SRX 2.8 TDi 7A Aut",
+    "price_usd": 32000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srx-28-tdi-7a-aut/cfc15840330a40ccb2153ff5c7ea6713",
+    "year": 2016,
+    "km": 206000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "l938ha",
+    "title": "Toyota SW4 SRV",
+    "price_usd": 15652,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srv/c718c51585f14c7aa13f4bff810496b5",
+    "year": 1999,
+    "km": 370000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "cu85gf",
+    "title": "Toyota SW4 SRV Aut 7P",
+    "price_usd": 27000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srv-aut-7p/84bd0be870ce4aa198045c16000a4183",
+    "year": 2013,
+    "km": 290000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "zd46cc",
+    "title": "Toyota SW4 HILUX SW4 TDI SRX AUT         L/16",
+    "price_usd": 50435,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/hilux-sw4-tdi-srx-aut---------l16/3cf65c38569e4267a26584ad699ef1bb",
+    "year": 2019,
+    "km": 170000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "sridl",
+    "title": "Toyota SW4 SRX 2.8 TDi 7A Aut",
+    "price_usd": 32000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srx-28-tdi-7a-aut/0dc9bdb21eb34d708d758043c0bf8d13",
+    "year": 2016,
+    "km": 278000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "9nylj7",
+    "title": "Toyota SW4 HILUX SW4 TDI SRX AUT L/21",
+    "price_usd": 62609,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/hilux-sw4-tdi-srx-aut-l21/991b0573f8c647bfb1c7a9d574b7ebed",
+    "year": 2023,
+    "km": 21000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "wi9xth",
+    "title": "Toyota SW4 HILUX SW4 TDI SRX AUT         L/16",
+    "price_usd": 44900,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/hilux-sw4-tdi-srx-aut---------l16/927a1ddc197c44b38d5e4de4aba33069",
+    "year": 2021,
+    "km": 54000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "ru77td",
+    "title": "Toyota SW4 SRV TDi Cuero",
+    "price_usd": 29000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/sw4/srv-tdi-cuero/d48b85df20b24ab882fdebb1a0cad2e1",
+    "year": 2011,
+    "km": 311000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota SW4",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "7aacf6",
+    "title": "Toyota Corolla 1.8 XEi Aut",
+    "price_usd": 11739,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-aut/7f537f4d6c7b4f54ae5cc7fce1556301",
+    "year": 2013,
+    "km": 260000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "j145m",
+    "title": "Toyota Corolla 2.0 GR-S",
+    "price_usd": 40000,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-gr-s/c5aa105ac1a34c678004bac73a3bb768",
+    "year": 2024,
+    "km": 21000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "scoynx",
+    "title": "Toyota Corolla 2.0 SE-G CVT",
+    "price_usd": 37200,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-se-g-cvt/60a4d863ea594d4fba1e537b3b13d0a3",
+    "year": 2022,
+    "km": 19800,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "ys8j9p",
+    "title": "Toyota Corolla 2.0 XE-I",
+    "price_usd": 22900,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-xe-i/b457854af06742699e134abd99137e16",
+    "year": 2022,
+    "km": 17000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "djdac9",
+    "title": "Toyota Corolla 1.6 XLi",
+    "price_usd": 7500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/16-xli/737bd4e1a1ef4b0c9e6a27821c2acd6d",
+    "year": 2007,
+    "km": 156000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "5byxzi",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 6696,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/ca7c972a8f80430e916fddc4495f8735",
+    "year": 2013,
+    "km": 130000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "0cblu",
+    "title": "Toyota Corolla 2.0 SE-G CVT",
+    "price_usd": 26957,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-se-g-cvt/8abd1d1e8b844563982646ef7b494f90",
+    "year": 2020,
+    "km": 79000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "kt7t6g",
+    "title": "Toyota Corolla 2.0 XE-I",
+    "price_usd": 30435,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-xe-i/9907cd9c9a6d43d3b844a380b74c0e8c",
+    "year": 2023,
+    "km": 29000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "ngd1e",
+    "title": "Toyota Corolla 1.8 SE-G Aut",
+    "price_usd": 11000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-aut/03bfc0eed07f4ac9a61740dd0a532508",
+    "year": 2015,
+    "km": 192000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "cf7hzc",
+    "title": "Toyota Corolla XRS",
+    "price_usd": 13478,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/xrs/df9ac448c87542e4a8d7aefc6d29545f",
+    "year": 2013,
+    "km": 200000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "lm3c9i",
+    "title": "Toyota Corolla 1.8 XEi",
+    "price_usd": 19498,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei/7f5b05be7d1a4e4585ce5f5e5ac3bac5",
+    "year": 2018,
+    "km": 77000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "2gb6xl",
+    "title": "Toyota Corolla 1.8 XEi 2016-2017",
+    "price_usd": 17900,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-2016-2017/77a39e43b02744df81b69d910f725a29",
+    "year": 2017,
+    "km": 79000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "bhd9eo",
+    "title": "Toyota Corolla 1.8 XEi Pack Aut",
+    "price_usd": 14000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack-aut/5501d53838eb4339aa5448d7c3f257e9",
+    "year": 2015,
+    "km": 237000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "1cj8ok",
+    "title": "Toyota Corolla 1.8 XEi CVT",
+    "price_usd": 20000,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-cvt/16e1856d6dcd44b0b206dd83ea553d9e",
+    "year": 2015,
+    "km": 160000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "yxjbf",
+    "title": "Toyota Corolla 2.0 XE-I CVT",
+    "price_usd": 22583,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-xe-i-cvt/2599c81cdc764587bec548927c47f369",
+    "year": 2022,
+    "km": 100525,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "6a64tm",
+    "title": "Toyota Corolla 1.8 XEi Pack Aut 2016-2017",
+    "price_usd": 19565,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack-aut-2016-2017/155dfe4fdc464df4afe3b214aad12dd3",
+    "year": 2017,
+    "km": 75000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "svmttd",
+    "title": "Toyota Corolla 1.8 XEi Pack",
+    "price_usd": 21739,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack/8e0eed8e0b3641aaa67b511162de1d50",
+    "year": 2018,
+    "km": 82000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "ih2uxn",
+    "title": "Toyota Corolla 1.8 SE-G Aut",
+    "price_usd": 13500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-aut/2148b716f1c44180abf070c2ea0caea1",
+    "year": 2011,
+    "km": 175000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "0crz8",
+    "title": "Toyota Corolla 1.8 XLi 2016-2017",
+    "price_usd": 15652,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli-2016-2017/85b27ea0bac946de831425a4fd770ff2",
+    "year": 2016,
+    "km": 104000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "3jfrbw",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 18000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/3f833412a73c47289926b61ccbda865d",
+    "year": 2019,
+    "km": 93500,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "xhx0wd",
+    "title": "Toyota Corolla 1.8 XEi 2016-2017",
+    "price_usd": 16500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-2016-2017/ee4ad1ceb9064f8eac189c502fce0dde",
+    "year": 2017,
+    "km": 118000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "0irkns",
+    "title": "Toyota Corolla XRS",
+    "price_usd": 11500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/xrs/6e358ac1f17e449293de971afe20ba6e",
+    "year": 2012,
+    "km": 180000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "uxa11d",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 18261,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/1b6c147ba1b543cfb9c393b41fe497f8",
+    "year": 2017,
+    "km": 99500,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "af7dwd",
+    "title": "Toyota Corolla 1.8 SE-G",
+    "price_usd": 21739,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g/147291dce26349368814eed41d0830c7",
+    "year": 2019,
+    "km": 56000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "73uuk",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 8000,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/20d3cc35516f4b7cb154b83717c1dec5",
+    "year": 2006,
+    "km": 290000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "d2p5br",
+    "title": "Toyota Corolla 1.8 XEi Pack",
+    "price_usd": 15400,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack/430a117c748d4a9fbb89f4acd2a13037",
+    "year": 2015,
+    "km": 131000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "vr9qs7",
+    "title": "Toyota Corolla 1.8 XEi CVT",
+    "price_usd": 20000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-cvt/b86da8faa98546949ef1db62afbddaa5",
+    "year": 2019,
+    "km": 113000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "64z3xp",
+    "title": "Toyota Corolla 1.8 XLi 2016-2017",
+    "price_usd": 20783,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli-2016-2017/d3802b6ddada4797a9459382e6ec88da",
+    "year": 2017,
+    "km": 127800,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "gimtd5",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 18696,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/8a12b99589c04fa2bb910e345f941b6c",
+    "year": 2018,
+    "km": 148000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "i1m1gk",
+    "title": "Toyota Corolla 1.8 XEi CVT",
+    "price_usd": 20500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-cvt/f4832c0992f64ce296297f16a02f089c",
+    "year": 2020,
+    "km": 106000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "aebm2",
+    "title": "Toyota Corolla 1.8 XEi CVT",
+    "price_usd": 20000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-cvt/9a54da6be20f44389ed0fae3255bf1c0",
+    "year": 2016,
+    "km": 73000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "lawuh5",
+    "title": "Toyota Corolla 1.8 XEi 2016-2017",
+    "price_usd": 17500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-2016-2017/236a2bb03a4d4da0ad416b72c6144a2f",
+    "year": 2016,
+    "km": 114000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "do9ei",
+    "title": "Toyota Corolla 1.8 XEi",
+    "price_usd": 21652,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei/917e7b1b730348e3812bd4203c0ceb6b",
+    "year": 2019,
+    "km": 128000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "vebnq8",
+    "title": "Toyota Corolla 1.8 XEi CVT",
+    "price_usd": 25217,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-cvt/3716c59006bf4f0aaf7365ff5b58b424",
+    "year": 2019,
+    "km": 49800,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "4ajqs",
+    "title": "Toyota Corolla 1.8 SE-G Aut",
+    "price_usd": 8522,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-aut/7249040a750d454f95688ec043166cb3",
+    "year": 2006,
+    "km": 218900,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "l2g9kf",
+    "title": "Toyota Corolla 1.8 XEi Pack Aut",
+    "price_usd": 19130,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack-aut/fdee8e02c9f74ef894bb8007c77ae2de",
+    "year": 2015,
+    "km": 62000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "syao6b",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 16500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/ac80262dad924a9395844e70fb835cc6",
+    "year": 2016,
+    "km": 89000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "09hohm",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 13900,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/4a42cd0e0e0c463f99d4da33cb887174",
+    "year": 2015,
+    "km": 124000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "34gzm",
+    "title": "Toyota Corolla 1.8 SE-G Aut",
+    "price_usd": 20000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-aut/fc1015824fbb4b88bfb499aecba07a22",
+    "year": 2019,
+    "km": 83000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "5sh3p5",
+    "title": "Toyota Corolla 2.0 SE-G CVT",
+    "price_usd": 25000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/20-se-g-cvt/6ed1a85ab6254773b6f336176add2865",
+    "year": 2022,
+    "km": 80000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "aryanj",
+    "title": "Toyota Corolla 1.8 XLi",
+    "price_usd": 16957,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xli/2a253c387d2b423ea2ea2af3772ef74d",
+    "year": 2015,
+    "km": 149800,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "cki9z",
+    "title": "Toyota Corolla 1.8 XEi",
+    "price_usd": 16087,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei/6a86f8f867b04779a9a71943ed873f02",
+    "year": 2014,
+    "km": 184000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "cmu5au",
+    "title": "Toyota Corolla 1.8 SE-G CVT",
+    "price_usd": 21739,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-cvt/8fe5c72c5d424191bb7c8252cd363054",
+    "year": 2019,
+    "km": 199500,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "50dx9",
+    "title": "Toyota Corolla 1.8 XEi Pack",
+    "price_usd": 15217,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-xei-pack/6adff26f36714b47bb353b43b6fd7234",
+    "year": 2013,
+    "km": 171000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "8452lq",
+    "title": "Toyota Corolla 1.8 SE-G CVT",
+    "price_usd": 29130,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-cvt/6a81e5facd8248498d530ce05ac07309",
+    "year": 2020,
+    "km": 74000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "b252ac",
+    "title": "Toyota Corolla 1.8 SE-G CVT",
+    "price_usd": 20000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/toyota/corolla/18-se-g-cvt/10a1bf16bedc40d1974261ee047760a8",
+    "year": 2017,
+    "km": 184000,
+    "location": "Autocosmos",
+    "brand_model": "Toyota Corolla",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "5nroyq",
+    "title": "Jeep Compass 2.4 4x4 Longitude Aut",
+    "price_usd": 26087,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x4-longitude-aut/20dbe46eee3d4ae682e956ae8b30695d",
+    "year": 2018,
+    "km": 110000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "yxy36",
+    "title": "Jeep Compass 2.4 4x2 Sport Aut",
+    "price_usd": 27826,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x2-sport-aut/d23e8113d8eb47eb8222f6ca298449b3",
+    "year": 2021,
+    "km": 46500,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "nwbwi",
+    "title": "Jeep Compass 1.3 4x2 Limited Plus Aut",
+    "price_usd": 31500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/13-4x2-limited-plus-aut/f220303636f348e5a87eefc1d97f352d",
+    "year": 2022,
+    "km": 45000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "v2i05z",
+    "title": "Jeep Compass COMPASS 2.4 LONGITUDE AT9 O/E",
+    "price_usd": 26087,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/compass-24-longitude-at9-oe/c295d058e9464e07b437adccd7166ba2",
+    "year": 2018,
+    "km": 140000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "it6fg",
+    "title": "Jeep Compass 2.4 4x4 Longitude Aut",
+    "price_usd": 22500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x4-longitude-aut/e310f20021064e1796575654e6374fec",
+    "year": 2018,
+    "km": 145000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "jx63ko",
+    "title": "Jeep Compass 2.4 4x2 Longitude Aut",
+    "price_usd": 31304,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x2-longitude-aut/d99e363b04a04b5bbad3c783808d3a62",
+    "year": 2020,
+    "km": 102000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "7gedsm",
+    "title": "Jeep Compass COMPASS 2.4 LONGITUDE AT6 4X2",
+    "price_usd": 42609,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/compass-24-longitude-at6-4x2/e0601f89ab864d9386973f1db5b376ff",
+    "year": 2023,
+    "km": 48000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "fvhfi",
+    "title": "Jeep Compass 2.4 4x4 Longitude Aut",
+    "price_usd": 24500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x4-longitude-aut/83460a5504744f2995defb942740fec2",
+    "year": 2018,
+    "km": 79000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "u5t3h",
+    "title": "Jeep Compass 2.4 4x2 Sport",
+    "price_usd": 27826,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x2-sport/3400fd1afe0c4c70b55daa19a3dde8ab",
+    "year": 2021,
+    "km": 57000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "anwqy",
+    "title": "Jeep Compass 2.4 4x2 Longitude Aut",
+    "price_usd": 33826,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x2-longitude-aut/b6ec87cab8da43dc85fdf6fff2bc7f08",
+    "year": 2021,
+    "km": 101500,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "rhmroc",
+    "title": "Jeep Compass 2.4 4x4 Limited Aut Plus",
+    "price_usd": 23900,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x4-limited-aut-plus/018f12c557204899befc6e774aa7e00e",
+    "year": 2018,
+    "km": 65000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "lidq",
+    "title": "Jeep Compass COMPASS 2.4 LONGITUDE AT6 4X2",
+    "price_usd": 32870,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/compass-24-longitude-at6-4x2/9f414e0c8ffd4bd0a57948e663ca1e65",
+    "year": 2021,
+    "km": 80000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "s2wi7q",
+    "title": "Jeep Compass 1.3 4x2 Limited Plus Aut",
+    "price_usd": 36000,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/13-4x2-limited-plus-aut/917938f6a63b48b182e1e7e62b9d1d5d",
+    "year": 2025,
+    "km": 4000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "4fbaia",
+    "title": "Jeep Compass 1.3 4x2 Sport Aut",
+    "price_usd": 33478,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/13-4x2-sport-aut/c0f8bc6bcdc84cdea8453cecca867012",
+    "year": 2022,
+    "km": 60000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "pjlcl5",
+    "title": "Jeep Compass Trailhawk 2.0 4X4 TD Aut",
+    "price_usd": 35500,
+    "currency": "USD",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/trailhawk-20-4x4-td-aut/a1b24d05cfc344c088724ec716f54a6c",
+    "year": 2023,
+    "km": 68900,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "xnhahs",
+    "title": "Jeep Compass 2.4 4x4 Limited Aut",
+    "price_usd": 17565,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x4-limited-aut/330e86ea009348f0a8d836edee2b6fef",
+    "year": 2012,
+    "km": 190000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "8d8a",
+    "title": "Jeep Compass COMPASS 2.4 LONGITUDE AT6 4X2",
+    "price_usd": 36435,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/compass-24-longitude-at6-4x2/6adb5923ca85411ebb62f8616fa31408",
+    "year": 2022,
+    "km": 55000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  },
+  {
+    "id": "ei6wfd",
+    "title": "Jeep Compass 2.4 4x2 Sport",
+    "price_usd": 24783,
+    "currency": "ARS",
+    "url": "https://www.autocosmos.com.ar/auto/usado/jeep/compass/24-4x2-sport/cccea57b3b8a4250a8ab9710249e22f1",
+    "year": 2019,
+    "km": 57000,
+    "location": "Autocosmos",
+    "brand_model": "Jeep Compass",
+    "source": "Autocosmos"
+  }
+]

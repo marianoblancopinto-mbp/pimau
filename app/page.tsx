@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Dashboard } from '@/components/Dashboard';
-import { EMERGENT_RULES } from '@/agents/agent_b/emergent_rules';
+import { EMERGENT_RULES } from '@/lib/core/emergent_rules';
 
 export interface ScatterPoint {
   year: number;
@@ -24,6 +24,8 @@ interface ReportItem {
   modelType?: 'LINEAR' | 'EXPONENTIAL' | 'ENSEMBLE';
   weights?: { linear: number; exponential: number };
   exponential_coefficients?: { intercept: number; year: number; km: number };
+  isManual?: boolean;
+  parentModel?: string;
 }
 
 interface ZeroKmData {
@@ -160,9 +162,9 @@ export default async function Home() {
   const sortedReport = report.sort((a, b) => b.resilience_score - a.resilience_score);
   const zeroKmData = await getZeroKmData();
 
-  // Identify Low R2 Models (< 0.6)
-  const lowR2Models = report.filter(r => r.r2 < 0.6).map(r => r.model);
-  const scatterData = await getScatterData(lowR2Models);
+  // Identify Low R2 Models (< 0.6) and manually ingested models
+  const targetModels = report.filter(r => r.r2 < 0.6 || r.isManual).map(r => r.model);
+  const scatterData = await getScatterData(targetModels);
 
   return <Dashboard data={sortedReport} zeroKmData={zeroKmData} scatterData={scatterData} />;
 }

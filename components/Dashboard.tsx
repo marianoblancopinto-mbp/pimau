@@ -1,7 +1,10 @@
 'use client';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area, BarChart, Bar, ReferenceLine, Cell, ScatterChart, Scatter, ZAxis, Legend } from 'recharts';
-import { Activity, Clock, TrendingUp, BarChart3, ChevronRight, AlertTriangle } from 'lucide-react';
+import { Activity, Clock, TrendingUp, BarChart3, ChevronRight, AlertTriangle, ClipboardList, Save } from 'lucide-react';
+import { PriceModeler, CarData } from '../lib/core/modeler';
+import { parseMeliText, ParsedCar } from '../lib/parser/parseMeli';
+import { parseKavakText } from '../lib/parser/parseKavak';
 
 // Utility for class names
 function cn(...classes: (string | undefined | null | false)[]) {
@@ -23,6 +26,8 @@ interface ReportItem {
     modelType?: 'LINEAR' | 'EXPONENTIAL' | 'ENSEMBLE';
     weights?: { linear: number; exponential: number };
     exponential_coefficients?: { intercept: number; year: number; km: number };
+    isManual?: boolean;
+    parentModel?: string;
 }
 
 interface ZeroKmData {
@@ -34,6 +39,7 @@ interface ScatterPoint {
     year: number;
     km: number;
     price: number;
+    loaded_date?: string; // ISO date string (YYYY-MM-DD) for tracking data freshness
 }
 
 interface DashboardProps {
@@ -45,68 +51,248 @@ interface DashboardProps {
 export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
     const currentYear = new Date().getFullYear();
 
-    // Group models by Parent 👨‍
-    const groupedModels = useMemo(() => {
-        const groups: Record<string, ReportItem[]> = {};
-        const allModels = data.map(d => d.model);
+    const [localData, setLocalData] = useState<ReportItem[]>(data);
+    const [localScatterData, setLocalScatterData] = useState<Record<string, ScatterPoint[]>>(scatterData || {});
 
-        // First, find parents that exist as actual models
-        const existingParents = allModels.filter(m =>
-            allModels.some(other => other !== m && other.startsWith(m + ' '))
-        );
-
-        // Second, detect implicit parents (common prefixes like "JEEP COMPASS" when we have "JEEP COMPASS SPORT", "JEEP COMPASS LIMITED")
-        const findCommonPrefix = (model: string): string | null => {
-            // Check if this model shares a prefix with other models
-            const parts = model.split(' ');
-            for (let i = parts.length - 1; i >= 2; i--) {
-                const prefix = parts.slice(0, i).join(' ');
-                const siblings = allModels.filter(m => m !== model && m.startsWith(prefix + ' '));
-                if (siblings.length >= 1) {
-                    // Found at least one sibling with same prefix
-                    return prefix;
-                }
+    // Scraper Modal State
+    const [isScraperOpen, setIsScraperOpen] = useState(false);
+    const [scraperMode, setScraperMode] = useState<'NEW_MODEL' | 'APPEND'>('NEW_MODEL');
+    const [rawText, setRawText] = useState('');
+    const [ingestModel, setIngestModel] = useState('');
+    const [ingestSource, setIngestSource] = useState<'MELI' | 'KAVAK'>('MELI');
+    const [isProcessing, setIsProcessing] = useState(false);
+    const handleProcessData = () => {
+        if (!rawText.trim() || !ingestModel.trim()) return;
+        setIsProcessing(true);
+        try {
+            let parsedCars: ParsedCar[] = [];
+            if (ingestSource === 'MELI') {
+                parsedCars = parseMeliText(rawText, ingestModel.trim().toUpperCase());
+            } else if (ingestSource === 'KAVAK') {
+                parsedCars = parseKavakText(rawText, ingestModel.trim().toUpperCase());
             }
-            return null;
-        };
+            if (parsedCars.length === 0) {
+                alert('No se detectaron vehículos. Revisa el texto y asegúrate de haber copiado precios y años.');
+                setIsProcessing(false);
+                return;
+            }
 
-        const findParent = (modelName: string) => {
-            // First check if there's an existing parent
-            const existingParent = existingParents.find(parent => modelName.startsWith(parent + ' '));
-            if (existingParent) return existingParent;
+            // VERSION REMAPPING SAFEGUARD:
+            // Compare detected versions against versions already loaded in the page.
+            // If a detected version matches an existing one (by word overlap), remap it.
+            // Only create a new version category if truly unmatched.
+            const safeParentName = ingestModel.trim().toUpperCase();
+            const existingVersionNames = localData
+                .filter(d => d.parentModel === safeParentName || d.model === safeParentName || d.model.startsWith(safeParentName + ' '))
+                .map(d => d.model);
 
-            // Then check for implicit parent (common prefix)
-            const implicitParent = findCommonPrefix(modelName);
-            if (implicitParent) return implicitParent;
+            if (existingVersionNames.length > 0) {
+                parsedCars = parsedCars.map(car => {
+                    // If the car's model already exactly matches a loaded version, keep it
+                    if (existingVersionNames.includes(car.model)) return car;
 
-            return modelName; // Fallback to self (Orphan)
-        };
+                    // Otherwise, try to find the closest existing version by word overlap
+                    const carWords = car.model.toUpperCase().split(/\s+/).filter(w => w.length > 2);
+                    let bestMatch = '';
+                    let bestScore = 0;
 
-        data.forEach(item => {
-            const parent = findParent(item.model);
-            if (!groups[parent]) groups[parent] = [];
-            groups[parent].push(item);
+                    for (const existing of existingVersionNames) {
+                        const existingWords = existing.toUpperCase().split(/\s+/).filter(w => w.length > 2);
+                        const overlap = existingWords.filter(ew =>
+                            carWords.some(cw => cw.includes(ew) || ew.includes(cw))
+                        ).length;
+                        if (overlap > bestScore) {
+                            bestScore = overlap;
+                            bestMatch = existing;
+                        }
+                    }
+
+                    // Remap if we found a reasonable match (at least 2 words overlap, or >50% of existing words)
+                    if (bestMatch && bestScore >= 2) {
+                        return { ...car, model: bestMatch };
+                    }
+
+                    // No good match found — this is a genuinely new version, keep it as-is
+                    return car;
+                });
+            }
+
+            const groupedParsedCars = parsedCars.reduce((acc, car) => {
+                if (!acc[car.model]) acc[car.model] = [];
+                acc[car.model].push(car);
+                return acc;
+            }, {} as Record<string, ParsedCar[]>);
+
+            let newReportItems: ReportItem[] = [];
+            let newScatterMap: Record<string, ScatterPoint[]> = {};
+            const modeler = new PriceModeler();
+
+            let totalInjected = 0;
+            let variantsDetected = 0;
+
+            Object.entries(groupedParsedCars).forEach(([modelName, cars]) => {
+
+                // Convert new cars to CarData
+                const newCarData: CarData[] = cars.map(c => ({
+                    brand_model: c.model,
+                    year: c.year,
+                    km: c.km,
+                    price_usd: c.price,
+                    loaded_date: new Date().toISOString().split('T')[0]
+                } as any));
+
+                // Retrieve existing cars from state to merge them
+                const existingPoints = localScatterData[modelName] || [];
+                const oldCarData: CarData[] = existingPoints.map(sp => ({
+                    brand_model: modelName,
+                    year: sp.year,
+                    km: sp.km,
+                    price_usd: sp.price,
+                    loaded_date: sp.loaded_date || '2026-03-22'
+                } as any));
+
+                // AGGRESSIVE DEDUPLICATION: No false negatives (if it looks like a duplicate, drop it)
+                const filteredNewCarData = newCarData.filter(newCar => {
+                    const isDuplicate = oldCarData.some(oldCar =>
+                        oldCar.year === newCar.year &&
+                        Math.abs(oldCar.price_usd - newCar.price_usd) < 5 && // Price within $5
+                        (Math.abs(oldCar.km - newCar.km) < 10) // Km within 10km (covers slight variations)
+                    );
+                    return !isDuplicate;
+                });
+
+                const combinedCarData = [...oldCarData, ...filteredNewCarData];
+
+                if (combinedCarData.length < 5) return; // Ignore noise clusters
+
+                // We effectively appended new data! Calculate stats on the combined cluster.
+                variantsDetected++;
+                totalInjected += cars.length; // Only count the newly injected ones for the alert
+
+                const linearModel = modeler.trainModel(combinedCarData);
+                const expModel = modeler.trainExponentialModel(combinedCarData);
+                const finalModel = modeler.trainEnsembleModel(combinedCarData, linearModel, expModel);
+
+                const prices = combinedCarData.map(c => c.price_usd);
+                const years = combinedCarData.map(c => c.year);
+                const kms = combinedCarData.map(c => c.km);
+
+                const newItem: ReportItem = {
+                    model: modelName,
+                    count: combinedCarData.length,
+                    depreciation_per_year: finalModel.depreciation.per_year_usd,
+                    depreciation_per_10k_km: finalModel.depreciation.per_10k_km_usd,
+                    coefficients: finalModel.coefficients,
+                    buckets: [],
+                    resilience_score: finalModel.r2 * 100,
+                    stability_label: finalModel.r2 > 0.8 ? 'Platinum' : finalModel.r2 > 0.6 ? 'Gold' : cars.length < 3 ? 'Unrated' : 'Silver',
+                    r2: finalModel.r2,
+                    yearRange: { min: Math.min(...years) || currentYear - 10, max: Math.max(...years) || currentYear },
+                    kmRange: { min: Math.min(...kms) || 0, max: Math.max(...kms) || 100000 },
+                    modelType: finalModel.modelType,
+                    weights: finalModel.weights,
+                    exponential_coefficients: expModel.coefficients,
+                    isManual: true
+                };
+
+                newReportItems.push(newItem);
+
+                const validCarData = modeler.filterOutliers(combinedCarData);
+
+                newScatterMap[modelName] = validCarData.map(c => ({
+                    year: c.year,
+                    km: c.km,
+                    price: c.price_usd,
+                    loaded_date: (c as any).loaded_date || new Date().toISOString().split('T')[0]
+                }));
+            });
+
+            // Make sure the ingestModel name is completely clean
+            const safeModelName = ingestModel.trim().toUpperCase();
+
+            let newData = [...localData];
+            newReportItems.forEach(newItem => {
+                newItem.parentModel = safeModelName; // Inject parent model for grouping
+
+                const existingIndex = newData.findIndex(d => d.model === newItem.model);
+                if (existingIndex >= 0) {
+                    newData[existingIndex] = newItem;
+                } else {
+                    newData.push(newItem);
+                }
+            });
+            setLocalData(newData);
+
+            setLocalScatterData(prev => ({
+                ...prev,
+                ...newScatterMap
+            }));
+
+            // Jump to the newly ingested parent group and default to global view
+            setSelectedOption(safeModelName);
+            setSelectedVariant('__GLOBAL__');
+
+            setIsScraperOpen(false);
+            setRawText('');
+
+            if (totalInjected === 0) {
+                alert(`¡Atención! Todas las versiones aisladas tenían menos de 5 vehículos y fueron descartadas por ruido.`);
+            } else {
+                alert(`¡Éxito! Se detectaron ${variantsDetected} versiones firmes. Inyectamos ${totalInjected} vehículos al modelo.`);
+            }
+        } catch (e) {
+            console.error(e);
+            alert('Error procesando datos. Revisa la consola para más detalles.');
+        } finally {
+            setIsProcessing(false);
+        }
+    };
+
+    // Hybrid grouping mapping
+    const dropdownOptions = useMemo(() => {
+        const options = new Set<string>();
+        localData.forEach(item => {
+            if (item.parentModel) {
+                options.add(item.parentModel);
+            } else {
+                // If native JSON forgot parent, deduce it by matching with the known ZeroKm base taxonomy
+                const baseModel = zeroKmData.find(z => item.model.startsWith(z.model));
+                options.add(baseModel ? baseModel.model : item.model);
+            }
         });
+        return Array.from(options).sort((a, b) => {
+            const aIsManual = localData.some(d => d.isManual && (d.parentModel === a || d.model === a));
+            const bIsManual = localData.some(d => d.isManual && (d.parentModel === b || d.model === b));
+            // Manual datasets always at the top of the list
+            if (aIsManual && !bIsManual) return -1;
+            if (!aIsManual && bIsManual) return 1;
+            return a.localeCompare(b);
+        });
+    }, [localData, zeroKmData]);
 
-        return groups;
-    }, [data]);
+    const [selectedOption, setSelectedOption] = useState(dropdownOptions[0] || '');
+    const [selectedVariant, setSelectedVariant] = useState('__GLOBAL__');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const parentKeys = useMemo(() => Object.keys(groupedModels).sort(), [groupedModels]);
+    // Sync state robustly if local data changes
+    useEffect(() => {
+        if (!dropdownOptions.includes(selectedOption) && dropdownOptions.length > 0) {
+            setSelectedOption(dropdownOptions[0]);
+        }
+    }, [dropdownOptions, selectedOption]);
 
-    const [selectedParent, setSelectedParent] = useState(parentKeys[0] || '');
+    const activeVariants = useMemo(() => {
+        return localData.filter(item => {
+            if (item.parentModel) {
+                return item.parentModel === selectedOption;
+            } else {
+                const baseModel = zeroKmData.find(z => item.model.startsWith(z.model))?.model || item.model;
+                return baseModel === selectedOption;
+            }
+        });
+    }, [localData, selectedOption, zeroKmData]);
 
-    // We just track selected VARIANT MODEL string (or 'GLOBAL' for combined view)
-    const [selectedModel, setSelectedModel] = useState(data[0]?.model || '');
-
-    // Track if we're in "Global" view (combined data from all variants)
-    const isGlobalView = selectedModel === '__GLOBAL__';
-
-    // Derived parent (for UI sync)
-    const activeParent = isGlobalView
-        ? selectedParent
-        : parentKeys.find(p =>
-            groupedModels[p].some(item => item.model === selectedModel)
-        ) || selectedParent;
+    const isGlobalView = selectedVariant === '__GLOBAL__';
 
     const [calcYear, setCalcYear] = useState(2022);
     const [calcKm, setCalcKm] = useState(50000);
@@ -115,78 +301,61 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
 
     // --- GLOBAL CONSOLIDATION LOGIC ---
     const globalReportItem = useMemo((): ReportItem | null => {
-        if (!isGlobalView || !activeParent) return null;
-        const variants = groupedModels[activeParent] || [];
-        if (variants.length === 0) return null;
+        if (!isGlobalView || activeVariants.length <= 1) return null;
+        const totalCount = activeVariants.reduce((sum, v) => sum + v.count, 0);
+        if (totalCount === 0) return activeVariants[0];
 
-        const totalCount = variants.reduce((sum, v) => sum + v.count, 0);
-        if (totalCount === 0) return variants[0]; // Fallback
-
-        // Weighted Average helper
         const weightedAvg = (getKey: (v: ReportItem) => number) => {
-            return variants.reduce((sum, v) => sum + (getKey(v) * v.count), 0) / totalCount;
+            return activeVariants.reduce((sum, v) => sum + (getKey(v) * v.count), 0) / totalCount;
         };
 
         return {
-            model: activeParent, // Display name
+            model: selectedOption, // Display name
             count: totalCount,
             r2: weightedAvg(v => v.r2),
             depreciation_per_year: weightedAvg(v => v.depreciation_per_year),
             depreciation_per_10k_km: weightedAvg(v => v.depreciation_per_10k_km),
-            // Synthesize linear coefficients (Approximate)
             coefficients: {
                 intercept: weightedAvg(v => v.coefficients.intercept),
                 year: weightedAvg(v => v.coefficients.year),
                 km: weightedAvg(v => v.coefficients.km)
             },
-            // For stability score/label, take the mode or avg? Avg score.
             resilience_score: weightedAvg(v => v.resilience_score),
-            stability_label: variants.sort((a, b) => b.count - a.count)[0].stability_label, // Take dominant label
-
-            // Ranges: Union of all ranges
+            stability_label: [...activeVariants].sort((a, b) => b.count - a.count)[0].stability_label,
             yearRange: {
-                min: Math.min(...variants.map(v => v.yearRange.min)),
-                max: Math.max(...variants.map(v => v.yearRange.max))
+                min: Math.min(...activeVariants.map(v => v.yearRange.min)),
+                max: Math.max(...activeVariants.map(v => v.yearRange.max))
             },
             kmRange: {
-                min: Math.min(...variants.map(v => v.kmRange.min)),
-                max: Math.max(...variants.map(v => v.kmRange.max))
+                min: Math.min(...activeVariants.map(v => v.kmRange.min)),
+                max: Math.max(...activeVariants.map(v => v.kmRange.max))
             },
-
-            // Buckets not strictly needed for UI (we use coefficients) but could aggregate
             buckets: [],
-            modelType: 'LINEAR', // Simplify to Linear for aggregate view 
+            modelType: 'LINEAR',
             weights: undefined,
-            exponential_coefficients: undefined // Skip complexity for aggregate
-        };
-    }, [isGlobalView, activeParent, groupedModels]);
+            exponential_coefficients: undefined,
+            isManual: true,
+            parentModel: selectedOption
+        } as ReportItem;
+    }, [isGlobalView, activeVariants, selectedOption]);
 
     // SELECT THE RIGHT DATA
     const selected = isGlobalView
-        ? globalReportItem || groupedModels[activeParent]?.[0] || data[0]
-        : data.find(d => d.model === selectedModel) || data[0];
+        ? globalReportItem || activeVariants[0] || localData[0]
+        : activeVariants.find(d => d.model === selectedVariant) || activeVariants[0] || localData[0];
 
-
-    // Get 0km data - for global view, combine all variants' 0km data
+    // Get 0km data
     const selectedZeroKm = useMemo(() => {
-        if (isGlobalView && activeParent) {
-            // Combine 0km data from all variants under this parent
-            const variants = groupedModels[activeParent] || [];
+        if (isGlobalView && activeVariants.length > 1) {
             const allPrices: number[] = [];
-            variants.forEach(v => {
+            activeVariants.forEach(v => {
                 const zkm = zeroKmData.find(z => z.model === v.model);
                 if (zkm) allPrices.push(...zkm.prices);
             });
-            // Also check parent name directly
-            const parentZkm = zeroKmData.find(z => z.model === activeParent);
-            if (parentZkm) allPrices.push(...parentZkm.prices);
-
-            if (allPrices.length > 0) {
-                return { model: activeParent, prices: allPrices };
-            }
+            return { model: selectedOption, prices: allPrices };
         }
-        return zeroKmData.find(z => z.model === selectedModel);
-    }, [isGlobalView, activeParent, selectedModel, zeroKmData, groupedModels]);
+        return zeroKmData.find(z => z.model === selected.model);
+    }, [isGlobalView, activeVariants, selectedOption, zeroKmData, selected.model]);
 
     // Calculate mean
     const calculateMean = (prices: number[]) => {
@@ -313,22 +482,17 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
 
     const showLowConfidence = selected.r2 < 0.6;
 
-    // For scatter plot, if Global, combine all points?
-    // User didn't strictly ask for scatter agg but for consistency we should.
+    // For scatter plot, logic handles global aggregation or individual
     const modelScatterData = useMemo(() => {
-        if (isGlobalView && scatterData && activeParent) {
-            const variants = groupedModels[activeParent] || [];
+        if (isGlobalView && activeVariants.length > 1) {
             const combined: ScatterPoint[] = [];
-            variants.forEach(v => {
-                if (scatterData[v.model]) combined.push(...scatterData[v.model]);
+            activeVariants.forEach(v => {
+                if (localScatterData?.[v.model]) combined.push(...localScatterData[v.model]);
             });
-            // also parent if exists
-            if (scatterData[activeParent]) combined.push(...scatterData[activeParent]);
-            // dedupe not needed if models keys are distinct
             return combined;
         }
-        return scatterData?.[selectedModel] || [];
-    }, [isGlobalView, selectedModel, scatterData, activeParent, groupedModels]);
+        return localScatterData?.[selected.model] || [];
+    }, [isGlobalView, activeVariants, selected.model, localScatterData]);
 
 
     return (
@@ -350,30 +514,119 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-3">
                             <span className="text-[10px] font-black uppercase tracking-widest opacity-60">Dataset:</span>
-                            <select
-                                value={activeParent}
-                                onChange={(e) => {
-                                    const newParent = e.target.value;
-                                    const variants = groupedModels[newParent];
-                                    if (variants.length > 1) {
-                                        setSelectedModel('__GLOBAL__');
-                                    } else {
-                                        setSelectedModel(variants[0].model);
-                                    }
-                                    setSelectedParent(newParent);
-                                }}
-                                className="bg-background text-foreground text-sm font-black focus:outline-none cursor-pointer min-w-[200px] text-right border border-border px-2 py-1 rounded-sm [&>option]:text-black"
-                            >
-                                {parentKeys.map(parent => (
-                                    <option key={parent} value={parent} className="text-black">
-                                        {parent}
-                                    </option>
-                                ))}
-                            </select>
+                            <div className="relative">
+                                <button
+                                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                    className="bg-background text-foreground text-sm font-black focus:outline-none cursor-pointer min-w-[200px] text-right border border-border px-2 py-1 rounded-sm flex items-center justify-end gap-2"
+                                >
+                                    {selectedOption}
+                                    {localData.some(d => d.isManual && (d.parentModel === selectedOption || d.model === selectedOption)) && (
+                                        <ClipboardList size={14} className="text-blue-600" />
+                                    )}
+                                    <ChevronRight size={14} className={cn("transition-transform opacity-50", isDropdownOpen ? "rotate-90" : "")} />
+                                </button>
+
+                                {isDropdownOpen && (
+                                    <div className="absolute top-full right-0 mt-1 w-full min-w-[200px] max-h-64 overflow-y-auto bg-white border border-border shadow-xl z-50 flex flex-col">
+                                        {dropdownOptions.map(opt => {
+                                            const isManualGroup = localData.some(d => d.isManual && (d.parentModel === opt || d.model === opt));
+                                            return (
+                                                <button
+                                                    key={opt}
+                                                    onClick={() => {
+                                                        setSelectedOption(opt);
+                                                        setSelectedVariant('__GLOBAL__');
+                                                        setIsDropdownOpen(false);
+                                                    }}
+                                                    className={cn(
+                                                        "px-3 py-2 text-sm font-black text-right flex items-center justify-end gap-2 hover:bg-zinc-100 transition-colors border-b border-zinc-100 last:border-0",
+                                                        isManualGroup ? "text-blue-600 bg-blue-50/50" : "text-black"
+                                                    )}
+                                                >
+                                                    {opt}
+                                                    {isManualGroup && <ClipboardList size={14} />}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                            </div>
                         </div>
+                        <button
+                            onClick={() => {
+                                setScraperMode('NEW_MODEL');
+                                setIngestModel('');
+                                setIsScraperOpen(true);
+                            }}
+                            className="bg-primary hover:bg-white hover:text-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 border-2 border-transparent hover:border-primary transition-all flex items-center gap-2"
+                        >
+                            <ClipboardList size={14} /> Cargar Más Modelos
+                        </button>
                     </div>
                 </div>
             </header>
+
+            {/* Manual Scraper Modal */}
+            {isScraperOpen && (
+                <div className="fixed inset-0 z-[100] bg-background/80 backdrop-blur-sm flex items-center justify-center p-4">
+                    <div className="bg-white text-black p-8 max-w-2xl w-full flex flex-col shadow-2xl border-4 border-black">
+                        <div className="flex justify-between items-center mb-6">
+                            <h2 className="text-3xl font-black uppercase tracking-tight">
+                                {scraperMode === 'APPEND' ? 'Cargar Más Publicaciones' : 'Simulador In-Situ'}
+                            </h2>
+                            <button onClick={() => setIsScraperOpen(false)} className="text-muted hover:text-black font-black uppercase text-xs">Cerrar ✕</button>
+                        </div>
+                        <p className="text-sm text-zinc-600 mb-6 font-medium">
+                            Selecioná y copiá (Ctrl+A, Ctrl+C) el listado de vehículos directo desde Mercado Libre o Kavak y pégalo (Ctrl+V) abajo.
+                            Tu navegador extraerá los precios, reentrenará la inteligencia matemática in-situ y te mostrará los nuevos resultados.
+                            AL CERRAR LA PÁGINA ESTOS DATOS DESAPARECERÁN
+                        </p>
+
+                        <label className="text-xs font-black uppercase tracking-widest mb-2 block">Fuente de Datos</label>
+                        <select
+                            value={ingestSource}
+                            onChange={e => setIngestSource(e.target.value as 'MELI' | 'KAVAK')}
+                            className="border-2 border-black p-3 mb-4 font-black uppercase w-full bg-zinc-100 focus:bg-white focus:outline-none cursor-pointer"
+                        >
+                            <option value="MELI">MERCADO LIBRE</option>
+                            <option value="KAVAK">KAVAK</option>
+                        </select>
+
+                        <label className="text-xs font-black uppercase tracking-widest mb-2 block">Nombre del Modelo / Dataset</label>
+                        {scraperMode === 'APPEND' ? (
+                            <div className="border-2 border-black p-3 mb-6 font-black uppercase w-full bg-zinc-200 text-zinc-500 cursor-not-allowed">
+                                {ingestModel}
+                            </div>
+                        ) : (
+                            <input
+                                type="text"
+                                placeholder="Ej: RENAULT DUSTER"
+                                value={ingestModel}
+                                onChange={e => setIngestModel(e.target.value)}
+                                className="border-2 border-black p-3 mb-6 font-black uppercase w-full bg-zinc-100 focus:bg-white focus:outline-none"
+                            />
+                        )}
+
+                        <label className="text-xs font-black uppercase tracking-widest mb-2 block">Texto Crudo (Raw Clipboard)</label>
+                        <textarea
+                            className="border-2 border-black p-4 w-full h-48 font-mono text-xs bg-zinc-100 focus:bg-white focus:outline-none mb-6 resize-none"
+                            placeholder="Pega el texto crudo aquí..."
+                            value={rawText}
+                            onChange={e => setRawText(e.target.value)}
+                        />
+
+                        <div className="flex justify-end mt-auto">
+                            <button
+                                onClick={handleProcessData}
+                                disabled={isProcessing || !rawText || !ingestModel}
+                                className="bg-primary text-white px-8 py-3 font-black uppercase tracking-widest hover:bg-black transition-colors disabled:opacity-50"
+                            >
+                                {isProcessing ? 'Procesando...' : 'Procesar Datos'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Main Content - 2x2 Grid */}
             <main className="flex-1 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2">
@@ -381,22 +634,36 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
                 {/* QUADRANT I: IDENTITY & VALUATOR (Top-Left) */}
                 <div className="p-8 lg:p-12 border-b lg:border-r border-border relative flex flex-col">
 
-                    {/* Top: Identity */}
+                    {/* Top: Identity + Buttons */}
                     <div className="mb-8">
                         <div className="flex justify-between items-start mb-6">
                             <h2 className="text-5xl lg:text-6xl font-black text-primary leading-[0.8] tracking-[-0.04em] uppercase">
-                                {activeParent}
+                                {selectedOption}
                             </h2>
-                            <div className={cn("badge-industrial ml-auto", getBadgeStyle(selected.stability_label))}>
-                                {selected.stability_label}
+
+                            <div className="flex flex-col items-end gap-3 ml-4 flex-shrink-0">
+                                <div className={cn("badge-industrial", getBadgeStyle(selected.stability_label))}>
+                                    {selected.stability_label}
+                                </div>
+                                <div className="flex flex-col gap-2 items-stretch">
+                                    <button
+                                        onClick={() => {
+                                            setScraperMode('APPEND');
+                                            setIngestModel(selectedOption);
+                                            setIsScraperOpen(true);
+                                        }}
+                                        className="text-[10px] uppercase font-black tracking-widest bg-[#75aadb] text-white border-2 border-transparent px-4 py-2 hover:bg-white hover:text-[#75aadb] hover:border-[#75aadb] transition-all flex items-center gap-2 whitespace-nowrap"
+                                    >
+                                        <ClipboardList size={14} /> Cargar Más Publicaciones
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Variant Selection */}
-                        <div className="flex flex-wrap gap-2 mb-8">
-                            {groupedModels[activeParent]?.length > 1 && (
+                        {activeVariants.length > 1 ? (
+                            <div className="flex flex-wrap gap-2">
                                 <button
-                                    onClick={() => setSelectedModel('__GLOBAL__')}
+                                    onClick={() => setSelectedVariant('__GLOBAL__')}
                                     className={cn(
                                         "px-2 py-0.5 text-[10px] font-black uppercase tracking-widest transition-all border",
                                         isGlobalView
@@ -406,62 +673,66 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
                                 >
                                     Vista Global
                                 </button>
-                            )}
-                            {groupedModels[activeParent]?.map((variant) => {
-                                const isActive = !isGlobalView && variant.model === selectedModel;
-                                const rawShortName = variant.model.replace(activeParent, '').trim();
-                                const shortName = rawShortName || 'Base';
+                                {activeVariants.map((variant) => {
+                                    const isActive = !isGlobalView && variant.model === selectedVariant;
+                                    const rawShortName = variant.model.replace(selectedOption, '').trim();
+                                    const shortName = rawShortName || variant.model;
 
-                                return (
-                                    <button
-                                        key={variant.model}
-                                        onClick={() => setSelectedModel(variant.model)}
-                                        className={cn(
-                                            "px-2 py-0.5 text-[10px] font-black uppercase tracking-widest transition-all border",
-                                            isActive
-                                                ? "bg-primary text-white border-primary"
-                                                : "bg-transparent text-muted hover:text-foreground border-border"
-                                        )}
-                                    >
-                                        {shortName}
-                                    </button>
-                                );
-                            })}
+                                    return (
+                                        <button
+                                            key={variant.model}
+                                            onClick={() => setSelectedVariant(variant.model)}
+                                            className={cn(
+                                                "px-2 py-0.5 text-[10px] font-black uppercase tracking-widest transition-all border flex items-center gap-1",
+                                                isActive
+                                                    ? "bg-primary text-white border-primary"
+                                                    : variant.isManual
+                                                        ? "bg-amber-50 text-amber-700 hover:bg-amber-100 border-amber-300"
+                                                        : "bg-transparent text-muted hover:text-foreground border-border"
+                                            )}
+                                        >
+                                            {shortName} {variant.isManual && <ClipboardList size={10} />}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        ) : (
+                            <div className="mb-4"></div>
+                        )}
+                    </div>
+
+                    {/* Compact Metrics Grid */}
+                    <div className="grid grid-cols-4 gap-4 pb-8 border-b border-border/50">
+                        <div>
+                            <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Confianza (R²)</div>
+                            <div className="text-2xl font-black text-foreground">
+                                {(selected.r2 * 100).toFixed(0)}<span className="text-sm text-muted opacity-50">%</span>
+                            </div>
                         </div>
-
-                        {/* Compact Metrics Grid */}
-                        <div className="grid grid-cols-4 gap-4 pb-8 border-b border-border/50">
+                        <div>
+                            <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Ensemble Weights</div>
+                            <div className="text-xs font-black text-foreground flex flex-col justify-center h-8">
+                                {selected.weights ? (
+                                    <>
+                                        <span>Lin: {(selected.weights.linear).toFixed(2)}</span>
+                                        <span>Exp: {(selected.weights.exponential).toFixed(2)}</span>
+                                    </>
+                                ) : (
+                                    <span className="text-muted/50">N/A</span>
+                                )}
+                            </div>
+                        </div>
+                        <div className="col-span-2 grid grid-cols-2 gap-4">
                             <div>
-                                <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Confianza (R²)</div>
-                                <div className="text-2xl font-black text-foreground">
-                                    {(selected.r2 * 100).toFixed(0)}<span className="text-sm text-muted opacity-50">%</span>
+                                <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Depreciación Temporal</div>
+                                <div className="text-xl font-black text-foreground whitespace-nowrap">
+                                    -${Math.abs(Math.round(selected.depreciation_per_year)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/año</span>
                                 </div>
                             </div>
                             <div>
-                                <div className="text-muted text-[10px] font-black uppercase tracking-widest mb-0.5">Ensemble Weights</div>
-                                <div className="text-xs font-black text-foreground flex flex-col justify-center h-8">
-                                    {selected.weights ? (
-                                        <>
-                                            <span>Lin: {(selected.weights.linear).toFixed(2)}</span>
-                                            <span>Exp: {(selected.weights.exponential).toFixed(2)}</span>
-                                        </>
-                                    ) : (
-                                        <span className="text-muted/50">N/A</span>
-                                    )}
-                                </div>
-                            </div>
-                            <div className="col-span-2 grid grid-cols-2 gap-4">
-                                <div>
-                                    <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Depreciación Temporal</div>
-                                    <div className="text-xl font-black text-foreground whitespace-nowrap">
-                                        -${Math.abs(Math.round(selected.depreciation_per_year)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/año</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Desgaste Operativo</div>
-                                    <div className="text-xl font-black text-foreground whitespace-nowrap">
-                                        -${Math.abs(Math.round(selected.depreciation_per_10k_km)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/10k KM</span>
-                                    </div>
+                                <div className="text-muted text-[9px] font-black uppercase tracking-widest mb-0.5 whitespace-nowrap">Desgaste Operativo</div>
+                                <div className="text-xl font-black text-foreground whitespace-nowrap">
+                                    -${Math.abs(Math.round(selected.depreciation_per_10k_km)).toLocaleString()}<span className="text-[10px] text-muted ml-1">USD/10k KM</span>
                                 </div>
                             </div>
                         </div>
@@ -690,6 +961,14 @@ export function Dashboard({ data, zeroKmData, scatterData }: DashboardProps) {
                 </div>
 
             </main>
+
+            {/* Close dropdowns when clicking outside roughly */}
+            {isDropdownOpen && (
+                <div
+                    className="fixed inset-0 z-40 bg-transparent"
+                    onClick={() => setIsDropdownOpen(false)}
+                />
+            )}
         </div>
     );
 }

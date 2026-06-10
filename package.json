@@ -8,13 +8,19 @@
     "start": "next start",
     "lint": "eslint",
     "predeploy": "npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
-    "deploy": "gh-pages -d out --dotfiles -t"
+    "deploy": "gh-pages -d out --dotfiles -t",
+    "importer": "tsx lib/importer_server.ts",
+    "pipeline": "tsx lib/pipeline.ts"
   },
   "dependencies": {
+    "@types/express": "^5.0.6",
     "cheerio": "^1.1.2",
+    "express": "^5.2.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "puppeteer": "^24.35.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "recharts": "^3.6.0",
@@ -29,6 +35,8 @@
     "eslint-config-next": "16.1.1",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
     "typescript": "^5"
   }
 }

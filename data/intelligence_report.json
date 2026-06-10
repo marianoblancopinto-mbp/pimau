@@ -1,74 +1,13 @@
 [
   {
-    "model": "RENAULT DUSTER",
-    "count": 10,
-    "depreciation_per_year": -1175.67537527654,
-    "depreciation_per_10k_km": -122.16680723386791,
-    "coefficients": {
-      "intercept": 24899.05022528994,
-      "year": -1175.67537527654,
-      "km": -0.012216680723386792
-    },
-    "exponential_coefficients": {
-      "intercept": 10.214042896244088,
-      "year": -0.07680814774524365,
-      "km": -0.0000013189607270092658
-    },
-    "r2": 0.9865433194927198,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 2,
-        "avg_price": 19078
-      },
-      {
-        "range": "50k-100k km",
-        "count": 3,
-        "avg_price": 11423
-      },
-      {
-        "range": "100k-150k km",
-        "count": 4,
-        "avg_price": 9839
-      },
-      {
-        "range": "150k-200k km",
-        "count": 1,
-        "avg_price": 7200
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2012,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 1002,
-      "max": 178000
-    },
-    "fair_price_new": 27283.649879483706,
-    "fair_price_5yo_100k": 16286.732280458311,
-    "resilience_score": 185.51181594782105,
-    "stability_label": "💎 Platinum"
-  },
-  {
     "model": "CHEVROLET TRACKER",
     "count": 11,
-    "depreciation_per_year": -880.04227373576,
-    "depreciation_per_10k_km": -337.1837964172067,
+    "depreciation_per_year": -623.6780675577825,
+    "depreciation_per_10k_km": -291.87314633449773,
     "coefficients": {
-      "intercept": 24698.293896177598,
-      "year": -880.04227373576,
-      "km": -0.03371837964172067
+      "intercept": 22112.90122138919,
+      "year": -623.6780675577825,
+      "km": -0.02918731463344977
     },
     "exponential_coefficients": {
       "intercept": 10.157752073274043,
@@ -118,29 +57,29 @@
     },
     "fair_price_new": 25790.257241024163,
     "fair_price_5yo_100k": 15961.795108562137,
-    "resilience_score": 169.4716766890768,
+    "resilience_score": 186.07940287904466,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "JEEP RENEGADE",
     "count": 11,
-    "depreciation_per_year": -1464.5599099505894,
-    "depreciation_per_10k_km": -27.618235397619184,
+    "depreciation_per_year": -976.9902708742001,
+    "depreciation_per_10k_km": -317.5176257468935,
     "coefficients": {
-      "intercept": 27395.068313553977,
-      "year": -1464.5599099505894,
-      "km": -0.0027618235397619184
+      "intercept": 25681.20389168215,
+      "year": -976.9902708742001,
+      "km": -0.03175176257468935
     },
     "exponential_coefficients": {
       "intercept": 10.36188858940693,
       "year": -0.08773403321237505,
       "km": -3.312002544720274e-7
     },
-    "r2": 0.8760241820082728,
+    "r2": 0.8500671984753401,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 1,
-      "exponential": 0
+      "linear": 0.433501781489742,
+      "exponential": 0.5664982185102581
     },
     "buckets": [
       {
@@ -177,27 +116,27 @@
       "min": 35004,
       "max": 115000
     },
-    "fair_price_new": 27395.068313553977,
-    "fair_price_5yo_100k": 19796.08640982484,
-    "resilience_score": 173.33140786953055,
+    "fair_price_new": 29051.674984760597,
+    "fair_price_5yo_100k": 18818.044725234664,
+    "resilience_score": 139.3754632634923,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "FORD ECOSPORT",
     "count": 15,
-    "depreciation_per_year": -749.8560873916683,
-    "depreciation_per_10k_km": -261.0019784337144,
+    "depreciation_per_year": -644.1878392402834,
+    "depreciation_per_10k_km": -329.5872089202207,
     "coefficients": {
-      "intercept": 21963.560563112118,
-      "year": -749.8560873916683,
-      "km": -0.02610019784337144
+      "intercept": 21571.236060093444,
+      "year": -644.1878392402834,
+      "km": -0.03295872089202207
     },
     "exponential_coefficients": {
       "intercept": 10.407417423151063,
       "year": -0.06812427048467616,
       "km": -0.0000036824834351349146
     },
-    "r2": 0.9216777103943576,
+    "r2": 0.9180591428829714,
     "modelType": "ENSEMBLE",
     "weights": {
       "linear": 1,
@@ -238,81 +177,20 @@
       "min": 57273,
       "max": 195000
     },
-    "fair_price_new": 21963.560563112118,
-    "fair_price_5yo_100k": 15604.26034181663,
-    "resilience_score": 207.12062426896009,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "TOYOTA COROLLA CROSS",
-    "count": 59,
-    "depreciation_per_year": -1073.8911432112304,
-    "depreciation_per_10k_km": -568.9364689561859,
-    "coefficients": {
-      "intercept": 36552.44074192791,
-      "year": -1073.8911432112304,
-      "km": -0.056893646895618585
-    },
-    "exponential_coefficients": {
-      "intercept": 10.51139785621556,
-      "year": -0.033230991609562166,
-      "km": -0.0000018589205924305585
-    },
-    "r2": 0.5218839848840255,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 42,
-        "avg_price": 31767
-      },
-      {
-        "range": "50k-100k km",
-        "count": 17,
-        "avg_price": 28727
-      },
-      {
-        "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2021,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 1000,
-      "max": 86000
-    },
-    "fair_price_new": 36731.789433757745,
-    "fair_price_5yo_100k": 25831.522796609213,
-    "resilience_score": 119.10332055662406,
+    "fair_price_new": 21571.236060093444,
+    "fair_price_5yo_100k": 15054.424774689822,
+    "resilience_score": 172.3824690733666,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "HONDA HR-V",
     "count": 38,
-    "depreciation_per_year": -1058.6420960645955,
-    "depreciation_per_10k_km": -336.7298210329505,
+    "depreciation_per_year": -1076.9184437468846,
+    "depreciation_per_10k_km": -268.8456716057798,
     "coefficients": {
-      "intercept": 32572.445326430003,
-      "year": -1058.6420960645955,
-      "km": -0.03367298210329505
+      "intercept": 32287.085680744225,
+      "year": -1076.9184437468846,
+      "km": -0.02688456716057798
     },
     "exponential_coefficients": {
       "intercept": 10.478421225188093,
@@ -362,29 +240,29 @@
     },
     "fair_price_new": 35540.2531693614,
     "fair_price_5yo_100k": 23749.218843640097,
-    "resilience_score": 152.08601235745928,
+    "resilience_score": 139.15238578842698,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "NISSAN KICKS",
     "count": 46,
-    "depreciation_per_year": -617.4527531905643,
-    "depreciation_per_10k_km": -268.3993874353032,
+    "depreciation_per_year": -561.8079129693298,
+    "depreciation_per_10k_km": -273.7676629767479,
     "coefficients": {
-      "intercept": 24562.560228715047,
-      "year": -617.4527531905643,
-      "km": -0.02683993874353032
+      "intercept": 24232.44025268125,
+      "year": -561.8079129693298,
+      "km": -0.027376766297674788
     },
     "exponential_coefficients": {
       "intercept": 10.142012714112091,
       "year": -0.03238347143822253,
       "km": -0.0000014794050664746378
     },
-    "r2": 0.48665806648137677,
+    "r2": 0.4865837243656319,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.182504085098674,
-      "exponential": 0.817495914901326
+      "linear": 0,
+      "exponential": 1
     },
     "buckets": [
       {
@@ -421,31 +299,31 @@
       "min": 25149,
       "max": 150000
     },
-    "fair_price_new": 25236.95566954255,
-    "fair_price_5yo_100k": 18653.749332337866,
-    "resilience_score": 228.22447269546151,
+    "fair_price_new": 25387.51290252615,
+    "fair_price_5yo_100k": 18623.04088389911,
+    "resilience_score": 202.53136819112268,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "FORD TERRITORY",
     "count": 12,
-    "depreciation_per_year": -2063.531493056493,
-    "depreciation_per_10k_km": -651.5906295865376,
+    "depreciation_per_year": -2613.5131307967245,
+    "depreciation_per_10k_km": -390.6650253156859,
     "coefficients": {
-      "intercept": 36231.80990266053,
-      "year": -2063.531493056493,
-      "km": -0.06515906295865376
+      "intercept": 36785.41162317129,
+      "year": -2613.5131307967245,
+      "km": -0.03906650253156859
     },
     "exponential_coefficients": {
       "intercept": 10.522562380129195,
       "year": -0.07445074417526322,
       "km": -0.0000024935774839900734
     },
-    "r2": 0.9724687326309113,
+    "r2": 0.9724594578161095,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.0683362755865757,
-      "exponential": 0.9316637244134243
+      "linear": 0.015508174482488457,
+      "exponential": 0.9844918255175116
     },
     "buckets": [
       {
@@ -482,20 +360,20 @@
       "min": 1003,
       "max": 79329
     },
-    "fair_price_new": 37081.8321791182,
-    "fair_price_5yo_100k": 19911.672339467936,
-    "resilience_score": 78.24500209447297,
-    "stability_label": "🥈 Silver"
+    "fair_price_new": 37138.61631964572,
+    "fair_price_5yo_100k": 19947.18922431159,
+    "resilience_score": 66.18179160726281,
+    "stability_label": "🥉 Bronze"
   },
   {
     "model": "TOYOTA SW4",
     "count": 31,
-    "depreciation_per_year": -1108.209272743596,
-    "depreciation_per_10k_km": -763.037595376659,
+    "depreciation_per_year": -1580.3527263666606,
+    "depreciation_per_10k_km": -333.2076566797264,
     "coefficients": {
-      "intercept": 57887.80927520777,
-      "year": -1108.209272743596,
-      "km": -0.07630375953766591
+      "intercept": 55000.31593922536,
+      "year": -1580.3527263666606,
+      "km": -0.033320765667972645
     },
     "exponential_coefficients": {
       "intercept": 11.05038994077572,
@@ -549,147 +427,25 @@
     "stability_label": "🥇 Gold"
   },
   {
-    "model": "JEEP COMPASS",
-    "count": 11,
-    "depreciation_per_year": -1152.5738910565622,
-    "depreciation_per_10k_km": -282.761533443206,
-    "coefficients": {
-      "intercept": 31528.590704475468,
-      "year": -1152.5738910565622,
-      "km": -0.0282761533443206
-    },
-    "exponential_coefficients": {
-      "intercept": 10.373258783180837,
-      "year": -0.045042633183322627,
-      "km": -0.000001208616919899691
-    },
-    "r2": 0.7744872544714606,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 2,
-        "avg_price": 27067
-      },
-      {
-        "range": "50k-100k km",
-        "count": 9,
-        "avg_price": 22311
-      },
-      {
-        "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2017,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 10197,
-      "max": 97158
-    },
-    "fair_price_new": 31992.564108845978,
-    "fair_price_5yo_100k": 22633.444245891646,
-    "resilience_score": 153.3257160673204,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "RENAULT KARDIAN",
-    "count": 17,
-    "depreciation_per_year": -839.1516048210207,
-    "depreciation_per_10k_km": -798.4062757678373,
-    "coefficients": {
-      "intercept": 23811.784492281302,
-      "year": -839.1516048210207,
-      "km": -0.07984062757678373
-    },
-    "exponential_coefficients": {
-      "intercept": 10.068209596135896,
-      "year": -0.03419092612516187,
-      "km": -0.0000035650669182843062
-    },
-    "r2": 0.14611673392429603,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0.9336371784623749,
-      "exponential": 0.06636282153762507
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 17,
-        "avg_price": 22172
-      },
-      {
-        "range": "50k-100k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2024,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 800,
-      "max": 38000
-    },
-    "fair_price_new": 23796.48934816162,
-    "fair_price_5yo_100k": 11783.49608041728,
-    "resilience_score": 108.14134750803692,
-    "stability_label": "🥇 Gold"
-  },
-  {
     "model": "HYUNDAI TUCSON",
     "count": 19,
-    "depreciation_per_year": -1165.7792555402934,
-    "depreciation_per_10k_km": -595.7142450967236,
+    "depreciation_per_year": -883.615358406482,
+    "depreciation_per_10k_km": -877.0750484756235,
     "coefficients": {
-      "intercept": 36833.01390243014,
-      "year": -1165.7792555402934,
-      "km": -0.059571424509672365
+      "intercept": 37205.12691150298,
+      "year": -883.615358406482,
+      "km": -0.08770750484756235
     },
     "exponential_coefficients": {
       "intercept": 10.868628581505039,
       "year": -0.08115408293260666,
       "km": -0.000002369262211787991
     },
-    "r2": 0.8606395992731768,
+    "r2": 0.8611183788671354,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.550635789461522,
-      "exponential": 0.44936421053847797
+      "linear": 0.35759222962009474,
+      "exponential": 0.6424077703799053
     },
     "buckets": [
       {
@@ -726,264 +482,20 @@
       "min": 41700,
       "max": 156907
     },
-    "fair_price_new": 43874.61541752313,
-    "fair_price_5yo_100k": 26198.689937128573,
-    "resilience_score": 111.75444626230542,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN TAOS",
-    "count": 21,
-    "depreciation_per_year": -1242.1930155363414,
-    "depreciation_per_10k_km": -543.6504014375906,
-    "coefficients": {
-      "intercept": 35033.551305519715,
-      "year": -1242.1930155363414,
-      "km": -0.054365040143759064
-    },
-    "exponential_coefficients": {
-      "intercept": 10.449861034462598,
-      "year": -0.037072147772187376,
-      "km": -0.0000019036207267357424
-    },
-    "r2": 0.49286896435438754,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 8,
-        "avg_price": 30549
-      },
-      {
-        "range": "50k-100k km",
-        "count": 11,
-        "avg_price": 25935
-      },
-      {
-        "range": "100k-150k km",
-        "count": 2,
-        "avg_price": 25291
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2021,
-      "max": 2026
-    },
-    "kmRange": {
-      "min": 0,
-      "max": 126000
-    },
-    "fair_price_new": 34539.57456521712,
-    "fair_price_5yo_100k": 23721.526901188277,
-    "resilience_score": 113.08398600058219,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN NIVUS",
-    "count": 18,
-    "depreciation_per_year": -628.7993971114934,
-    "depreciation_per_10k_km": -339.3199081446265,
-    "coefficients": {
-      "intercept": 24832.72591612596,
-      "year": -628.7993971114934,
-      "km": -0.033931990814462645
-    },
-    "exponential_coefficients": {
-      "intercept": 10.141495984314723,
-      "year": -0.031172606203117334,
-      "km": -0.0000017151276775846643
-    },
-    "r2": 0.44970751502204653,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 8,
-        "avg_price": 22135
-      },
-      {
-        "range": "50k-100k km",
-        "count": 9,
-        "avg_price": 19522
-      },
-      {
-        "range": "100k-150k km",
-        "count": 1,
-        "avg_price": 17726
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2020,
-      "max": 2026
-    },
-    "kmRange": {
-      "min": 0,
-      "max": 140000
-    },
-    "fair_price_new": 25374.39780690051,
-    "fair_price_5yo_100k": 18290.191024606367,
-    "resilience_score": 201.4842783126372,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN TIGUAN",
-    "count": 90,
-    "depreciation_per_year": -1272.464654356507,
-    "depreciation_per_10k_km": -574.2928855497402,
-    "coefficients": {
-      "intercept": 42222.81448701295,
-      "year": -1272.464654356507,
-      "km": -0.05742928855497401
-    },
-    "exponential_coefficients": {
-      "intercept": 10.834286970150423,
-      "year": -0.060145654905265425,
-      "km": -0.000002195608652466537
-    },
-    "r2": 0.7081853018062982,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 3,
-        "avg_price": 32307
-      },
-      {
-        "range": "50k-100k km",
-        "count": 28,
-        "avg_price": 30390
-      },
-      {
-        "range": "100k-150k km",
-        "count": 34,
-        "avg_price": 22235
-      },
-      {
-        "range": "150k-200k km",
-        "count": 16,
-        "avg_price": 19210
-      },
-      {
-        "range": "200k+ km",
-        "count": 9,
-        "avg_price": 15018
-      }
-    ],
-    "yearRange": {
-      "min": 2009,
-      "max": 2024
-    },
-    "kmRange": {
-      "min": 26000,
-      "max": 250000
-    },
-    "fair_price_new": 50730.72237952801,
-    "fair_price_5yo_100k": 30151.737540961847,
-    "resilience_score": 108.80750090121587,
-    "stability_label": "🥇 Gold"
-  },
-  {
-    "model": "VOLKSWAGEN T-CROSS",
-    "count": 28,
-    "depreciation_per_year": -780.6422380370586,
-    "depreciation_per_10k_km": -464.10080379535606,
-    "coefficients": {
-      "intercept": 27740.952975142016,
-      "year": -780.6422380370586,
-      "km": -0.046410080379535604
-    },
-    "exponential_coefficients": {
-      "intercept": 10.248387353243052,
-      "year": -0.03695475739747469,
-      "km": -0.0000020086692297872176
-    },
-    "r2": 0.785897767943156,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 1,
-      "exponential": 0
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 17,
-        "avg_price": 25231
-      },
-      {
-        "range": "50k-100k km",
-        "count": 9,
-        "avg_price": 19214
-      },
-      {
-        "range": "100k-150k km",
-        "count": 2,
-        "avg_price": 19150
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2019,
-      "max": 2026
-    },
-    "kmRange": {
-      "min": 0,
-      "max": 117307
-    },
-    "fair_price_new": 27740.952975142016,
-    "fair_price_5yo_100k": 19196.73374700316,
-    "resilience_score": 154.15594995627987,
-    "stability_label": "💎 Platinum"
+    "fair_price_new": 47032.7003590764,
+    "fair_price_5yo_100k": 26324.8965647602,
+    "resilience_score": 85.176945325543,
+    "stability_label": "🥈 Silver"
   },
   {
     "model": "PEUGEOT 2008",
     "count": 19,
-    "depreciation_per_year": -1875.5472943123912,
-    "depreciation_per_10k_km": -229.9443567824024,
+    "depreciation_per_year": -2308.6357058393032,
+    "depreciation_per_10k_km": 247.994212444292,
     "coefficients": {
-      "intercept": 28788.818830085514,
-      "year": -1875.5472943123912,
-      "km": -0.02299443567824024
+      "intercept": 28277.424022199164,
+      "year": -2308.6357058393032,
+      "km": 0.0247994212444292
     },
     "exponential_coefficients": {
       "intercept": 10.2725782527015,
@@ -1033,29 +545,29 @@
     },
     "fair_price_new": 28928.3757629741,
     "fair_price_5yo_100k": 14380.691532512506,
-    "resilience_score": 112.79625965394607,
-    "stability_label": "💎 Platinum"
+    "resilience_score": 80.10941698426474,
+    "stability_label": "🥈 Silver"
   },
   {
     "model": "HONDA CR-V",
     "count": 23,
-    "depreciation_per_year": -1843.3898105619628,
-    "depreciation_per_10k_km": -233.8831502798675,
+    "depreciation_per_year": -1702.7051585196155,
+    "depreciation_per_10k_km": -286.51269323603674,
     "coefficients": {
-      "intercept": 46886.65554499603,
-      "year": -1843.3898105619628,
-      "km": -0.023388315027986748
+      "intercept": 45462.26767538341,
+      "year": -1702.7051585196155,
+      "km": -0.02865126932360367
     },
     "exponential_coefficients": {
       "intercept": 11.033232701374299,
       "year": -0.07546525652272972,
       "km": -0.000001925925751762978
     },
-    "r2": 0.9832047466939295,
+    "r2": 0.9832039575589894,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.013803588812409872,
-      "exponential": 0.9861964111875902
+      "linear": 0.01270329421490918,
+      "exponential": 0.9872967057850908
     },
     "buckets": [
       {
@@ -1092,20 +604,20 @@
       "min": 35000,
       "max": 298000
     },
-    "fair_price_new": 61690.1518791122,
-    "fair_price_5yo_100k": 35011.833936607414,
-    "resilience_score": 113.98124301600676,
-    "stability_label": "💎 Platinum"
+    "fair_price_new": 61688.57365066072,
+    "fair_price_5yo_100k": 34995.63367280031,
+    "resilience_score": 98.72733152308763,
+    "stability_label": "🥇 Gold"
   },
   {
     "model": "KIA SORENTO",
     "count": 92,
-    "depreciation_per_year": -1393.952606359906,
-    "depreciation_per_10k_km": -288.8426993414152,
+    "depreciation_per_year": -1444.0946356175002,
+    "depreciation_per_10k_km": -303.7867857077123,
     "coefficients": {
-      "intercept": 41541.54493982123,
-      "year": -1393.952606359906,
-      "km": -0.028884269934141518
+      "intercept": 42278.24968203831,
+      "year": -1444.0946356175002,
+      "km": -0.030378678570771228
     },
     "exponential_coefficients": {
       "intercept": 11.028681148886625,
@@ -1155,29 +667,29 @@
     },
     "fair_price_new": 61616.264507700216,
     "fair_price_5yo_100k": 35775.23197429189,
-    "resilience_score": 133.60893108975216,
-    "stability_label": "💎 Platinum"
+    "resilience_score": 109.50932670421099,
+    "stability_label": "🥇 Gold"
   },
   {
     "model": "PEUGEOT 5008",
     "count": 26,
-    "depreciation_per_year": -2506.91455425915,
-    "depreciation_per_10k_km": -494.8465926537822,
+    "depreciation_per_year": -2290.407417117216,
+    "depreciation_per_10k_km": -599.0002710016214,
     "coefficients": {
-      "intercept": 47496.26296173982,
-      "year": -2506.91455425915,
-      "km": -0.04948465926537822
+      "intercept": 46342.865936533955,
+      "year": -2290.407417117216,
+      "km": -0.059900027100162144
     },
     "exponential_coefficients": {
       "intercept": 11.13522232085526,
       "year": -0.13766697841284364,
       "km": -0.0000011326271067397628
     },
-    "r2": 0.8963467534261135,
+    "r2": 0.8951976128153276,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.6931419929787914,
-      "exponential": 0.3068580070212086
+      "linear": 0.6580610380587969,
+      "exponential": 0.3419389619412031
     },
     "buckets": [
       {
@@ -1214,88 +726,27 @@
       "min": 5500,
       "max": 160000
     },
-    "fair_price_new": 53954.74381651341,
-    "fair_price_5yo_100k": 30239.115844199507,
-    "resilience_score": 75.33828955670458,
-    "stability_label": "🥈 Silver"
+    "fair_price_new": 53934.09164749403,
+    "fair_price_5yo_100k": 29532.91460365765,
+    "resilience_score": 64.40668826740658,
+    "stability_label": "🥉 Bronze"
   },
   {
-    "model": "TOYOTA COROLLA CROSS SEG",
-    "count": 12,
-    "depreciation_per_year": -1771.3050703881615,
-    "depreciation_per_10k_km": -297.84361436722713,
+    "model": "JEEP COMPASS SPORT",
+    "count": 60,
+    "depreciation_per_year": -1572.6653760001159,
+    "depreciation_per_10k_km": -267.42894363832437,
     "coefficients": {
-      "intercept": 38180.662601355056,
-      "year": -1771.3050703881615,
-      "km": -0.029784361436722716
+      "intercept": 34592.08957778027,
+      "year": -1572.6653760001159,
+      "km": -0.026742894363832436
     },
     "exponential_coefficients": {
-      "intercept": 10.564187808983275,
-      "year": -0.056130842389025826,
-      "km": -9.252843220506862e-7
+      "intercept": 10.517074138295014,
+      "year": -0.06735846802889324,
+      "km": -9.57387593041666e-7
     },
-    "r2": 0.7719339853465677,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 1,
-      "exponential": 0
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 10,
-        "avg_price": 30713
-      },
-      {
-        "range": "50k-100k km",
-        "count": 2,
-        "avg_price": 29382
-      },
-      {
-        "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2021,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 7000,
-      "max": 86000
-    },
-    "fair_price_new": 38180.662601355056,
-    "fair_price_5yo_100k": 26345.701105741977,
-    "resilience_score": 111.2924813685865,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "TOYOTA COROLLA CROSS XEI HYBRID",
-    "count": 18,
-    "depreciation_per_year": -734.1352723396378,
-    "depreciation_per_10k_km": -551.4002504194467,
-    "coefficients": {
-      "intercept": 34618.6368403628,
-      "year": -734.1352723396378,
-      "km": -0.055140025041944665
-    },
-    "exponential_coefficients": {
-      "intercept": 10.452163086324964,
-      "year": -0.022774817440540326,
-      "km": -0.0000017886007386623817
-    },
-    "r2": 0.5431704036537919,
+    "r2": 0.7195334871870134,
     "modelType": "ENSEMBLE",
     "weights": {
       "linear": 0,
@@ -1304,23 +755,23 @@
     "buckets": [
       {
         "range": "0-50k km",
-        "count": 11,
-        "avg_price": 31386
+        "count": 10,
+        "avg_price": 26384
       },
       {
         "range": "50k-100k km",
-        "count": 7,
-        "avg_price": 28790
+        "count": 33,
+        "avg_price": 23131
       },
       {
         "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
+        "count": 16,
+        "avg_price": 20502
       },
       {
         "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
+        "count": 1,
+        "avg_price": 22000
       },
       {
         "range": "200k+ km",
@@ -1329,34 +780,95 @@
       }
     ],
     "yearRange": {
-      "min": 2021,
-      "max": 2025
+      "min": 2018,
+      "max": 2024
     },
     "kmRange": {
-      "min": 1000,
-      "max": 86000
+      "min": 14300,
+      "max": 150000
     },
-    "fair_price_new": 34619.178047688314,
-    "fair_price_5yo_100k": 25833.539964212694,
-    "resilience_score": 143.40645448581444,
-    "stability_label": "💎 Platinum"
+    "fair_price_new": 36940.882305510146,
+    "fair_price_5yo_100k": 23969.633535489636,
+    "resilience_score": 106.60703389972797,
+    "stability_label": "🥇 Gold"
   },
   {
-    "model": "TOYOTA COROLLA CROSS SEG HYBRID",
-    "count": 20,
-    "depreciation_per_year": -1183.5004411369175,
-    "depreciation_per_10k_km": -418.5820426618711,
+    "model": "JEEP COMPASS LONGITUDE",
+    "count": 75,
+    "depreciation_per_year": -1180.4108169797048,
+    "depreciation_per_10k_km": -447.2836578852921,
     "coefficients": {
-      "intercept": 37855.5006353219,
-      "year": -1183.5004411369175,
-      "km": -0.04185820426618711
+      "intercept": 36072.018851896624,
+      "year": -1180.4108169797048,
+      "km": -0.044728365788529206
     },
     "exponential_coefficients": {
-      "intercept": 10.548256849519259,
-      "year": -0.035567720705863934,
-      "km": -0.00000132910991823555
+      "intercept": 10.513699848161986,
+      "year": -0.044282940499236235,
+      "km": -0.0000016202576164232757
     },
-    "r2": 0.6405169107363209,
+    "r2": 0.718920785294966,
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "buckets": [
+      {
+        "range": "0-50k km",
+        "count": 12,
+        "avg_price": 29683
+      },
+      {
+        "range": "50k-100k km",
+        "count": 35,
+        "avg_price": 24100
+      },
+      {
+        "range": "100k-150k km",
+        "count": 26,
+        "avg_price": 22107
+      },
+      {
+        "range": "150k-200k km",
+        "count": 2,
+        "avg_price": 18500
+      },
+      {
+        "range": "200k+ km",
+        "count": 0,
+        "avg_price": 0
+      }
+    ],
+    "yearRange": {
+      "min": 2017,
+      "max": 2024
+    },
+    "kmRange": {
+      "min": 16000,
+      "max": 168000
+    },
+    "fair_price_new": 36816.4431158765,
+    "fair_price_5yo_100k": 25090.871758739282,
+    "resilience_score": 108.27911891043038,
+    "stability_label": "🥇 Gold"
+  },
+  {
+    "model": "JEEP COMPASS LIMITED",
+    "count": 39,
+    "depreciation_per_year": -937.064210615202,
+    "depreciation_per_10k_km": -377.14115336649013,
+    "coefficients": {
+      "intercept": 36104.41195615301,
+      "year": -937.064210615202,
+      "km": -0.037714115336649014
+    },
+    "exponential_coefficients": {
+      "intercept": 10.560461324173298,
+      "year": -0.041934482022000875,
+      "km": -0.0000011386515063228117
+    },
+    "r2": 0.598553716292324,
     "modelType": "ENSEMBLE",
     "weights": {
       "linear": 1,
@@ -1365,23 +877,23 @@
     "buckets": [
       {
         "range": "0-50k km",
-        "count": 15,
-        "avg_price": 33763
+        "count": 9,
+        "avg_price": 30818
       },
       {
         "range": "50k-100k km",
-        "count": 5,
-        "avg_price": 30242
+        "count": 22,
+        "avg_price": 27115
       },
       {
         "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
+        "count": 7,
+        "avg_price": 24423
       },
       {
         "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
+        "count": 1,
+        "avg_price": 23000
       },
       {
         "range": "200k+ km",
@@ -1390,38 +902,38 @@
       }
     ],
     "yearRange": {
-      "min": 2021,
-      "max": 2025
+      "min": 2017,
+      "max": 2023
     },
     "kmRange": {
-      "min": 2000,
-      "max": 84000
+      "min": 32600,
+      "max": 165000
     },
-    "fair_price_new": 37855.5006353219,
-    "fair_price_5yo_100k": 27752.1780030186,
-    "resilience_score": 130.36723459044703,
+    "fair_price_new": 36104.41195615301,
+    "fair_price_5yo_100k": 27647.679369412097,
+    "resilience_score": 132.83901416303277,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "PEUGEOT 5008 ALLURE PLUS",
     "count": 15,
-    "depreciation_per_year": -2555.1562326149947,
-    "depreciation_per_10k_km": -326.9114308768569,
+    "depreciation_per_year": -2021.3089559259568,
+    "depreciation_per_10k_km": -683.1885927517808,
     "coefficients": {
-      "intercept": 46640.72561453874,
-      "year": -2555.1562326149947,
-      "km": -0.03269114308768569
+      "intercept": 45070.246558792336,
+      "year": -2021.3089559259568,
+      "km": -0.06831885927517808
     },
     "exponential_coefficients": {
       "intercept": 11.123807584663844,
       "year": -0.12470301550632129,
       "km": -0.00000179642825385903
     },
-    "r2": 0.8776638186966403,
+    "r2": 0.8676144299572288,
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.9302903211681153,
-      "exponential": 0.06970967883188472
+      "linear": 0.7148298278032683,
+      "exponential": 0.2851701721967317
     },
     "buckets": [
       {
@@ -1458,203 +970,20 @@
       "min": 25000,
       "max": 160000
     },
-    "fair_price_new": 48113.32255264676,
-    "fair_price_5yo_100k": 30578.900507277656,
-    "resilience_score": 82.09104472259418,
-    "stability_label": "🥈 Silver"
-  },
-  {
-    "model": "PEUGEOT 5008 ALLURE",
-    "count": 7,
-    "depreciation_per_year": -2138.0323504327703,
-    "depreciation_per_10k_km": -62.71478579608561,
-    "coefficients": {
-      "intercept": 37853.74281443838,
-      "year": -2138.0323504327703,
-      "km": -0.00627147857960856
-    },
-    "exponential_coefficients": {
-      "intercept": 11.237001495428453,
-      "year": -0.14939938289212606,
-      "km": -0.0000013584255756763487
-    },
-    "r2": 0.8673369854544241,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0.769419590380916,
-      "exponential": 0.230580409619084
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "50k-100k km",
-        "count": 2,
-        "avg_price": 15300
-      },
-      {
-        "range": "100k-150k km",
-        "count": 4,
-        "avg_price": 17173
-      },
-      {
-        "range": "150k-200k km",
-        "count": 1,
-        "avg_price": 8696
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2012,
-      "max": 2019
-    },
-    "kmRange": {
-      "min": 80000,
-      "max": 160000
-    },
-    "fair_price_new": 46623.48126629283,
-    "fair_price_5yo_100k": 27654.97260542858,
-    "resilience_score": 116.38298121402578,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN TAOS COMFORTLINE",
-    "count": 11,
-    "depreciation_per_year": -52.138309647767414,
-    "depreciation_per_10k_km": -1092.1058300729433,
-    "coefficients": {
-      "intercept": 31996.84253757923,
-      "year": -52.138309647767414,
-      "km": -0.10921058300729432
-    },
-    "exponential_coefficients": {
-      "intercept": 10.35102199779952,
-      "year": 0.00082552758564102,
-      "km": -0.0000036402023528232008
-    },
-    "r2": 0.43297174669551153,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 5,
-        "avg_price": 28432
-      },
-      {
-        "range": "50k-100k km",
-        "count": 6,
-        "avg_price": 25972
-      },
-      {
-        "range": "100k-150k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2021,
-      "max": 2026
-    },
-    "kmRange": {
-      "min": 0,
-      "max": 80000
-    },
-    "fair_price_new": 31289.003777823364,
-    "fair_price_5yo_100k": 21831.941884542823,
-    "resilience_score": 117.79392756402866,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN TAOS HIGHLINE",
-    "count": 10,
-    "depreciation_per_year": -1752.4908945618402,
-    "depreciation_per_10k_km": -603.9154696437142,
-    "coefficients": {
-      "intercept": 38955.13308985511,
-      "year": -1752.4908945618402,
-      "km": -0.06039154696437143
-    },
-    "exponential_coefficients": {
-      "intercept": 10.577155415262599,
-      "year": -0.05285151470579744,
-      "km": -0.000002133527881257185
-    },
-    "r2": 0.734140350574312,
-    "modelType": "ENSEMBLE",
-    "weights": {
-      "linear": 0,
-      "exponential": 1
-    },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 3,
-        "avg_price": 34078
-      },
-      {
-        "range": "50k-100k km",
-        "count": 5,
-        "avg_price": 25890
-      },
-      {
-        "range": "100k-150k km",
-        "count": 2,
-        "avg_price": 25291
-      },
-      {
-        "range": "150k-200k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2021,
-      "max": 2025
-    },
-    "kmRange": {
-      "min": 1003,
-      "max": 126000
-    },
-    "fair_price_new": 39228.36712677814,
-    "fair_price_5yo_100k": 24331.937178927794,
-    "resilience_score": 88.9864214551155,
-    "stability_label": "🥈 Silver"
+    "fair_price_new": 51542.238301351186,
+    "fair_price_5yo_100k": 28765.22303722717,
+    "resilience_score": 66.32161144591848,
+    "stability_label": "🥉 Bronze"
   },
   {
     "model": "NISSAN KICKS ADVANCE",
     "count": 21,
-    "depreciation_per_year": -822.4892624434417,
-    "depreciation_per_10k_km": -229.98986938187207,
+    "depreciation_per_year": -821.3516694075017,
+    "depreciation_per_10k_km": -227.60154301481418,
     "coefficients": {
-      "intercept": 25199.942325813492,
-      "year": -822.4892624434417,
-      "km": -0.022998986938187208
+      "intercept": 25319.43769333138,
+      "year": -821.3516694075017,
+      "km": -0.022760154301481417
     },
     "exponential_coefficients": {
       "intercept": 10.198632883273168,
@@ -1704,18 +1033,18 @@
     },
     "fair_price_new": 26866.43140829423,
     "fair_price_5yo_100k": 18704.76626200222,
-    "resilience_score": 205.40726216518811,
+    "resilience_score": 176.00248090860418,
     "stability_label": "💎 Platinum"
   },
   {
     "model": "NISSAN KICKS EXCLUSIVE",
     "count": 21,
-    "depreciation_per_year": -692.2686403147922,
-    "depreciation_per_10k_km": -357.1319963824267,
+    "depreciation_per_year": -591.3841529297109,
+    "depreciation_per_10k_km": -297.53076019313625,
     "coefficients": {
-      "intercept": 26601.561699041133,
-      "year": -692.2686403147922,
-      "km": -0.03571319963824267
+      "intercept": 25440.22474506992,
+      "year": -591.3841529297109,
+      "km": -0.029753076019313627
     },
     "exponential_coefficients": {
       "intercept": 10.225822140151438,
@@ -1765,190 +1094,812 @@
     },
     "fair_price_new": 27606.930911214477,
     "fair_price_5yo_100k": 19333.086892031857,
-    "resilience_score": 187.28925312803221,
+    "resilience_score": 189.36965174702414,
     "stability_label": "💎 Platinum"
   },
   {
-    "model": "VOLKSWAGEN TIGUAN HIGHLINE",
-    "count": 21,
-    "depreciation_per_year": -2935.3513307136827,
-    "depreciation_per_10k_km": -415.5705743151425,
+    "model": "TOYOTA COROLLA CROSS SEG",
+    "parentModel": "TOYOTA COROLLA CROSS",
+    "isManual": false,
+    "count": 164,
+    "depreciation_per_year": -3678.084380879472,
+    "depreciation_per_10k_km": -106.81223681867382,
     "coefficients": {
-      "intercept": 57767.63121674645,
-      "year": -2935.3513307136827,
-      "km": -0.04155705743151425
+      "intercept": 49031.261053131624,
+      "year": -3678.084380879472,
+      "km": -0.010681223681867382
     },
-    "exponential_coefficients": {
-      "intercept": 11.102125411760973,
-      "year": -0.08181908104365503,
-      "km": -0.000001324467311635487
+    "resilience_score": 26.9987271796411,
+    "stability_label": "Silver",
+    "r2": 0.269987271796411,
+    "yearRange": {
+      "min": 2021,
+      "max": 2026
     },
-    "r2": 0.7587075530443416,
+    "kmRange": {
+      "min": 500,
+      "max": 185000
+    },
     "modelType": "ENSEMBLE",
     "weights": {
       "linear": 0,
       "exponential": 1
     },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "50k-100k km",
-        "count": 15,
-        "avg_price": 33988
-      },
-      {
-        "range": "100k-150k km",
-        "count": 5,
-        "avg_price": 30200
-      },
-      {
-        "range": "150k-200k km",
-        "count": 1,
-        "avg_price": 29500
-      },
-      {
-        "range": "200k+ km",
-        "count": 0,
-        "avg_price": 0
-      }
-    ],
-    "yearRange": {
-      "min": 2018,
-      "max": 2021
+    "exponential_coefficients": {
+      "intercept": 10.787220785774496,
+      "year": -0.06911161454069283,
+      "km": -0.0000012284923396600043
     },
-    "kmRange": {
-      "min": 63000,
-      "max": 152000
-    },
-    "fair_price_new": 66311.9506963574,
-    "fair_price_5yo_100k": 38583.626262923135,
-    "resilience_score": 69.9399900024689,
-    "stability_label": "🥉 Bronze"
+    "buckets": []
   },
   {
-    "model": "VOLKSWAGEN TIGUAN TRENDLINE",
-    "count": 32,
-    "depreciation_per_year": -1412.4239277134484,
-    "depreciation_per_10k_km": -328.78558126967715,
+    "model": "TOYOTA COROLLA CROSS XEI",
+    "parentModel": "TOYOTA COROLLA CROSS",
+    "isManual": false,
+    "count": 96,
+    "depreciation_per_year": -1864.7796773433026,
+    "depreciation_per_10k_km": -652.0105747409581,
     "coefficients": {
-      "intercept": 36755.7081484804,
-      "year": -1412.4239277134484,
-      "km": -0.032878558126967716
+      "intercept": 44300.835252405515,
+      "year": -1864.7796773433026,
+      "km": -0.06520105747409581
     },
-    "exponential_coefficients": {
-      "intercept": 10.641349487301419,
-      "year": -0.06122733445069497,
-      "km": -0.0000014986382653337845
+    "resilience_score": 31.192456925714175,
+    "stability_label": "Silver",
+    "r2": 0.31192456925714174,
+    "yearRange": {
+      "min": 2021,
+      "max": 2026
     },
-    "r2": 0.5077159448380832,
+    "kmRange": {
+      "min": 500,
+      "max": 123000
+    },
     "modelType": "ENSEMBLE",
     "weights": {
-      "linear": 0.5559507884118419,
-      "exponential": 0.44404921158815813
+      "linear": 0,
+      "exponential": 1
     },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "50k-100k km",
-        "count": 9,
-        "avg_price": 24246
-      },
-      {
-        "range": "100k-150k km",
-        "count": 16,
-        "avg_price": 22273
-      },
-      {
-        "range": "150k-200k km",
-        "count": 6,
-        "avg_price": 21074
-      },
-      {
-        "range": "200k+ km",
-        "count": 1,
-        "avg_price": 18595
-      }
-    ],
+    "exponential_coefficients": {
+      "intercept": 10.687771289817997,
+      "year": -0.05182028488088117,
+      "km": -0.0000015068983267265931
+    },
+    "buckets": []
+  },
+  {
+    "model": "TOYOTA COROLLA CROSS XLI",
+    "parentModel": "TOYOTA COROLLA CROSS",
+    "isManual": false,
+    "count": 38,
+    "depreciation_per_year": -1621.4266432427767,
+    "depreciation_per_10k_km": -181.1701722714655,
+    "coefficients": {
+      "intercept": 37350.45344242971,
+      "year": -1621.4266432427767,
+      "km": -0.01811701722714655
+    },
+    "resilience_score": 29.87345663929335,
+    "stability_label": "Silver",
+    "r2": 0.2987345663929335,
     "yearRange": {
-      "min": 2018,
+      "min": 2021,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 1000,
+      "max": 105000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.602679800680162,
+      "year": -0.056380759458546655,
+      "km": -0.0000011767415143416924
+    },
+    "buckets": []
+  },
+  {
+    "model": "TOYOTA COROLLA CROSS GRS",
+    "parentModel": "TOYOTA COROLLA CROSS",
+    "isManual": false,
+    "count": 9,
+    "depreciation_per_year": -5065.28536672428,
+    "depreciation_per_10k_km": 890.9286268010891,
+    "coefficients": {
+      "intercept": 48730.346374385466,
+      "year": -5065.28536672428,
+      "km": 0.08909286268010891
+    },
+    "resilience_score": 56.5881758725514,
+    "stability_label": "Silver",
+    "r2": 0.565881758725514,
+    "yearRange": {
+      "min": 2022,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 10000,
+      "max": 61000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.4354226495546204,
+      "exponential": 0.5645773504453796
+    },
+    "exponential_coefficients": {
+      "intercept": 10.888290445747941,
+      "year": -0.13444684606169846,
+      "km": 0.0000011867264402180822
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TAOS COMFORTLINE",
+    "parentModel": "VOLKSWAGEN TAOS",
+    "isManual": false,
+    "count": 81,
+    "depreciation_per_year": -1946.063833181282,
+    "depreciation_per_10k_km": -40.945897091595214,
+    "coefficients": {
+      "intercept": 39230.59620588033,
+      "year": -1946.063833181282,
+      "km": -0.004094589709159521
+    },
+    "resilience_score": 23.778054710947714,
+    "stability_label": "Silver",
+    "r2": 0.23778054710947716,
+    "yearRange": {
+      "min": 2020,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 5000,
+      "max": 1111111
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.4394710132575793,
+      "exponential": 0.5605289867424207
+    },
+    "exponential_coefficients": {
+      "intercept": 10.553356729485314,
+      "year": -0.05443006321633931,
+      "km": -1.3949223771889756e-7
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TAOS HIGHLINE",
+    "parentModel": "VOLKSWAGEN TAOS",
+    "isManual": false,
+    "count": 83,
+    "depreciation_per_year": -2884.0136730829663,
+    "depreciation_per_10k_km": 476.1832265772491,
+    "coefficients": {
+      "intercept": 40968.55892716918,
+      "year": -2884.0136730829663,
+      "km": 0.047618322657724914
+    },
+    "resilience_score": 21.26484608727971,
+    "stability_label": "Silver",
+    "r2": 0.2126484608727971,
+    "yearRange": {
+      "min": 2021,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 500,
+      "max": 125000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.6759559793032,
+      "year": -0.06991259139653566,
+      "km": -1.0314351460007173e-7
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TAOS HERO",
+    "parentModel": "VOLKSWAGEN TAOS",
+    "isManual": false,
+    "count": 8,
+    "depreciation_per_year": 0,
+    "depreciation_per_10k_km": 0,
+    "coefficients": {
+      "intercept": 0,
+      "year": 0,
+      "km": 0
+    },
+    "resilience_score": -7164.659034462474,
+    "stability_label": "Silver",
+    "r2": -71.64659034462474,
+    "yearRange": {
+      "min": 2022,
       "max": 2022
     },
     "kmRange": {
-      "min": 62000,
-      "max": 220000
+      "min": 23700,
+      "max": 94000
     },
-    "fair_price_new": 39008.579811047326,
-    "fair_price_5yo_100k": 26452.876448385796,
-    "resilience_score": 127.26042085322995,
-    "stability_label": "💎 Platinum"
-  },
-  {
-    "model": "VOLKSWAGEN TIGUAN SPORT",
-    "count": 10,
-    "depreciation_per_year": -1264.5996792413366,
-    "depreciation_per_10k_km": -328.6505796029081,
-    "coefficients": {
-      "intercept": 38081.01862422756,
-      "year": -1264.5996792413366,
-      "km": -0.032865057960290815
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.5,
+      "exponential": 0.5
     },
     "exponential_coefficients": {
-      "intercept": 11.19067858650235,
-      "year": -0.09022250423880204,
-      "km": -0.000002083746039308622
+      "intercept": 0,
+      "year": 0,
+      "km": 0
     },
-    "r2": 0.8382172591733555,
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN NIVUS COMFORTLINE",
+    "parentModel": "VOLKSWAGEN NIVUS",
+    "isManual": false,
+    "count": 136,
+    "depreciation_per_year": -334.2553610028274,
+    "depreciation_per_10k_km": -956.8345041487863,
+    "coefficients": {
+      "intercept": 33144.1007497963,
+      "year": -334.2553610028274,
+      "km": -0.09568345041487863
+    },
+    "resilience_score": 29.118160850992414,
+    "stability_label": "Silver",
+    "r2": 0.29118160850992414,
+    "yearRange": {
+      "min": 2020,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 1000,
+      "max": 134000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.14309952929205524,
+      "exponential": 0.8569004707079447
+    },
+    "exponential_coefficients": {
+      "intercept": 10.363847459980907,
+      "year": -0.024357174124400614,
+      "km": -0.000002471121059895176
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN NIVUS TRENDLINE",
+    "parentModel": "VOLKSWAGEN NIVUS",
+    "isManual": false,
+    "count": 10,
+    "depreciation_per_year": -1093.968818183457,
+    "depreciation_per_10k_km": -514.9383361446214,
+    "coefficients": {
+      "intercept": 34596.60946804552,
+      "year": -1093.968818183457,
+      "km": -0.05149383361446214
+    },
+    "resilience_score": 72.64505005660784,
+    "stability_label": "Gold",
+    "r2": 0.7264505005660784,
+    "yearRange": {
+      "min": 2022,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 500,
+      "max": 160000
+    },
     "modelType": "ENSEMBLE",
     "weights": {
       "linear": 0,
       "exponential": 1
     },
-    "buckets": [
-      {
-        "range": "0-50k km",
-        "count": 1,
-        "avg_price": 21000
-      },
-      {
-        "range": "50k-100k km",
-        "count": 0,
-        "avg_price": 0
-      },
-      {
-        "range": "100k-150k km",
-        "count": 2,
-        "avg_price": 15950
-      },
-      {
-        "range": "150k-200k km",
-        "count": 4,
-        "avg_price": 16881
-      },
-      {
-        "range": "200k+ km",
-        "count": 3,
-        "avg_price": 12000
-      }
-    ],
+    "exponential_coefficients": {
+      "intercept": 10.411375505921264,
+      "year": -0.010632546412893677,
+      "km": -0.0000023234261567097934
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN NIVUS HIGHLINE",
+    "parentModel": "VOLKSWAGEN NIVUS",
+    "isManual": false,
+    "count": 60,
+    "depreciation_per_year": -2028.6865015102064,
+    "depreciation_per_10k_km": -667.6405255303906,
+    "coefficients": {
+      "intercept": 39994.295081485674,
+      "year": -2028.6865015102064,
+      "km": -0.06676405255303906
+    },
+    "resilience_score": 53.75424400331752,
+    "stability_label": "Silver",
+    "r2": 0.5375424400331752,
+    "yearRange": {
+      "min": 2020,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 500,
+      "max": 140000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.55806480392261,
+      "year": -0.05613380377256637,
+      "km": -0.000002013440409342175
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TIGUAN TRENDLINE",
+    "parentModel": "VOLKSWAGEN TIGUAN",
+    "isManual": false,
+    "count": 91,
+    "depreciation_per_year": -1405.5823494704869,
+    "depreciation_per_10k_km": -357.47672732609243,
+    "coefficients": {
+      "intercept": 38501.72984168376,
+      "year": -1405.5823494704869,
+      "km": -0.035747672732609245
+    },
+    "resilience_score": 14.525740563599776,
+    "stability_label": "Silver",
+    "r2": 0.14525740563599776,
+    "yearRange": {
+      "min": 2017,
+      "max": 2021
+    },
+    "kmRange": {
+      "min": 49500,
+      "max": 209000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.721224481598538,
+      "year": -0.05335718933975972,
+      "km": -0.0000016069486749521084
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TIGUAN SPORT",
+    "parentModel": "VOLKSWAGEN TIGUAN",
+    "isManual": false,
+    "count": 40,
+    "depreciation_per_year": -865.4652421999616,
+    "depreciation_per_10k_km": -308.26465562969304,
+    "coefficients": {
+      "intercept": 32600.165437651878,
+      "year": -865.4652421999616,
+      "km": -0.030826465562969304
+    },
+    "resilience_score": 31.22981124235553,
+    "stability_label": "Silver",
+    "r2": 0.3122981124235553,
     "yearRange": {
       "min": 2009,
+      "max": 2018
+    },
+    "kmRange": {
+      "min": 102000,
+      "max": 264000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.741818858963292,
+      "year": -0.061048571952502025,
+      "km": -0.000001315773534754488
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLKSWAGEN TIGUAN PREMIUM",
+    "parentModel": "VOLKSWAGEN TIGUAN",
+    "isManual": false,
+    "count": 26,
+    "depreciation_per_year": -1864.7633394774573,
+    "depreciation_per_10k_km": -225.59520558091978,
+    "coefficients": {
+      "intercept": 46763.90959082909,
+      "year": -1864.7633394774573,
+      "km": -0.02255952055809198
+    },
+    "resilience_score": 72.40200477495048,
+    "stability_label": "Gold",
+    "r2": 0.7240200477495049,
+    "yearRange": {
+      "min": 2011,
+      "max": 2023
+    },
+    "kmRange": {
+      "min": 9000,
+      "max": 266713
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.889320632243702,
+      "year": -0.06934411454295851,
+      "km": -7.493045060153296e-7
+    },
+    "buckets": []
+  },
+  {
+    "model": "VOLSKWAGEN AMAROK COMFORTLINE",
+    "count": 54,
+    "depreciation_per_year": -2394.634224818419,
+    "depreciation_per_10k_km": 6.138206278986843,
+    "coefficients": {
+      "intercept": 44790.86337428275,
+      "year": -2394.634224818419,
+      "km": 0.0006138206278986843
+    },
+    "buckets": [],
+    "resilience_score": 70.34127609709314,
+    "stability_label": "Gold",
+    "r2": 0.7034127609709314,
+    "yearRange": {
+      "min": 2017,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 1000,
+      "max": 3580368
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.1186891952086341,
+      "exponential": 0.8813108047913659
+    },
+    "exponential_coefficients": {
+      "intercept": 10.7683944465186,
+      "year": -0.0774419408241048,
+      "km": 2.1294363781400396e-8
+    },
+    "isManual": false,
+    "parentModel": "VOLSKWAGEN AMAROK"
+  },
+  {
+    "model": "VOLSKWAGEN AMAROK HIGHLINE",
+    "count": 122,
+    "depreciation_per_year": -1848.1345169828876,
+    "depreciation_per_10k_km": 30.71717063644657,
+    "coefficients": {
+      "intercept": 43640.556479505816,
+      "year": -1848.1345169828876,
+      "km": 0.003071717063644657
+    },
+    "buckets": [],
+    "resilience_score": 78.99589689913358,
+    "stability_label": "Gold",
+    "r2": 0.7899589689913359,
+    "yearRange": {
+      "min": 2010,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 5000,
+      "max": 1111111
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.752742430823488,
+      "year": -0.06471652250721906,
+      "km": 1.0367032034431848e-7
+    },
+    "isManual": false,
+    "parentModel": "VOLSKWAGEN AMAROK"
+  },
+  {
+    "model": "VOLSKWAGEN AMAROK TRENDLINE",
+    "count": 26,
+    "depreciation_per_year": -1174.3552412340878,
+    "depreciation_per_10k_km": -81.34946447637168,
+    "coefficients": {
+      "intercept": 36960.03406821803,
+      "year": -1174.3552412340878,
+      "km": -0.008134946447637167
+    },
+    "buckets": [],
+    "resilience_score": 70.58992701027222,
+    "stability_label": "Gold",
+    "r2": 0.7058992701027221,
+    "yearRange": {
+      "min": 2013,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 1000,
+      "max": 196000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.510472028236363,
+      "year": -0.038438821454756196,
+      "km": -4.0893870063709054e-7
+    },
+    "isManual": false,
+    "parentModel": "VOLSKWAGEN AMAROK"
+  },
+  {
+    "model": "VOLSKWAGEN AMAROK EXTREME",
+    "count": 36,
+    "depreciation_per_year": -1421.6524525088637,
+    "depreciation_per_10k_km": -457.59504960401307,
+    "coefficients": {
+      "intercept": 48844.61722577702,
+      "year": -1421.6524525088637,
+      "km": -0.04575950496040131
+    },
+    "buckets": [],
+    "resilience_score": 77.19000157086367,
+    "stability_label": "Gold",
+    "r2": 0.7719000157086366,
+    "yearRange": {
+      "min": 2018,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 4500,
+      "max": 257000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.859836872496263,
+      "year": -0.04245455497960316,
+      "km": -0.0000012967465883430685
+    },
+    "isManual": false,
+    "parentModel": "VOLSKWAGEN AMAROK"
+  },
+  {
+    "model": "VOLKSWAGEN T-CROSS HIGHLINE",
+    "count": 108,
+    "depreciation_per_year": -1765.6576735755234,
+    "depreciation_per_10k_km": -301.91788993288384,
+    "coefficients": {
+      "intercept": 38029.032188944075,
+      "year": -1765.6576735755234,
+      "km": -0.030191788993288386
+    },
+    "buckets": [],
+    "resilience_score": 65.82879434791522,
+    "stability_label": "Gold",
+    "r2": 0.6582879434791522,
+    "yearRange": {
+      "min": 2019,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 1000,
+      "max": 176000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.57555011038651,
+      "year": -0.06096050476966107,
+      "km": -9.794199461669022e-7
+    },
+    "isManual": false,
+    "parentModel": "VOLKSWAGEN T-CROSS"
+  },
+  {
+    "model": "VOLKSWAGEN T-CROSS COMFORTLINE",
+    "count": 40,
+    "depreciation_per_year": -1604.150891178684,
+    "depreciation_per_10k_km": -596.2376207313242,
+    "coefficients": {
+      "intercept": 39159.484539603734,
+      "year": -1604.150891178684,
+      "km": -0.05962376207313242
+    },
+    "buckets": [],
+    "resilience_score": 73.86718718352921,
+    "stability_label": "Gold",
+    "r2": 0.738671871835292,
+    "yearRange": {
+      "min": 2019,
+      "max": 2026
+    },
+    "kmRange": {
+      "min": 1002,
+      "max": 145000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.5079008468306614,
+      "exponential": 0.4920991531693386
+    },
+    "exponential_coefficients": {
+      "intercept": 10.599745833998938,
+      "year": -0.05444394488428178,
+      "km": -0.0000023388674183418527
+    },
+    "isManual": false,
+    "parentModel": "VOLKSWAGEN T-CROSS"
+  },
+  {
+    "model": "VOLKSWAGEN T-CROSS TRENDLINE",
+    "count": 18,
+    "depreciation_per_year": -661.2875255052919,
+    "depreciation_per_10k_km": -653.4655330367925,
+    "coefficients": {
+      "intercept": 35747.45169785854,
+      "year": -661.2875255052919,
+      "km": -0.06534655330367925
+    },
+    "buckets": [],
+    "resilience_score": 62.07328061358495,
+    "stability_label": "Gold",
+    "r2": 0.6207328061358495,
+    "yearRange": {
+      "min": 2020,
+      "max": 2025
+    },
+    "kmRange": {
+      "min": 700,
+      "max": 128000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.5036782775172205,
+      "exponential": 0.4963217224827795
+    },
+    "exponential_coefficients": {
+      "intercept": 10.510513250791764,
+      "year": -0.01788322175923819,
+      "km": -0.00000276997807271016
+    },
+    "isManual": false,
+    "parentModel": "VOLKSWAGEN T-CROSS"
+  },
+  {
+    "model": "RENAULT DUSTER PRIVILEGE",
+    "parentModel": "RENAULT DUSTER",
+    "isManual": true,
+    "count": 20,
+    "depreciation_per_year": -1035.7972525859689,
+    "depreciation_per_10k_km": -278.0411000676199,
+    "coefficients": {
+      "intercept": 29538.684302226025,
+      "year": -1035.7972525859689,
+      "km": -0.027804110006761987
+    },
+    "resilience_score": 64.3820295072257,
+    "stability_label": "Gold",
+    "r2": 0.643820295072257,
+    "yearRange": {
+      "min": 2012,
+      "max": 2020
+    },
+    "kmRange": {
+      "min": 72000,
+      "max": 242000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0,
+      "exponential": 1
+    },
+    "exponential_coefficients": {
+      "intercept": 10.447010567842364,
+      "year": -0.06669594271620777,
+      "km": -0.0000011023349969332557
+    },
+    "buckets": []
+  },
+  {
+    "model": "RENAULT DUSTER COMFORT PLUS",
+    "parentModel": "RENAULT DUSTER",
+    "isManual": true,
+    "count": 8,
+    "depreciation_per_year": -829.1315392327449,
+    "depreciation_per_10k_km": -183.75420141533104,
+    "coefficients": {
+      "intercept": 26532.111050829357,
+      "year": -829.1315392327449,
+      "km": -0.018375420141533105
+    },
+    "resilience_score": 54.48831872008171,
+    "stability_label": "Silver",
+    "r2": 0.5448831872008171,
+    "yearRange": {
+      "min": 2012,
       "max": 2015
     },
     "kmRange": {
-      "min": 39000,
-      "max": 225000
+      "min": 109000,
+      "max": 228000
     },
-    "fair_price_new": 72451.93000339903,
-    "fair_price_5yo_100k": 37466.08719683913,
-    "resilience_score": 137.066617111492,
-    "stability_label": "💎 Platinum"
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.028442449263263423,
+      "exponential": 0.9715575507367366
+    },
+    "exponential_coefficients": {
+      "intercept": 10.331301917365884,
+      "year": -0.05043876537280888,
+      "km": -0.0000015128520763721776
+    },
+    "buckets": []
+  },
+  {
+    "model": "RENAULT DUSTER DYNAMIQUE",
+    "parentModel": "RENAULT DUSTER",
+    "isManual": true,
+    "count": 6,
+    "depreciation_per_year": -630.574868999528,
+    "depreciation_per_10k_km": -161.55511810557581,
+    "coefficients": {
+      "intercept": 23817.247228575266,
+      "year": -630.574868999528,
+      "km": -0.01615551181055758
+    },
+    "resilience_score": 86.32998683824944,
+    "stability_label": "Platinum",
+    "r2": 0.8632998683824944,
+    "yearRange": {
+      "min": 2011,
+      "max": 2017
+    },
+    "kmRange": {
+      "min": 86400,
+      "max": 181000
+    },
+    "modelType": "ENSEMBLE",
+    "weights": {
+      "linear": 0.21361544408218242,
+      "exponential": 0.7863845559178175
+    },
+    "exponential_coefficients": {
+      "intercept": 10.49674335135735,
+      "year": -0.06419531625765613,
+      "km": -0.0000017147037955121421
+    },
+    "buckets": []
   }
 ]

@@ -1,3 +1,0 @@
-TypeError: curator.curate is not a function
-TypeError: curator.curate is not a function
-    at runDeepScrape (C:\Users\USUARIO\Documents\autos\vehicle-intelligence\scrape_deep.ts:26:35)
